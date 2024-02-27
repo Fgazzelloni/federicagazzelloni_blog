@@ -1,0 +1,30 @@
+---
+title: "Federica Gazzelloni"
+image: images/profile.png
+about:
+  template: trestles
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/fgazzelloni
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/federicagazzelloni
+    - icon: github
+      text: Github
+      href: https://github.com/fgazzelloni
+---
+
+::: column-page
+::: {style="margin-top: 10px; face: bold;font-size: 2em; color: #343a40;"}
+About
+:::
+
+::: {style="margin-top: 10px; font-size: 1.5em; color: #343a40;"}
+STATISTICIAN \| ACTUARY \| DATA SCIENTIST
+:::
+
+::: {style="font-size: 1.2em; color: ##343440;"}
+I’ve always loved maths and science, I meant to be a Veterinary, I wanted to do ballet classes, teach gymnastic, be an economist, a psychologist… Many years passed since I started the journey of my career as an investigator, it turned out to be an everyday challenge with tasks to solve, and most importantly a continuous learning path.
+:::
+:::

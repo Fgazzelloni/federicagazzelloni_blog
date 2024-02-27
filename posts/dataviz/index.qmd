@@ -1,0 +1,13 @@
+---
+title: Data Visualizations
+description: "This is my blog section about Data Visualizations.\n"
+listing:
+  contents: data_visualization
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---

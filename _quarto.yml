@@ -1,0 +1,37 @@
+project:
+  type: website
+
+website:
+  title: "Federica Gazzelloni"
+  favicon: images/profile.png
+  site-url: https://fgazzelloni.quarto.pub/federicagazzelloni_blog/
+  description: "Data Science"
+  open-graph: 
+    locale: en_US
+  twitter-card:
+    creator: "@fgazzelloni"
+  navbar:
+    right:
+      - text: "Home"
+        href: index.html
+      - text: "Data Visualization"
+        href: posts/dataviz/index.qmd
+      - text: "Statistics"
+        href: posts/stats/index.qmd
+      - text: "Projects"
+        href: posts/proj/index.qmd
+      - text:  "About"
+        href: about.qmd
+      - icon: github
+        href: https://github.com/fgazzelloni
+      - icon: twitter
+        href: https://twitter.com/fgazzelloni
+  page-footer:
+    left: "© Copyright 2024 Federica Gazzelloni. CC-BY-NC 4.0."
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+
+editor: visual
+

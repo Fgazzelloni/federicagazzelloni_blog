@@ -1,0 +1,65 @@
+[
+  {
+    "listing": "/posts/stats/index.html",
+    "items": [
+      "/posts/stats/statistics/linear_prediction/index.html",
+      "/posts/stats/statistics/simpson_paradox/index.html",
+      "/posts/stats/statistics/bayesian_statistics/index.html",
+      "/posts/stats/statistics/tidymodels/index.html",
+      "/posts/stats/statistics/multiple_testing/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/proj/index.html",
+    "items": [
+      "/posts/proj/projects/health_metrics/index.html",
+      "/posts/proj/projects/oregonfrogs/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/dataviz/index.html",
+    "items": [
+      "/posts/dataviz/data_visualization/dubois2024/challenge01/index.html",
+      "/posts/dataviz/data_visualization/usecases/hiv/index.html",
+      "/posts/dataviz/data_visualization/ggmap/index.html",
+      "/posts/dataviz/data_visualization/usecases/malaria/index.html",
+      "/posts/dataviz/data_visualization/ggstream/index.html",
+      "/posts/dataviz/data_visualization/yarn/index.html",
+      "/posts/dataviz/data_visualization/oregonfrogs/index.html",
+      "/posts/dataviz/data_visualization/european_flights/index.html",
+      "/posts/dataviz/data_visualization/Statistics/index.html",
+      "/posts/dataviz/data_visualization/erasmus/index.html",
+      "/posts/dataviz/data_visualization/dubois2023/index.html",
+      "/posts/dataviz/data_visualization/dogbreeds/index.html",
+      "/posts/dataviz/data_visualization/network/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/proj/index.html",
+      "/posts/dataviz/index.html",
+      "/posts/stats/index.html",
+      "/posts/stats/statistics/linear_prediction/index.html",
+      "/posts/dataviz/data_visualization/dubois2024/challenge01/index.html",
+      "/posts/stats/statistics/simpson_paradox/index.html",
+      "/posts/dataviz/data_visualization/usecases/hiv/index.html",
+      "/posts/dataviz/data_visualization/ggmap/index.html",
+      "/posts/dataviz/data_visualization/usecases/malaria/index.html",
+      "/posts/stats/statistics/bayesian_statistics/index.html",
+      "/posts/proj/projects/health_metrics/index.html",
+      "/posts/dataviz/data_visualization/ggstream/index.html",
+      "/posts/proj/projects/oregonfrogs/index.html",
+      "/posts/dataviz/data_visualization/yarn/index.html",
+      "/posts/dataviz/data_visualization/oregonfrogs/index.html",
+      "/posts/dataviz/data_visualization/european_flights/index.html",
+      "/posts/stats/statistics/tidymodels/index.html",
+      "/posts/stats/statistics/multiple_testing/index.html",
+      "/posts/dataviz/data_visualization/Statistics/index.html",
+      "/posts/dataviz/data_visualization/erasmus/index.html",
+      "/posts/dataviz/data_visualization/dubois2023/index.html",
+      "/posts/dataviz/data_visualization/dogbreeds/index.html",
+      "/posts/dataviz/data_visualization/network/index.html"
+    ]
+  }
+]
