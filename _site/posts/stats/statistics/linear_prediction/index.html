@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Federica Gazzelloni">
 <meta name="dcterms.date" content="2024-02-26">
 
 <title>Federica Gazzelloni - How does geom_smooth() make predictions</title>
@@ -225,12 +224,6 @@ window.Quarto = {
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Federica Gazzelloni </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
@@ -254,15 +247,22 @@ window.Quarto = {
 
 
 
-<center>
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTIzNW90ZGV3dnJhMTc3czF6MWtxOWlmZDd1bzM0ZDl2NmxjOTk3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1WozRHfDOlVZqVjhlf/giphy.gif" class="img-fluid">
-</center>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p><strong>Linear regression</strong> is a statistical technique used to represent the linear relationship between a response <span class="math inline">\((y)\)</span> and a predictor <span class="math inline">\((x)\)</span>.</p>
-<p><img src="featured.png" class="img-fluid"></p>
 <p><span class="math display">\[
 y= \beta_0 + \beta_1x
 \]</span></p>
+</div><div class="column" style="width:50%;">
+<center>
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTIzNW90ZGV3dnJhMTc3czF6MWtxOWlmZDd1bzM0ZDl2NmxjOTk3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1WozRHfDOlVZqVjhlf/giphy.gif" class="img-fluid">
+</center>
+</div>
+</div>
 <p>Below we examine some mismatch in output when plotting the prediction results of a linear model made with the <code>lm()</code> and the <code>predict()</code> functions versus the output produced by the <code>geom_smooth()</code> layer in a <code>ggplot()</code> visualization.</p>
+<p><img src="featured.png" class="img-fluid"></p>
 <p>The data is from the <code>HistData::CholeraDeaths1849</code> dataset. We select just the deaths due to Cholera within 12 months in 1849, and visualize the trend in time of the number of deaths with the addition of a futher layer made with the <code>geom_smooth()</code>.</p>
 <pre><code>?geom_smooth()
 
@@ -374,7 +374,16 @@ F-statistic: 36.31 on 1 and 363 DF,  p-value: 4.132e-09</code></pre>
 <pre><code>Root Mean Squared Error (RMSE): 222.4774 </code></pre>
 </div>
 </div>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
 <p>What if we want to visualize the output of our prediction?</p>
+</div>
+</div>
+</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(cholera, <span class="fu">aes</span>(<span class="at">x=</span>date)) <span class="sc">+</span> </span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y=</span>deaths)) <span class="sc">+</span> </span>
@@ -501,7 +510,16 @@ Coefficients:
 <pre><code>Root Mean Squared Error (RMSE): 281.7808 </code></pre>
 </div>
 </div>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
 <p>What if we want to visualize the output of our prediction?</p>
+</div>
+</div>
+</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(cholera2, <span class="fu">aes</span>(<span class="at">x=</span>popn)) <span class="sc">+</span> </span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y=</span>cholera_deaths)) <span class="sc">+</span> </span>
@@ -531,6 +549,7 @@ Coefficients:
 <center>
 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGJqZGFycDB0bGp4YzlhMGNiMjE3YXl0eXA4NWRmejFzNW1ha2NlNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2Cy90VMhfoA9BC/giphy.gif" class="img-fluid">
 </center>
+<p><br></p>
 <p>Imagine that we absolutely want to replicate the <code>geom_smooth(method="lm")</code> line, we would need to consider some steps that the function takes in order to plot the prediction line that doesn’t much with ours this time. First think to consider is that we haven’t used <code>new data</code> but just produced the prediction from our dataset. But this is exactly as the same as before.</p>
 <p>There is a function <code>ggplot_build()</code> that let’s us dig into the ggplot data manipulation used to make the geom_smooth line.</p>
 <pre><code>?ggplot_build()</code></pre>
@@ -573,8 +592,11 @@ a multiple of shorter object length</code></pre>
 </div>
 </div>
 </div>
+<p>We eventually matched the geom_smooth line, but why did our predictions on the original data result in that squiggly prediction line?</p>
+<hr>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

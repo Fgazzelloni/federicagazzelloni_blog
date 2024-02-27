@@ -27,13 +27,20 @@
 
 
 
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Linear regression</strong> is a statistical technique used to represent the linear relationship between a response <img src="https://latex.codecogs.com/png.latex?(y)"> and a predictor <img src="https://latex.codecogs.com/png.latex?(x)">.</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ay=%20%5Cbeta_0%20+%20%5Cbeta_1x%0A"></p>
+</div><div class="column" style="width:50%;">
 <center>
 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTIzNW90ZGV3dnJhMTc3czF6MWtxOWlmZDd1bzM0ZDl2NmxjOTk3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1WozRHfDOlVZqVjhlf/giphy.gif" class="img-fluid">
 </center>
-<p><strong>Linear regression</strong> is a statistical technique used to represent the linear relationship between a response <img src="https://latex.codecogs.com/png.latex?(y)"> and a predictor <img src="https://latex.codecogs.com/png.latex?(x)">.</p>
-<p><img src="https://fgazzelloni.quarto.pub/blog/posts/stats/statistics/linear_prediction/featured.png" class="img-fluid"></p>
-<p><img src="https://latex.codecogs.com/png.latex?%0Ay=%20%5Cbeta_0%20+%20%5Cbeta_1x%0A"></p>
+</div>
+</div>
 <p>Below we examine some mismatch in output when plotting the prediction results of a linear model made with the <code>lm()</code> and the <code>predict()</code> functions versus the output produced by the <code>geom_smooth()</code> layer in a <code>ggplot()</code> visualization.</p>
+<p><img src="https://fgazzelloni.quarto.pub/blog/posts/stats/statistics/linear_prediction/featured.png" class="img-fluid"></p>
 <p>The data is from the <code>HistData::CholeraDeaths1849</code> dataset. We select just the deaths due to Cholera within 12 months in 1849, and visualize the trend in time of the number of deaths with the addition of a futher layer made with the <code>geom_smooth()</code>.</p>
 <pre><code>?geom_smooth()
 
@@ -281,7 +288,16 @@ font-style: inherit;">"</span>)</span></code></pre></div>
 <pre><code>Root Mean Squared Error (RMSE): 222.4774 </code></pre>
 </div>
 </div>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
 <p>What if we want to visualize the output of our prediction?</p>
+</div>
+</div>
+</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -616,7 +632,16 @@ font-style: inherit;">"</span>)</span></code></pre></div>
 <pre><code>Root Mean Squared Error (RMSE): 281.7808 </code></pre>
 </div>
 </div>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
 <p>What if we want to visualize the output of our prediction?</p>
+</div>
+</div>
+</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb29" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1">plot <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -716,6 +741,7 @@ font-style: inherit;">theme_minimal</span>()</span>
 <center>
 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGJqZGFycDB0bGp4YzlhMGNiMjE3YXl0eXA4NWRmejFzNW1ha2NlNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2Cy90VMhfoA9BC/giphy.gif" class="img-fluid">
 </center>
+<p><br></p>
 <p>Imagine that we absolutely want to replicate the <code>geom_smooth(method="lm")</code> line, we would need to consider some steps that the function takes in order to plot the prediction line that doesn’t much with ours this time. First think to consider is that we haven’t used <code>new data</code> but just produced the prediction from our dataset. But this is exactly as the same as before.</p>
 <p>There is a function <code>ggplot_build()</code> that let’s us dig into the ggplot data manipulation used to make the geom_smooth line.</p>
 <pre><code>?ggplot_build()</code></pre>
@@ -854,8 +880,11 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div>
 </div>
 </div>
 </div>
+<p>We eventually matched the geom_smooth line, but why did our predictions on the original data result in that squiggly prediction line?</p>
+<hr>
 
 
+</section>
 
  ]]></description>
   <category>rstats</category>

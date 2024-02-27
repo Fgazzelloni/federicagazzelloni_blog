@@ -10,20 +10,33 @@ tags:
   - modeling
 summary: "William Farr's Data on Cholera in London, 1849 is used to digg into a linear model output and compared with that made by geom_smooth(method='lm')"
 execute: 
-  eval: false
+  eval: true
 ---
 
-<center>![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTIzNW90ZGV3dnJhMTc3czF6MWtxOWlmZDd1bzM0ZDl2NmxjOTk3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1WozRHfDOlVZqVjhlf/giphy.gif)</center>
+## Overview
 
+:::: {.columns}
+
+::: {.column width="50%"}
 **Linear regression** is a statistical technique used to represent the linear relationship between a response $(y)$ and a predictor $(x)$.
-
-![](featured.png)
 
 $$
 y= \beta_0 + \beta_1x
 $$
+:::
+
+::: {.column width="50%"}
+<center>![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTIzNW90ZGV3dnJhMTc3czF6MWtxOWlmZDd1bzM0ZDl2NmxjOTk3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1WozRHfDOlVZqVjhlf/giphy.gif)</center>
+:::
+
+::::
+
+
 
 Below we examine some mismatch in output when plotting the prediction results of a linear model made with the `lm()` and the `predict()` functions versus the output produced by the `geom_smooth()` layer in a `ggplot()` visualization.
+
+![](featured.png)
+
 
 The data is from the `HistData::CholeraDeaths1849` dataset. We select just the deaths due to Cholera within 12 months in 1849, and visualize the trend in time of the number of deaths with the addition of a futher layer made with the `geom_smooth()`.
 
@@ -96,7 +109,10 @@ rmse <- sqrt(mean((predictions - cholera$deaths)^2))
 cat("Root Mean Squared Error (RMSE):", rmse, "\n")
 ```
 
+::: {.callout}
 What if we want to visualize the output of our prediction?
+:::
+
 
 ```{r}
 ggplot(cholera, aes(x=date)) + 
@@ -105,6 +121,7 @@ ggplot(cholera, aes(x=date)) +
   geom_line(y=predictions, col="red")+
   theme_minimal()
 ```
+
 
 Now let's use a different dataset. This data set comes from a paper by Brigham et al. (2003) that analyses some tables from Farr's report of the Registrar-General on mortality due to cholera in England in the years 1848-1849, during which there was a large epidemic throughout the country. In this case we do not have the time variable but the numbers of deaths are considered by 38 districts in London.
 
@@ -175,7 +192,9 @@ rmse <- sqrt(mean((predictions2 - cholera2$cholera_deaths)^2))
 cat("Root Mean Squared Error (RMSE):", rmse, "\n")
 ```
 
+::: {.callout}
 What if we want to visualize the output of our prediction?
+:::
 
 ```{r}
 #| fig-cap: "Cholera Deaths explanined by London Districts Population (1849)"
@@ -202,6 +221,8 @@ ggsave(plot,filename="featured.png",
 > Think about that!
 
 <center>![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGJqZGFycDB0bGp4YzlhMGNiMjE3YXl0eXA4NWRmejFzNW1ha2NlNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2Cy90VMhfoA9BC/giphy.gif)</center>
+
+<br>
 
 Imagine that we absolutely want to replicate the `geom_smooth(method="lm")` line, we would need to consider some steps that the function takes in order to plot the prediction line that doesn't much with ours this time. First think to consider is that we haven't used `new data` but just produced the prediction from our dataset. But this is exactly as the same as before.
 
@@ -233,3 +254,11 @@ ggplot(cholera2, aes(x=popn)) +
   geom_line(data=dat,y=predictions3, col="red")+
   theme_minimal()
 ```
+
+
+
+We eventually matched the geom_smooth line, but why did our predictions on the original data result in that squiggly line?
+
+
+------
+
