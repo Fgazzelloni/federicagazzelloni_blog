@@ -1,1 +1,1 @@
-Sitemap: https://fgazzelloni.quarto.pub/federicagazzelloni_blog/sitemap.xml
+Sitemap: https://fgazzelloni.quarto.pub/blog/sitemap.xml

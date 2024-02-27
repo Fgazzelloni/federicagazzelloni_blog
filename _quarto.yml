@@ -4,7 +4,7 @@ project:
 website:
   title: "Federica Gazzelloni"
   favicon: images/profile.png
-  site-url: https://fgazzelloni.quarto.pub/federicagazzelloni_blog/
+  site-url: https://fgazzelloni.quarto.pub/blog/
   description: "Data Science"
   open-graph: 
     locale: en_US
@@ -26,6 +26,8 @@ website:
         href: https://github.com/fgazzelloni
       - icon: twitter
         href: https://twitter.com/fgazzelloni
+      - icon: rss
+        href: index.xml  
   page-footer:
     left: "© Copyright 2024 Federica Gazzelloni. CC-BY-NC 4.0."
 format:
