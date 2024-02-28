@@ -6,6 +6,13 @@ website:
   favicon: images/profile.png
   site-url: https://fgazzelloni.quarto.pub/blog/
   description: "Data Science"
+  cookie-consent:
+    type: express
+    style: headline
+    palette: dark
+  google-analytics:
+    tracking-id: "G-119NQB71C8"
+    anonymize-ip: true
   open-graph: 
     locale: en_US
   twitter-card:
