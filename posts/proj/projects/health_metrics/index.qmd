@@ -7,23 +7,24 @@ images:
 series:
 categories: 
 layout: single
+page-layout: full
 execute: 
   eval: false
 ---
 
 ## Overview
 
-These days measuring performances is very appropriate for many different topics. Thinking about health and the fast changing environments, including climate changes, require a ready tool for identifying possible future outcomes.
+::: columns
+::: {.column width="80%"}
+These days measuring performances is very appropriate for many different topics. Thinking about health and the fast changing environments, including climate changes, require a ready tool for identifying possible future outcomes. On health, interesting simple metrics are used to classify the state of health of a population, so to be comparable with other near and far.
 
+Here is a spec of my latest project where I am collecting all that I learned since the start of the Covid19 pandemic on a summary of the techniques used for measuring the health status of a population when in conjunction with an extreme event. Many tools are available and ready to use for the most exceptional purpose someone might had in mind, and I had difficulties choosing one on top of the other. But, why choosing if you can combine them?
+:::
+
+::: {.column width="20%"}
 ![](featured.png)
-
-On health, interesting simple metrics are used to classify the state of health of a population, so to be comparable with other near and far.
-
-Here is a spec of my latest endeavor, I am collecting all that I learned in the last three years, since the start of the Covid19 outbreak, on a summary of the techniques used for measuring the health status of a population when in conjunction with an extreme event.
-
-Many tools are available and ready to use for the most exceptional purpose someone might had in mind, and I had difficulties choosing one on top of the other. But, why choosing if you can combine them?
-
-What am I talking about?
+:::
+:::
 
 There are three metrics that are used for the purpose of classification in the public health, the DALYs, YLLs, and the YLDs. Respectively are the **Disability Adjusted Life Years**, **Years of Life Lost**, and **Years Lived with Disabilities**.
 

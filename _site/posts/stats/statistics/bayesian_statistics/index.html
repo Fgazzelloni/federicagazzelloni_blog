@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.549">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Federica Gazzelloni">
 <meta name="dcterms.date" content="2023-03-22">
-
 <title>Federica Gazzelloni - Bayesian Statistics model comparison</title>
 <style>
 code{white-space: pre-wrap;}
@@ -58,7 +54,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-
 <script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
@@ -78,7 +73,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../../../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -104,18 +100,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-119NQB71C8"></script>
-
-<script type="text/plain" cookie-consent="tracking">
+}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-119NQB71C8"></script><script type="text/plain" cookie-consent="tracking">
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-119NQB71C8', { 'anonymize_ip': true});
-</script>
-
-<script type="text/javascript" charset="UTF-8">
+</script><script type="text/javascript" charset="UTF-8">
 document.addEventListener('DOMContentLoaded', function () {
 cookieconsent.run({
   "notice_banner_type":"headline",
@@ -130,13 +121,8 @@ cookieconsent.run({
 "language":"en"
   });
 });
-</script> 
-  
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
+</script><style>html{ scroll-behavior: smooth; }</style>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
 const typesetMath = (el) => {
   if (window.MathJax) {
     // MathJax Typeset
@@ -161,9 +147,7 @@ const typesetMath = (el) => {
 window.Quarto = {
   typesetMath
 };
-</script>
-
-<link rel="stylesheet" href="../../../../styles.css">
+</script><link rel="stylesheet" href="../../../../styles.css">
 <meta property="og:title" content="Federica Gazzelloni - Bayesian Statistics model comparison">
 <meta property="og:description" content="Data Science">
 <meta property="og:image" content="https://fgazzelloni.quarto.pub/blog/posts/stats/statistics/bayesian_statistics/featured.png">
@@ -179,13 +163,10 @@ window.Quarto = {
 <meta name="twitter:image-width" content="2560">
 <meta name="twitter:card" content="summary_large_image">
 </head>
-
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">Federica Gazzelloni</span>
@@ -197,7 +178,7 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
+<li class="nav-item">
     <a class="nav-link" href="../../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
@@ -217,15 +198,18 @@ window.Quarto = {
     <a class="nav-link" href="../../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0002-4285-611X"> 
+<span class="menu-text"><i class="ai  ai-orcid ai-xl"></i></span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/fgazzelloni"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/fgazzelloni"> <i class="bi bi-twitter" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?hl=en&amp;user=Xes0-r0AAAAJ"> 
+<span class="menu-text"><i class="ai  ai-google-scholar ai-xl"></i></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="../../../../index.xml"> <i class="bi bi-rss" role="img">
@@ -233,20 +217,17 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
+</div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Bayesian Statistics model comparison</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">rstats</div>
                 <div class="quarto-category">modeling</div>
+                <div class="quarto-category">bayesian</div>
               </div>
                   </div>
   </div>
@@ -254,12 +235,6 @@ window.Quarto = {
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Federica Gazzelloni </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
@@ -275,19 +250,37 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li>
+<a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+<li><a href="#compare-efficiency-between-packages" id="toc-compare-efficiency-between-packages" class="nav-link" data-scroll-target="#compare-efficiency-between-packages">Compare efficiency between packages</a></li>
+  <li>
+<a href="#dyestuff" id="toc-dyestuff" class="nav-link" data-scroll-target="#dyestuff">Dyestuff</a>
+  <ul class="collapse">
+<li><a href="#brms" id="toc-brms" class="nav-link" data-scroll-target="#brms">brms</a></li>
+  <li><a href="#rstanarm" id="toc-rstanarm" class="nav-link" data-scroll-target="#rstanarm">rstanarm</a></li>
+  <li><a href="#rethinking" id="toc-rethinking" class="nav-link" data-scroll-target="#rethinking">rethinking</a></li>
+  <li><a href="#mcmcglmm" id="toc-mcmcglmm" class="nav-link" data-scroll-target="#mcmcglmm">MCMCglmm</a></li>
+  <li><a href="#efficiency" id="toc-efficiency" class="nav-link" data-scroll-target="#efficiency">Efficiency</a></li>
+  </ul>
+</li>
+  </ul>
+</li>
+  </ul></nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
-
-
-
-
-
-<section id="overview" class="level1">
-<h1>Overview</h1>
-<p>In this post I’ll go through some differences between <em>Bayesian statistical packages</em> in R.</p>
-<p><img src="featured.png" class="img-fluid"></p>
-<p>Bayesian statistics involves probabilities. This means that the probability of an event to occur is considered in the modeling procedure, and is mainly used in for making <strong>inferences</strong>, and can be used for an analysis of the speculation of the root cause of a phenomenon under the term of <strong>causal inference</strong>.</p>
+<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="overview" class="level1"><h1>Overview</h1>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>In this post I’ll go through some differences between <em>Bayesian statistical packages</em> in R. Bayesian statistics involves probabilities. This means that the probability of an event to occur is considered in the modeling procedure, and is mainly used in for making <strong>inferences</strong>, and can be used for an analysis of the speculation of the root cause of a phenomenon under the term of <strong>causal inference</strong>.</p>
+</div><div class="column" style="width:40%;">
+<p><img src="featured.png" class="img-fluid" width="400"></p>
+</div>
+</div>
 <p>In more details, when Bayesian statistics is performed, the response variable is tested against (causal) predictors with the application of suited <strong>prior</strong> distributions, and the use of the <strong>likelihood function</strong>, to finally produce a <strong>posterior</strong> distribution which should be as much as possible close to the real future outcome of the response variable distribution.</p>
 <p>The <strong>prior distribution</strong> is the starting point; it is the probability distribution on which the future outcome is linked to, such as the probability to have a <em>Girl</em> given the probability to have had a <em>Boy</em>.</p>
 <p><span class="math display">\[P( \text{ Girl } | \text{ Boy })\]</span></p>
@@ -307,170 +300,318 @@ window.Quarto = {
 </blockquote>
 <p>Loading required packages</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"brms"</span>) </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"rstanarm"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"rethinking"</span>) </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"MCMCglmm"</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.0     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/paul-buerkner/brms">"brms"</a></span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: Rcpp
+Loading 'brms' package (version 2.20.4). Useful instructions
+can be found by typing help('brms'). A more detailed introduction
+to the package is available through vignette('brms_overview').
+
+Attaching package: 'brms'
+
+The following object is masked from 'package:stats':
+
+    ar</code></pre>
+</div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://mc-stan.org/rstanarm/">"rstanarm"</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>This is rstanarm version 2.26.1
+- See https://mc-stan.org/rstanarm/articles/priors for changes to default priors!
+- Default priors may change, so it's safest to specify priors, even if equivalent to the defaults.
+- For execution on a local, multicore CPU with excess RAM we recommend calling
+  options(mc.cores = parallel::detectCores())
+
+Attaching package: 'rstanarm'
+
+The following objects are masked from 'package:brms':
+
+    dirichlet, exponential, get_y, lasso, ngrps</code></pre>
+</div>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st">"rethinking"</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: rstan
+Loading required package: StanHeaders
+
+rstan version 2.32.3 (Stan version 2.26.1)
+
+For execution on a local, multicore CPU with excess RAM we recommend calling
+options(mc.cores = parallel::detectCores()).
+To avoid recompilation of unchanged Stan programs, we recommend calling
+rstan_options(auto_write = TRUE)
+For within-chain threading using `reduce_sum()` or `map_rect()` Stan functions,
+change `threads_per_chain` option:
+rstan_options(threads_per_chain = 1)
+
+
+Attaching package: 'rstan'
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+Loading required package: cmdstanr
+This is cmdstanr version 0.5.3
+- CmdStanR documentation and vignettes: mc-stan.org/cmdstanr
+- CmdStan path: /Users/macintoshhd/.cmdstan/cmdstan-2.31.0
+- CmdStan version: 2.31.0
+Loading required package: parallel
+rethinking (Version 2.31)
+
+Attaching package: 'rethinking'
+
+The following object is masked from 'package:rstan':
+
+    stan
+
+The following objects are masked from 'package:rstanarm':
+
+    logit, se
+
+The following objects are masked from 'package:brms':
+
+    LOO, stancode, WAIC
+
+The following object is masked from 'package:purrr':
+
+    map
+
+The following object is masked from 'package:stats':
+
+    rstudent</code></pre>
+</div>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st">"MCMCglmm"</span><span class="op">)</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: Matrix
+
+Attaching package: 'Matrix'
+
+The following objects are masked from 'package:tidyr':
+
+    expand, pack, unpack
+
+Loading required package: coda
+
+Attaching package: 'coda'
+
+The following object is masked from 'package:rstan':
+
+    traceplot
+
+Loading required package: ape
+
+Attaching package: 'ape'
+
+The following object is masked from 'package:dplyr':
+
+    where
+
+
+Attaching package: 'MCMCglmm'
+
+The following object is masked from 'package:brms':
+
+    me</code></pre>
+</div>
 </div>
 <p>Helper function to better compute the effective sample size</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>eff_size <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is</span>(x, <span class="st">"brmsfit"</span>)) {</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    samples <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(x<span class="sc">$</span>fit)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">is</span>(x, <span class="st">"stanreg"</span>)) {</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    samples <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(x<span class="sc">$</span>stanfit)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">is</span>(x, <span class="st">"ulam"</span>)) {</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    samples <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(x<span class="sc">@</span>stanfit)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">is</span>(x, <span class="st">"stanfit"</span>)) {</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    samples <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(x)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">is</span>(x, <span class="st">"MCMCglmm"</span>)) {</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    samples <span class="ot">&lt;-</span> <span class="fu">cbind</span>(x<span class="sc">$</span>Sol, x<span class="sc">$</span>VCV)</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"invalid input"</span>)</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># call an internal function of rstan</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">floor</span>(<span class="fu">apply</span>(samples, <span class="at">MARGIN =</span> <span class="dv">2</span>, <span class="at">FUN =</span> rstan<span class="sc">:::</span>ess_rfun))</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">eff_size</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/methods/is.html">is</a></span><span class="op">(</span><span class="va">x</span>, <span class="st">"brmsfit"</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="va">samples</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span></span>
+<span>  <span class="op">}</span> <span class="kw">else</span> <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/methods/is.html">is</a></span><span class="op">(</span><span class="va">x</span>, <span class="st">"stanreg"</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="va">samples</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">stanfit</span><span class="op">)</span></span>
+<span>  <span class="op">}</span> <span class="kw">else</span> <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/methods/is.html">is</a></span><span class="op">(</span><span class="va">x</span>, <span class="st">"ulam"</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="va">samples</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span><span class="op">(</span><span class="va">x</span><span class="op">@</span><span class="va">stanfit</span><span class="op">)</span></span>
+<span>  <span class="op">}</span> <span class="kw">else</span> <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/methods/is.html">is</a></span><span class="op">(</span><span class="va">x</span>, <span class="st">"stanfit"</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="va">samples</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
+<span>  <span class="op">}</span> <span class="kw">else</span> <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/methods/is.html">is</a></span><span class="op">(</span><span class="va">x</span>, <span class="st">"MCMCglmm"</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="va">samples</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">Sol</span>, <span class="va">x</span><span class="op">$</span><span class="va">VCV</span><span class="op">)</span></span>
+<span>  <span class="op">}</span> <span class="kw">else</span> <span class="op">{</span></span>
+<span>    <span class="kw"><a href="https://rdrr.io/r/base/stop.html">stop</a></span><span class="op">(</span><span class="st">"invalid input"</span><span class="op">)</span></span>
+<span>  <span class="op">}</span></span>
+<span>  <span class="co"># call an internal function of rstan</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/Round.html">floor</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/apply.html">apply</a></span><span class="op">(</span><span class="va">samples</span>, MARGIN <span class="op">=</span> <span class="fl">2</span>, FUN <span class="op">=</span> <span class="fu">rstan</span><span class="fu">:::</span><span class="va">ess_rfun</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="compare-efficiency-between-packages" class="level3">
-<h3 class="anchored" data-anchor-id="compare-efficiency-between-packages">Compare efficiency between packages</h3>
+<section id="compare-efficiency-between-packages" class="level3"><h3 class="anchored" data-anchor-id="compare-efficiency-between-packages">Compare efficiency between packages</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># only used for Stan packages</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>iter <span class="ot">&lt;-</span> <span class="dv">6000</span>  </span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>warmup <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>chains <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>adapt_delta <span class="ot">&lt;-</span> <span class="fl">0.8</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># only used for MCMCglmm</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>nitt <span class="ot">&lt;-</span> <span class="dv">35000</span>  </span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>burnin <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>thin <span class="ot">&lt;-</span> <span class="dv">5</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># leads to 5000 posterior samples</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># only used for Stan packages</span></span>
+<span><span class="va">iter</span> <span class="op">&lt;-</span> <span class="fl">6000</span>  </span>
+<span><span class="va">warmup</span> <span class="op">&lt;-</span> <span class="fl">1000</span></span>
+<span><span class="va">chains</span> <span class="op">&lt;-</span> <span class="fl">1</span></span>
+<span><span class="va">adapt_delta</span> <span class="op">&lt;-</span> <span class="fl">0.8</span></span>
+<span></span>
+<span><span class="co"># only used for MCMCglmm</span></span>
+<span><span class="va">nitt</span> <span class="op">&lt;-</span> <span class="fl">35000</span>  </span>
+<span><span class="va">burnin</span> <span class="op">&lt;-</span> <span class="fl">10000</span></span>
+<span><span class="va">thin</span> <span class="op">&lt;-</span> <span class="fl">5</span></span>
+<span><span class="co"># leads to 5000 posterior samples</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="dyestuff" class="level2">
-<h2 class="anchored" data-anchor-id="dyestuff">Dyestuff</h2>
-<section id="brms" class="level3">
-<h3 class="anchored" data-anchor-id="brms">brms</h3>
+</section><section id="dyestuff" class="level2"><h2 class="anchored" data-anchor-id="dyestuff">Dyestuff</h2>
+<section id="brms" class="level3"><h3 class="anchored" data-anchor-id="brms">brms</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>prior_dye_brms <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">set_prior</span>(<span class="st">"normal(0, 2000)"</span>, <span class="at">class =</span> <span class="st">"Intercept"</span>),</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">set_prior</span>(<span class="st">"cauchy(0, 50)"</span>, <span class="at">class =</span> <span class="st">"sd"</span>),</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">set_prior</span>(<span class="st">"cauchy(0, 50)"</span>, <span class="at">class =</span> <span class="st">"sigma"</span>))</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>dye_brms <span class="ot">&lt;-</span> <span class="fu">brm</span>(Yield <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> Batch), </span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> lme4<span class="sc">::</span>Dyestuff, </span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">prior =</span> prior_dye_brms, </span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">chains =</span> <span class="dv">0</span>)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>time_dye_brms <span class="ot">&lt;-</span> <span class="fu">system.time</span>(<span class="fu">capture.output</span>(</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  dye_brms <span class="ot">&lt;-</span> <span class="fu">update</span>(dye_brms, </span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>                     <span class="at">iter =</span> iter, </span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>                     <span class="at">warmup =</span> warmup, </span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>                     <span class="at">chains =</span> chains,</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>                     <span class="at">control =</span> <span class="fu">list</span>(<span class="at">adapt_delta =</span> adapt_delta))</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>))</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co"># summary(dye_brms)</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>eff_dye_brms <span class="ot">&lt;-</span> <span class="fu">min</span>(<span class="fu">eff_size</span>(dye_brms)) <span class="sc">/</span> time_dye_brms[[<span class="dv">1</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">prior_dye_brms</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fu"><a href="https://paul-buerkner.github.io/brms/reference/set_prior.html">set_prior</a></span><span class="op">(</span><span class="st">"normal(0, 2000)"</span>, class <span class="op">=</span> <span class="st">"Intercept"</span><span class="op">)</span>,</span>
+<span>                    <span class="fu"><a href="https://paul-buerkner.github.io/brms/reference/set_prior.html">set_prior</a></span><span class="op">(</span><span class="st">"cauchy(0, 50)"</span>, class <span class="op">=</span> <span class="st">"sd"</span><span class="op">)</span>,</span>
+<span>                    <span class="fu"><a href="https://paul-buerkner.github.io/brms/reference/set_prior.html">set_prior</a></span><span class="op">(</span><span class="st">"cauchy(0, 50)"</span>, class <span class="op">=</span> <span class="st">"sigma"</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">dye_brms</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://paul-buerkner.github.io/brms/reference/brm.html">brm</a></span><span class="op">(</span><span class="va">Yield</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">+</span> <span class="op">(</span><span class="fl">1</span> <span class="op">|</span> <span class="va">Batch</span><span class="op">)</span>, </span>
+<span>                data <span class="op">=</span> <span class="fu">lme4</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/lme4/man/Dyestuff.html">Dyestuff</a></span>, </span>
+<span>                prior <span class="op">=</span> <span class="va">prior_dye_brms</span>, </span>
+<span>                chains <span class="op">=</span> <span class="fl">0</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Compiling Stan program...</code></pre>
 </div>
-</section>
-<section id="rstanarm" class="level3">
-<h3 class="anchored" data-anchor-id="rstanarm">rstanarm</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>time_dye_rstanarm <span class="ot">&lt;-</span> <span class="fu">system.time</span>(<span class="fu">capture.output</span>(</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  dye_rstanarm <span class="ot">&lt;-</span> <span class="fu">stan_glmer</span>(Yield <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> Batch), <span class="at">data =</span> lme4<span class="sc">::</span>Dyestuff,</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                             <span class="at">prior_intercept =</span> <span class="fu">normal</span>(<span class="dv">0</span>, <span class="dv">2000</span>),</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>                             <span class="at">iter =</span> iter, <span class="at">warmup =</span> warmup, <span class="at">chains =</span> chains,</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>                             <span class="at">adapt_delta =</span> adapt_delta)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>))</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># summary(dye_rstanarm)</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>eff_dye_rstanarm <span class="ot">&lt;-</span> <span class="fu">min</span>(<span class="fu">eff_size</span>(dye_rstanarm)) <span class="sc">/</span> time_dye_rstanarm[[<span class="dv">1</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying to compile a simple C file</code></pre>
 </div>
-</section>
-<section id="rethinking" class="level3">
-<h3 class="anchored" data-anchor-id="rethinking">rethinking</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span>  lme4<span class="sc">::</span>Dyestuff</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Yield =</span> d<span class="sc">$</span>Yield,</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Batch =</span> d<span class="sc">$</span>Batch</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>dye_flist <span class="ot">&lt;-</span> <span class="fu">alist</span>(</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  Yield <span class="sc">~</span> <span class="fu">dnorm</span>(eta, sigma),</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  eta <span class="ot">&lt;-</span> a <span class="sc">+</span> a_Batch[Batch],</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  a <span class="sc">~</span> <span class="fu">dnorm</span>(<span class="dv">0</span>,<span class="dv">2000</span>),</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  a_Batch[Batch] <span class="sc">~</span> <span class="fu">dnorm</span>(<span class="dv">0</span>, sd_Batch),</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  sigma <span class="sc">~</span> <span class="fu">dcauchy</span>(<span class="dv">0</span>, <span class="dv">50</span>),</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  sd_Batch <span class="sc">~</span> <span class="fu">dcauchy</span>(<span class="dv">0</span>, <span class="dv">50</span>))</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>dye_rethinking <span class="ot">&lt;-</span> <span class="fu">ulam</span>(dye_flist, </span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>                       <span class="at">data =</span> dat, </span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>                       <span class="at">chains=</span><span class="dv">1</span>,</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>                       <span class="at">cores =</span> <span class="dv">4</span>,</span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>                       <span class="at">sample =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>time_dye_rethinking <span class="ot">&lt;-</span> <span class="fu">system.time</span>(<span class="fu">capture.output</span>(</span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>  dye_rethinking <span class="ot">&lt;-</span> <span class="fu">update</span>(dye_rethinking,</span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>       <span class="at">iter =</span> iter, </span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>       <span class="at">warmup =</span> warmup, </span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>       <span class="at">chains =</span> chains,</span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>       <span class="at">control =</span> <span class="fu">list</span>(<span class="at">adapt_delta =</span> adapt_delta))</span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>))</span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="co"># summary(dye_rethinking)</span></span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>eff_dye_rethinking <span class="ot">&lt;-</span> <span class="fu">min</span>(<span class="fu">eff_size</span>(dye_rethinking)) <span class="sc">/</span> time_dye_rethinking[[<span class="dv">1</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Running /Library/Frameworks/R.framework/Resources/bin/R CMD SHLIB foo.c
+clang -mmacosx-version-min=10.13 -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG   -I"/Library/Frameworks/R.framework/Versions/4.2/Resources/library/Rcpp/include/"  -I"/Library/Frameworks/R.framework/Versions/4.2/Resources/library/RcppEigen/include/"  -I"/Library/Frameworks/R.framework/Versions/4.2/Resources/library/RcppEigen/include/unsupported"  -I"/Library/Frameworks/R.framework/Versions/4.2/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/4.2/Resources/library/StanHeaders/include/src/"  -I"/Library/Frameworks/R.framework/Versions/4.2/Resources/library/StanHeaders/include/"  -I"/Library/Frameworks/R.framework/Versions/4.2/Resources/library/RcppParallel/include/"  -I"/Library/Frameworks/R.framework/Versions/4.2/Resources/library/rstan/include" -DEIGEN_NO_DEBUG  -DBOOST_DISABLE_ASSERTS  -DBOOST_PENDING_INTEGER_LOG2_HPP  -DSTAN_THREADS  -DUSE_STANC3 -DSTRICT_R_HEADERS  -DBOOST_PHOENIX_NO_VARIADIC_EXPRESSION  -D_HAS_AUTO_PTR_ETC=0  -include '/Library/Frameworks/R.framework/Versions/4.2/Resources/library/StanHeaders/include/stan/math/prim/fun/Eigen.hpp'  -D_REENTRANT -DRCPP_PARALLEL_USE_TBB=1   -I/usr/local/include   -fPIC  -Wall -g -O2  -c foo.c -o foo.o
+In file included from &lt;built-in&gt;:1:
+In file included from /Library/Frameworks/R.framework/Versions/4.2/Resources/library/StanHeaders/include/stan/math/prim/fun/Eigen.hpp:22:
+In file included from /Library/Frameworks/R.framework/Versions/4.2/Resources/library/RcppEigen/include/Eigen/Dense:1:
+In file included from /Library/Frameworks/R.framework/Versions/4.2/Resources/library/RcppEigen/include/Eigen/Core:88:
+/Library/Frameworks/R.framework/Versions/4.2/Resources/library/RcppEigen/include/Eigen/src/Core/util/Macros.h:628:1: error: unknown type name 'namespace'
+namespace Eigen {
+^
+/Library/Frameworks/R.framework/Versions/4.2/Resources/library/RcppEigen/include/Eigen/src/Core/util/Macros.h:628:16: error: expected ';' after top level declarator
+namespace Eigen {
+               ^
+               ;
+In file included from &lt;built-in&gt;:1:
+In file included from /Library/Frameworks/R.framework/Versions/4.2/Resources/library/StanHeaders/include/stan/math/prim/fun/Eigen.hpp:22:
+In file included from /Library/Frameworks/R.framework/Versions/4.2/Resources/library/RcppEigen/include/Eigen/Dense:1:
+/Library/Frameworks/R.framework/Versions/4.2/Resources/library/RcppEigen/include/Eigen/Core:96:10: fatal error: 'complex' file not found
+#include &lt;complex&gt;
+         ^~~~~~~~~
+3 errors generated.
+make: *** [foo.o] Error 1</code></pre>
 </div>
-</section>
-<section id="mcmcglmm" class="level3">
-<h3 class="anchored" data-anchor-id="mcmcglmm">MCMCglmm</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>time_dye_MCMCglmm <span class="ot">&lt;-</span> <span class="fu">system.time</span>(<span class="fu">capture.output</span>(</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  dye_MCMCglmm <span class="ot">&lt;-</span> <span class="fu">MCMCglmm</span>(Yield <span class="sc">~</span> <span class="dv">1</span>, </span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>                           <span class="at">random =</span> <span class="sc">~</span> Batch, <span class="at">data =</span> lme4<span class="sc">::</span>Dyestuff, </span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>                           <span class="at">thin =</span> thin, <span class="at">nitt =</span> nitt, <span class="at">burnin =</span> burnin)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>))</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># summary(dye_MCMCglmm)</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>eff_dye_MCMCglmm <span class="ot">&lt;-</span> <span class="fu">min</span>(<span class="fu">eff_size</span>(dye_MCMCglmm)) <span class="sc">/</span> time_dye_MCMCglmm[[<span class="dv">1</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Start sampling</code></pre>
 </div>
-</section>
-<section id="efficiency" class="level3">
-<h3 class="anchored" data-anchor-id="efficiency">Efficiency</h3>
+<div class="cell-output cell-output-stderr">
+<pre><code>the number of chains is less than 1; sampling not done</code></pre>
+</div>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">time_dye_brms</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.time.html">system.time</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/capture.output.html">capture.output</a></span><span class="op">(</span></span>
+<span>  <span class="va">dye_brms</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/update.html">update</a></span><span class="op">(</span><span class="va">dye_brms</span>, </span>
+<span>                     iter <span class="op">=</span> <span class="va">iter</span>, </span>
+<span>                     warmup <span class="op">=</span> <span class="va">warmup</span>, </span>
+<span>                     chains <span class="op">=</span> <span class="va">chains</span>,</span>
+<span>                     control <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>adapt_delta <span class="op">=</span> <span class="va">adapt_delta</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Start sampling</code></pre>
+</div>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># summary(dye_brms)</span></span>
+<span><span class="va">eff_dye_brms</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">min</a></span><span class="op">(</span><span class="fu">eff_size</span><span class="op">(</span><span class="va">dye_brms</span><span class="op">)</span><span class="op">)</span> <span class="op">/</span> <span class="va">time_dye_brms</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="rstanarm" class="level3"><h3 class="anchored" data-anchor-id="rstanarm">rstanarm</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">c</span>(<span class="at">brms =</span> eff_dye_brms, </span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">rstanarm =</span> eff_dye_rstanarm, </span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">rethinking =</span> eff_dye_rethinking, </span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">MCMCglmm =</span> eff_dye_MCMCglmm))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">time_dye_rstanarm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.time.html">system.time</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/capture.output.html">capture.output</a></span><span class="op">(</span></span>
+<span>  <span class="va">dye_rstanarm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://mc-stan.org/rstanarm/reference/stan_glmer.html">stan_glmer</a></span><span class="op">(</span><span class="va">Yield</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">+</span> <span class="op">(</span><span class="fl">1</span> <span class="op">|</span> <span class="va">Batch</span><span class="op">)</span>, data <span class="op">=</span> <span class="fu">lme4</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/lme4/man/Dyestuff.html">Dyestuff</a></span>,</span>
+<span>                             prior_intercept <span class="op">=</span> <span class="fu"><a href="https://mc-stan.org/rstanarm/reference/priors.html">normal</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">2000</span><span class="op">)</span>,</span>
+<span>                             iter <span class="op">=</span> <span class="va">iter</span>, warmup <span class="op">=</span> <span class="va">warmup</span>, chains <span class="op">=</span> <span class="va">chains</span>,</span>
+<span>                             adapt_delta <span class="op">=</span> <span class="va">adapt_delta</span><span class="op">)</span></span>
+<span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There were 1 divergent transitions after warmup. See
+https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Examine the pairs() plot to diagnose sampling problems</code></pre>
+</div>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># summary(dye_rstanarm)</span></span>
+<span><span class="va">eff_dye_rstanarm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">min</a></span><span class="op">(</span><span class="fu">eff_size</span><span class="op">(</span><span class="va">dye_rstanarm</span><span class="op">)</span><span class="op">)</span> <span class="op">/</span> <span class="va">time_dye_rstanarm</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="rethinking" class="level3"><h3 class="anchored" data-anchor-id="rethinking">rethinking</h3>
+<div class="cell">
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span>  <span class="fu">lme4</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/lme4/man/Dyestuff.html">Dyestuff</a></span></span>
+<span></span>
+<span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>  Yield <span class="op">=</span> <span class="va">d</span><span class="op">$</span><span class="va">Yield</span>,</span>
+<span>  Batch <span class="op">=</span> <span class="va">d</span><span class="op">$</span><span class="va">Batch</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">dye_flist</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">alist</a></span><span class="op">(</span></span>
+<span>  <span class="va">Yield</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">dnorm</a></span><span class="op">(</span><span class="va">eta</span>, <span class="va">sigma</span><span class="op">)</span>,</span>
+<span>  <span class="va">eta</span> <span class="op">&lt;-</span> <span class="va">a</span> <span class="op">+</span> <span class="va">a_Batch</span><span class="op">[</span><span class="va">Batch</span><span class="op">]</span>,</span>
+<span>  <span class="va">a</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">dnorm</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">2000</span><span class="op">)</span>,</span>
+<span>  <span class="va">a_Batch</span><span class="op">[</span><span class="va">Batch</span><span class="op">]</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">dnorm</a></span><span class="op">(</span><span class="fl">0</span>, <span class="va">sd_Batch</span><span class="op">)</span>,</span>
+<span>  <span class="va">sigma</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/stats/Cauchy.html">dcauchy</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">50</span><span class="op">)</span>,</span>
+<span>  <span class="va">sd_Batch</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/stats/Cauchy.html">dcauchy</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">50</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">dye_rethinking</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/rethinking/man/ulam.html">ulam</a></span><span class="op">(</span><span class="va">dye_flist</span>, </span>
+<span>                       data <span class="op">=</span> <span class="va">dat</span>, </span>
+<span>                       chains<span class="op">=</span><span class="fl">1</span>,</span>
+<span>                       cores <span class="op">=</span> <span class="fl">4</span>,</span>
+<span>                       sample <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">time_dye_rethinking</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.time.html">system.time</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/capture.output.html">capture.output</a></span><span class="op">(</span></span>
+<span>  <span class="va">dye_rethinking</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/update.html">update</a></span><span class="op">(</span><span class="va">dye_rethinking</span>,</span>
+<span>       iter <span class="op">=</span> <span class="va">iter</span>, </span>
+<span>       warmup <span class="op">=</span> <span class="va">warmup</span>, </span>
+<span>       chains <span class="op">=</span> <span class="va">chains</span>,</span>
+<span>       control <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>adapt_delta <span class="op">=</span> <span class="va">adapt_delta</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span></span>
+<span><span class="co"># summary(dye_rethinking)</span></span>
+<span><span class="va">eff_dye_rethinking</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">min</a></span><span class="op">(</span><span class="fu">eff_size</span><span class="op">(</span><span class="va">dye_rethinking</span><span class="op">)</span><span class="op">)</span> <span class="op">/</span> <span class="va">time_dye_rethinking</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="mcmcglmm" class="level3"><h3 class="anchored" data-anchor-id="mcmcglmm">MCMCglmm</h3>
+<div class="cell">
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">time_dye_MCMCglmm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.time.html">system.time</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/capture.output.html">capture.output</a></span><span class="op">(</span></span>
+<span>  <span class="va">dye_MCMCglmm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/MCMCglmm/man/MCMCglmm.html">MCMCglmm</a></span><span class="op">(</span><span class="va">Yield</span> <span class="op">~</span> <span class="fl">1</span>, </span>
+<span>                           random <span class="op">=</span> <span class="op">~</span> <span class="va">Batch</span>, data <span class="op">=</span> <span class="fu">lme4</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/lme4/man/Dyestuff.html">Dyestuff</a></span>, </span>
+<span>                           thin <span class="op">=</span> <span class="va">thin</span>, nitt <span class="op">=</span> <span class="va">nitt</span>, burnin <span class="op">=</span> <span class="va">burnin</span><span class="op">)</span></span>
+<span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co"># summary(dye_MCMCglmm)</span></span>
+<span><span class="va">eff_dye_MCMCglmm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">min</a></span><span class="op">(</span><span class="fu">eff_size</span><span class="op">(</span><span class="va">dye_MCMCglmm</span><span class="op">)</span><span class="op">)</span> <span class="op">/</span> <span class="va">time_dye_MCMCglmm</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="efficiency" class="level3"><h3 class="anchored" data-anchor-id="efficiency">Efficiency</h3>
+<div class="cell">
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span>brms <span class="op">=</span> <span class="va">eff_dye_brms</span>, </span>
+<span>        rstanarm <span class="op">=</span> <span class="va">eff_dye_rstanarm</span>, </span>
+<span>        rethinking <span class="op">=</span> <span class="va">eff_dye_rethinking</span>, </span>
+<span>        MCMCglmm <span class="op">=</span> <span class="va">eff_dye_MCMCglmm</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      brms   rstanarm rethinking   MCMCglmm 
+ 545.82485  151.78571 4120.30075   98.28571 </code></pre>
+</div>
 </div>
 <table class="table">
-<thead>
-<tr class="header">
+<thead><tr class="header">
 <th>brms</th>
 <th>rstanarm</th>
 <th>rethinking</th>
 <th>MCMCglmm</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+</tr></thead>
+<tbody><tr class="odd">
 <td>559.55398</td>
 <td>202.97177</td>
 <td>3660.71429</td>
 <td>34.11514</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>(to be continued…)</p>
-<p>```</p>
 
 
-</section>
-</section>
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></section></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -549,6 +690,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/fgazzelloni\.quarto\.pub\/blog");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -858,8 +1017,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2024 Federica Gazzelloni. CC-BY-NC 4.0.</p>
 </div>   
@@ -867,12 +1025,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
-      &nbsp;
-    </div>
+      <ul class="footer-items list-unstyled">
+<li class="nav-item">
+    <a class="nav-link" href="https://quarto.org">
+<p>This Blog is made with 💜 in <a href="https://quarto.org/">Quarto</a></p>
+</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/fgazzelloni">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/fgazzelloni">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+</div>
   </div>
 </footer>
 
 
-
-
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

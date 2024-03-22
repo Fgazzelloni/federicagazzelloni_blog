@@ -1,13 +1,13 @@
 ---
 title: "How does geom_smooth() make predictions"
 date: '2024-02-26'
+image: featured.png
 slug: model prediction
 categories:
   - rstats
   - modeling
-tags:
-  - rstats
-  - modeling
+  - linear regression
+  - geom_smooth
 summary: "William Farr's Data on Cholera in London, 1849 is used to digg into a linear model output and compared with that made by geom_smooth(method='lm')"
 execute: 
   eval: true
@@ -15,9 +15,8 @@ execute:
 
 ## Overview
 
-:::: {.columns}
-
-::: {.column width="50%"}
+::: columns
+::: {.column width="80%"}
 **Linear regression** is a statistical technique used to represent the linear relationship between a response $(y)$ and a predictor $(x)$.
 
 $$
@@ -25,20 +24,14 @@ y= \beta_0 + \beta_1x
 $$
 :::
 
-::: {.column width="50%"}
+::: {.column width="20%"}
 <center>![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTIzNW90ZGV3dnJhMTc3czF6MWtxOWlmZDd1bzM0ZDl2NmxjOTk3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1WozRHfDOlVZqVjhlf/giphy.gif)</center>
 :::
-
-::::
-
-
+:::
 
 Below we examine some mismatch in output when plotting the prediction results of a linear model made with the `lm()` and the `predict()` functions versus the output produced by the `geom_smooth()` layer in a `ggplot()` visualization.
 
-![](featured.png)
-
-
-The data is from the `HistData::CholeraDeaths1849` dataset. We select just the deaths due to Cholera within 12 months in 1849, and visualize the trend in time of the number of deaths with the addition of a futher layer made with the `geom_smooth()`.
+The first dataset used is from the `{HistData}` package `HistData::CholeraDeaths1849`. We select just the deaths due to Cholera within 12 months in 1849, and visualize the trend in time of the number of deaths with the addition of a further layer made with the `geom_smooth()`.
 
 ```         
 ?geom_smooth()
@@ -100,7 +93,7 @@ ggplot(cholera, aes(x=date, y=deaths)) +
   theme_minimal()
 ```
 
-Now calculate the prediction and the Residual Standard Error metric (RMSE) to evaluate how the model worked.
+Now calculate the prediction and the **Root Mean Squared Error (RMSE)** to evaluate how the model worked.
 
 ```{r}
 predictions <- predict(mod, newdata = NULL)
@@ -109,10 +102,9 @@ rmse <- sqrt(mean((predictions - cholera$deaths)^2))
 cat("Root Mean Squared Error (RMSE):", rmse, "\n")
 ```
 
-::: {.callout}
+::: callout
 What if we want to visualize the output of our prediction?
 :::
-
 
 ```{r}
 ggplot(cholera, aes(x=date)) + 
@@ -121,7 +113,6 @@ ggplot(cholera, aes(x=date)) +
   geom_line(y=predictions, col="red")+
   theme_minimal()
 ```
-
 
 Now let's use a different dataset. This data set comes from a paper by Brigham et al. (2003) that analyses some tables from Farr's report of the Registrar-General on mortality due to cholera in England in the years 1848-1849, during which there was a large epidemic throughout the country. In this case we do not have the time variable but the numbers of deaths are considered by 38 districts in London.
 
@@ -192,7 +183,7 @@ rmse <- sqrt(mean((predictions2 - cholera2$cholera_deaths)^2))
 cat("Root Mean Squared Error (RMSE):", rmse, "\n")
 ```
 
-::: {.callout}
+::: callout
 What if we want to visualize the output of our prediction?
 :::
 
@@ -255,10 +246,6 @@ ggplot(cholera2, aes(x=popn)) +
   theme_minimal()
 ```
 
-
-
 We eventually matched the geom_smooth line, but why did our predictions on the original data result in that squiggly line?
 
-
-------
-
+------------------------------------------------------------------------

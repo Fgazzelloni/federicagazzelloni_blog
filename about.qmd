@@ -1,6 +1,9 @@
 ---
-title: "Federica Gazzelloni"
+title: "About"
 image: images/profile.png
+image-alt: "Federica Gazzelloni"
+cap-location: bottom
+description: "Thanks for stopping by and exploring my journey!"
 about:
   template: trestles
   links:
@@ -15,16 +18,64 @@ about:
       href: https://github.com/fgazzelloni
 ---
 
-::: column-page
+::: column-screen
+::: panel-tabset
+## About
+
 ::: {style="margin-top: 10px; face: bold;font-size: 2em; color: #343a40;"}
-About
+Who am I?
 :::
 
 ::: {style="margin-top: 10px; font-size: 1.5em; color: #343a40;"}
 STATISTICIAN \| ACTUARY \| DATA SCIENTIST
 :::
 
-::: {style="font-size: 1.2em; color: ##343440;"}
-I’ve always loved maths and science, I meant to be a Veterinary, I wanted to do ballet classes, teach gymnastic, be an economist, a psychologist… Many years passed since I started the journey of my career as an investigator, it turned out to be an everyday challenge with tasks to solve, and most importantly a continuous learning path.
+::: {style="font-size: 1.1em; color: ##343440;"}
+I’ve always loved maths and science, I meant to be a Veterinary, I wanted to do ballet classes, teach gymnastic, be an economist, a psychologist… Many years passed since I started the journey of my career as an investigator, it turned out to be an everyday challenge with tasks to solve, and most importantly a continuous learning path. Each day brings with it a fresh set of challenges to solve and opportunities for growth. It's a path marked by curiosity, resilience, and a relentless pursuit of excellence—a journey that I'm grateful to be on.
+:::
+
+## Book
+
+::: {style="margin-top: 10px; face: bold;font-size: 2em; color: #343a40;"}
+Coming soon!
+:::
+
+### Health Metrics and the Spread of Infectious Diseases: Machine Learning Applications and Spatial Modelling Analysis with R
+
+##### Editor CRC Press - Chapman & Hall
+
+\
+
+Discover the fascinating world of health metrics and infectious disease analysis with our upcoming manual and textbook! Whether you're new to the field or a seasoned practitioner, this resource offers valuable insights into key concepts and practical applications.
+
+Learn about essential public health metrics like **DALYs**, **YLL**, and **YLD**, which provide crucial indicators of a population's health status. Dive into recent infectious disease outbreaks, including the impact of Covid19, and explore the most affected locations.
+
+With a mix of explanatory text and hands-on R code examples, you'll become proficient in analyzing real-world case studies. We'll compare health metrics across different locations and test predictive models using `tidymodels` and `INLA.` Plus, you'll discover the power of spatial visualization techniques using `ggplot2`, `leaflet`, `sf`, `rgdal`, and other popular R packages. Whether you're a beginner or an advanced practitioner, this book is designed to enhance your understanding and skills in health data analysis.
+
+Ideal for early-stage practitioners and graduate students in public health, this resource is your guide to unlocking the full potential of R for spatial and health metrics analysis.
+
+## Workshops
+
+::: {style="margin-top: 10px; face: bold;font-size: 2em; color: #343a40;"}
+List of my workshops
+:::
+
+{{< include about/workshops/index.qmd >}}
+
+## Talks
+
+::: {style="margin-top: 10px; face: bold;font-size: 2em; color: #343a40;"}
+List of my talks
+:::
+
+{{< include about/talks/index.qmd >}}
+
+## Papers
+
+::: {style="margin-top: 10px; face: bold;font-size: 2em; color: #343a40;"}
+List of my papers
+:::
+
+{{< include about/papers/index.qmd >}}
 :::
 :::

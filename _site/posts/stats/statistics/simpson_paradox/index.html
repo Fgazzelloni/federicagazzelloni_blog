@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.549">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Federica Gazzelloni">
 <meta name="dcterms.date" content="2024-01-12">
-
 <title>Federica Gazzelloni - Understanding Simpson’s Paradox: A Simple Explanation</title>
 <style>
 code{white-space: pre-wrap;}
@@ -58,7 +54,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-
 <script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
@@ -78,7 +73,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../../../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -104,18 +100,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-119NQB71C8"></script>
-
-<script type="text/plain" cookie-consent="tracking">
+}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-119NQB71C8"></script><script type="text/plain" cookie-consent="tracking">
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-119NQB71C8', { 'anonymize_ip': true});
-</script>
-
-<script type="text/javascript" charset="UTF-8">
+</script><script type="text/javascript" charset="UTF-8">
 document.addEventListener('DOMContentLoaded', function () {
 cookieconsent.run({
   "notice_banner_type":"headline",
@@ -130,31 +121,27 @@ cookieconsent.run({
 "language":"en"
   });
 });
-</script> 
-  
-
-
+</script><style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="../../../../styles.css">
 <meta property="og:title" content="Federica Gazzelloni - Understanding Simpson’s Paradox: A Simple Explanation">
+<meta property="og:description" content="Data Science">
 <meta property="og:image" content="https://fgazzelloni.quarto.pub/blog/posts/stats/statistics/simpson_paradox/featured.png">
 <meta property="og:site_name" content="Federica Gazzelloni">
 <meta property="og:locale" content="en_US">
 <meta property="og:image:height" content="1200">
 <meta property="og:image:width" content="1800">
 <meta name="twitter:title" content="Federica Gazzelloni - Understanding Simpson’s Paradox: A Simple Explanation">
+<meta name="twitter:description" content="Data Science">
 <meta name="twitter:image" content="https://fgazzelloni.quarto.pub/blog/posts/stats/statistics/simpson_paradox/featured.png">
 <meta name="twitter:creator" content="@fgazzelloni">
 <meta name="twitter:image-height" content="1200">
 <meta name="twitter:image-width" content="1800">
 <meta name="twitter:card" content="summary_large_image">
 </head>
-
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">Federica Gazzelloni</span>
@@ -166,7 +153,7 @@ cookieconsent.run({
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
+<li class="nav-item">
     <a class="nav-link" href="../../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
@@ -186,15 +173,18 @@ cookieconsent.run({
     <a class="nav-link" href="../../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0002-4285-611X"> 
+<span class="menu-text"><i class="ai  ai-orcid ai-xl"></i></span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/fgazzelloni"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/fgazzelloni"> <i class="bi bi-twitter" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?hl=en&amp;user=Xes0-r0AAAAJ"> 
+<span class="menu-text"><i class="ai  ai-google-scholar ai-xl"></i></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="../../../../index.xml"> <i class="bi bi-rss" role="img">
@@ -202,15 +192,11 @@ cookieconsent.run({
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
+</div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Understanding Simpson’s Paradox: A Simple Explanation</h1>
                                 <div class="quarto-categories">
@@ -223,12 +209,6 @@ cookieconsent.run({
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Federica Gazzelloni </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
@@ -244,104 +224,118 @@ cookieconsent.run({
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#example-scenario-work-environment" id="toc-example-scenario-work-environment" class="nav-link active" data-scroll-target="#example-scenario-work-environment">Example Scenario: Work Environment</a></li>
+  <li><a href="#calculate-the-proportion-of-managerial-positions-for-each-gender" id="toc-calculate-the-proportion-of-managerial-positions-for-each-gender" class="nav-link" data-scroll-target="#calculate-the-proportion-of-managerial-positions-for-each-gender">Calculate the proportion of managerial positions for each gender</a></li>
+  </ul></nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
-
-
-
-
-
-<center>
-<p><img src="https://media.giphy.com/media/aQt5QYJm0FZo4/giphy.gif" class="img-fluid"></p>
+<main class="content quarto-banner-title-block" id="quarto-document-content"><center>
+<img src="https://media.giphy.com/media/aQt5QYJm0FZo4/giphy.gif" class="img-fluid">
+</center>
 <p><code>Simpson's Paradox</code> is a statistical phenomenon where a trend appears in different groups of data but disappears or reverses when these groups are combined. This paradox highlights the importance of considering confounding variables and understanding the causal relationship between variables.</p>
-<p><img src="featured.png" class="img-fluid"></p>
-<section id="example-scenario-work-environment" class="level3">
-<h3 class="anchored" data-anchor-id="example-scenario-work-environment">Example Scenario: Work Environment</h3>
+<section id="example-scenario-work-environment" class="level3"><h3 class="anchored" data-anchor-id="example-scenario-work-environment">Example Scenario: Work Environment</h3>
 <p>Let’s consider a hypothetical work environment where the number of women (W) is greater than the number of men (M). However, when looking at the distribution of managerial positions (P), it seems that more men occupy higher-level positions compared to women.</p>
 <p>Now, suppose there’s a characteristic Z, representing gender, and you suspect it might influence the choice of assigning a managerial position (P) because a specific time dedicated to a critical task (T) is primarily marketed toward men (M).</p>
 <p>To illustrate this paradox, we’ll create synthetic data in R.</p>
-<section id="install-and-load-necessary-library" class="level4">
-<h4 class="anchored" data-anchor-id="install-and-load-necessary-library">Install and load necessary library</h4>
+<section id="install-and-load-necessary-library" class="level4"><h4 class="anchored" data-anchor-id="install-and-load-necessary-library">Install and load necessary library</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="set-seed-for-reproducibility" class="level4">
-<h4 class="anchored" data-anchor-id="set-seed-for-reproducibility">Set seed for reproducibility</h4>
+</section><section id="set-seed-for-reproducibility" class="level4"><h4 class="anchored" data-anchor-id="set-seed-for-reproducibility">Set seed for reproducibility</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">123</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="generate-synthetic-data" class="level4">
-<h4 class="anchored" data-anchor-id="generate-synthetic-data">Generate synthetic data</h4>
+</section><section id="generate-synthetic-data" class="level4"><h4 class="anchored" data-anchor-id="generate-synthetic-data">Generate synthetic data</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">1000</span>  <span class="co"># Number of employees </span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>W <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">runif</span>(n, <span class="dv">200</span>, <span class="dv">800</span>))  <span class="co"># Number of women</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>M <span class="ot">&lt;-</span> n <span class="sc">-</span> W  <span class="co"># Number of men</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">n</span> <span class="op">&lt;-</span> <span class="fl">1000</span>  <span class="co"># Number of employees </span></span>
+<span><span class="va">W</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span><span class="va">n</span>, <span class="fl">200</span>, <span class="fl">800</span><span class="op">)</span><span class="op">)</span>  <span class="co"># Number of women</span></span>
+<span><span class="va">M</span> <span class="op">&lt;-</span> <span class="va">n</span> <span class="op">-</span> <span class="va">W</span>  <span class="co"># Number of men</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="assign-managerial-positions-based-on-gender-and-a-confounding-variable" class="level4">
-<h4 class="anchored" data-anchor-id="assign-managerial-positions-based-on-gender-and-a-confounding-variable">Assign managerial positions based on gender and a confounding variable</h4>
+</section><section id="assign-managerial-positions-based-on-gender-and-a-confounding-variable" class="level4"><h4 class="anchored" data-anchor-id="assign-managerial-positions-based-on-gender-and-a-confounding-variable">Assign managerial positions based on gender and a confounding variable</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>P_W <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">runif</span>(W, <span class="dv">0</span>, <span class="dv">1</span>))  <span class="co"># 0 for no managerial position, 1 for managerial position for women</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>P_M <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">runif</span>(M, <span class="fl">0.2</span>, <span class="dv">1</span>))  <span class="co"># Higher chance of managerial position for men due to confounding variable</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">P_W</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span><span class="va">W</span>, <span class="fl">0</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span>  <span class="co"># 0 for no managerial position, 1 for managerial position for women</span></span>
+<span><span class="va">P_M</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span><span class="va">M</span>, <span class="fl">0.2</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span>  <span class="co"># Higher chance of managerial position for men due to confounding variable</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="create-a-data-frame" class="level4">
-<h4 class="anchored" data-anchor-id="create-a-data-frame">Create a data frame</h4>
+</section><section id="create-a-data-frame" class="level4"><h4 class="anchored" data-anchor-id="create-a-data-frame">Create a data frame</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>w <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">gender=</span><span class="st">"Women"</span>,<span class="at">count=</span>W,<span class="at">manager=</span>P_W)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">gender=</span><span class="st">"Men"</span>,<span class="at">count=</span>M,<span class="at">manager=</span>P_M)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">rbind</span>(w,m)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>data<span class="sc">%&gt;%</span>head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">w</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span>gender<span class="op">=</span><span class="st">"Women"</span>,count<span class="op">=</span><span class="va">W</span>,manager<span class="op">=</span><span class="va">P_W</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">m</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span>gender<span class="op">=</span><span class="st">"Men"</span>,count<span class="op">=</span><span class="va">M</span>,manager<span class="op">=</span><span class="va">P_M</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html">rbind</a></span><span class="op">(</span><span class="va">w</span>,<span class="va">m</span><span class="op">)</span></span>
+<span><span class="va">data</span><span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span><span class="va">head</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  gender count manager
+  &lt;chr&gt;  &lt;dbl&gt;   &lt;dbl&gt;
+1 Women    373       0
+2 Women    673       1
+3 Women    445       0
+4 Women    730       1
+5 Women    764       1
+6 Women    227       0</code></pre>
 </div>
-</section>
-<section id="display-the-initial-summary" class="level4">
-<h4 class="anchored" data-anchor-id="display-the-initial-summary">Display the initial summary</h4>
+</div>
+</section><section id="display-the-initial-summary" class="level4"><h4 class="anchored" data-anchor-id="display-the-initial-summary">Display the initial summary</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    gender              count        manager      
+ Length:2000        Min.   :200   Min.   :0.0000  
+ Class :character   1st Qu.:352   1st Qu.:0.0000  
+ Mode  :character   Median :500   Median :1.0000  
+                    Mean   :500   Mean   :0.5615  
+                    3rd Qu.:648   3rd Qu.:1.0000  
+                    Max.   :800   Max.   :1.0000  </code></pre>
+</div>
 </div>
 <p>In this example, we have created a dataset with a larger number of women, but the chance of obtaining a managerial position for men is influenced by a confounding variable. Now, let’s examine the paradox.</p>
-</section>
-</section>
-<section id="calculate-the-proportion-of-managerial-positions-for-each-gender" class="level3">
-<h3 class="anchored" data-anchor-id="calculate-the-proportion-of-managerial-positions-for-each-gender">Calculate the proportion of managerial positions for each gender</h3>
+</section></section><section id="calculate-the-proportion-of-managerial-positions-for-each-gender" class="level3"><h3 class="anchored" data-anchor-id="calculate-the-proportion-of-managerial-positions-for-each-gender">Calculate the proportion of managerial positions for each gender</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>proportion_table <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(gender) <span class="sc">%&gt;%</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">proportion =</span> <span class="fu">mean</span>(manager))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">proportion_table</span> <span class="op">&lt;-</span> <span class="va">data</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">gender</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarize</a></span><span class="op">(</span>proportion <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">manager</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="display-the-proportions" class="level4">
-<h4 class="anchored" data-anchor-id="display-the-proportions">Display the proportions</h4>
+<section id="display-the-proportions" class="level4"><h4 class="anchored" data-anchor-id="display-the-proportions">Display the proportions</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>proportion_table</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">proportion_table</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  gender proportion
+  &lt;chr&gt;       &lt;dbl&gt;
+1 Men         0.626
+2 Women       0.497</code></pre>
+</div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>proportion_table<span class="sc">%&gt;%</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(gender,proportion,<span class="at">fill=</span>gender))<span class="sc">+</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">color=</span><span class="st">"white"</span>,<span class="at">show.legend =</span> F)<span class="sc">+</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_d</span>()<span class="sc">+</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Proportion of Managers by Gender"</span>,</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Example of the Simpson's Paradox"</span>,</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">x=</span><span class="st">""</span>,</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Data: Syntetic | Graphics: Federica Gazzelloni"</span>) <span class="sc">+</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_equal</span>()<span class="sc">+</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  ggthemes<span class="sc">::</span><span class="fu">theme_pander</span>()<span class="sc">+</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.caption =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span></span>
+<span><span class="va">proportion_table</span><span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span><span class="va">gender</span>,<span class="va">proportion</span>,fill<span class="op">=</span><span class="va">gender</span><span class="op">)</span><span class="op">)</span><span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_col</a></span><span class="op">(</span>color<span class="op">=</span><span class="st">"white"</span>,show.legend <span class="op">=</span> <span class="cn">F</span><span class="op">)</span><span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_viridis.html">scale_fill_viridis_d</a></span><span class="op">(</span><span class="op">)</span><span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Proportion of Managers by Gender"</span>,</span>
+<span>       subtitle <span class="op">=</span> <span class="st">"Example of the Simpson's Paradox"</span>,</span>
+<span>       x<span class="op">=</span><span class="st">""</span>,</span>
+<span>       caption <span class="op">=</span> <span class="st">"Data: Syntetic | Graphics: Federica Gazzelloni"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_fixed.html">coord_equal</a></span><span class="op">(</span><span class="op">)</span><span class="op">+</span></span>
+<span>  <span class="fu">ggthemes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ggthemes/man/theme_pander.html">theme_pander</a></span><span class="op">(</span><span class="op">)</span><span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span>plot.caption <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_text</a></span><span class="op">(</span>hjust <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
 </div>
 <p>In this scenario, when examining the proportion of managerial positions within each gender group, it might appear that men have a higher chance. However, when we consider the entire dataset, we may find the opposite due to the confounding variable.</p>
 <p>The key takeaway is that understanding causation is crucial, and Simpson’s Paradox emphasizes the need to consider confounding factors when interpreting data.</p>
 
 
-</section>
-</section>
-
-</center></main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -420,6 +414,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/fgazzelloni\.quarto\.pub\/blog");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -729,8 +741,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2024 Federica Gazzelloni. CC-BY-NC 4.0.</p>
 </div>   
@@ -738,12 +749,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
-      &nbsp;
-    </div>
+      <ul class="footer-items list-unstyled">
+<li class="nav-item">
+    <a class="nav-link" href="https://quarto.org">
+<p>This Blog is made with 💜 in <a href="https://quarto.org/">Quarto</a></p>
+</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/fgazzelloni">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/fgazzelloni">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+</div>
   </div>
 </footer>
 
 
-
-
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

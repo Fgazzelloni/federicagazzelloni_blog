@@ -45,6 +45,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -128,6 +130,7 @@ cookieconsent.run({
 });
 </script> 
   
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -162,12 +165,18 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Federica Gazzelloni - Statistics">
 <meta property="og:description" content="This is my blog section about Statistical techiniques.">
+<meta property="og:image" content="https://fgazzelloni.quarto.pub/blog/posts/stats/statistics/linear_prediction/featured.png">
 <meta property="og:site_name" content="Federica Gazzelloni">
 <meta property="og:locale" content="en_US">
+<meta property="og:image:height" content="1500">
+<meta property="og:image:width" content="2100">
 <meta name="twitter:title" content="Federica Gazzelloni - Statistics">
 <meta name="twitter:description" content="This is my blog section about Statistical techiniques.">
+<meta name="twitter:image" content="https://fgazzelloni.quarto.pub/blog/posts/stats/statistics/linear_prediction/featured.png">
 <meta name="twitter:creator" content="@fgazzelloni">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="1500">
+<meta name="twitter:image-width" content="2100">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -207,15 +216,18 @@ window.Quarto = {
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0002-4285-611X"> 
+<span class="menu-text"><i class="ai  ai-orcid ai-xl"></i></span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/fgazzelloni"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/fgazzelloni"> <i class="bi bi-twitter" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?hl=en&amp;user=Xes0-r0AAAAJ"> 
+<span class="menu-text"><i class="ai  ai-google-scholar ai-xl"></i></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
@@ -256,7 +268,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="modeling">modeling <span class="quarto-category-count">(3)</span></div><div class="category" data-category="rstats">rstats <span class="quarto-category-count">(3)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(1)</span></div><div class="category" data-category="geom_smooth">geom_smooth <span class="quarto-category-count">(1)</span></div><div class="category" data-category="linear regression">linear regression <span class="quarto-category-count">(1)</span></div><div class="category" data-category="modeling">modeling <span class="quarto-category-count">(4)</span></div><div class="category" data-category="rstats">rstats <span class="quarto-category-count">(3)</span></div><div class="category" data-category="text-analysis">text-analysis <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -270,10 +282,40 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="rstats,modeling" data-listing-date-sort="1708902000000" data-listing-file-modified-sort="1709072240313" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1159">
+<div class="quarto-post image-right" data-index="0" data-categories="text-analysis" data-listing-date-sort="1710198000000" data-listing-file-modified-sort="1710443107004" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="549">
+<div class="thumbnail">
+<p><a href="../../posts/stats/statistics/rladies/index.html" class="no-external"></a></p><a href="../../posts/stats/statistics/rladies/index.html" class="no-external">
+<p class="card-img-top"><img src="statistics/rladies/featured.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="../../posts/stats/statistics/rladies/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../posts/stats/statistics/rladies/index.html" class="no-external">R-Ladies Events Stats</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../../posts/stats/statistics/rladies/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('text-analysis'); return false;">
+text-analysis
+</div>
+</div>
+<div class="listing-description">
+<a href="../../posts/stats/statistics/rladies/index.html" class="no-external">Let’s scrap the R-Ladies chapters events from Meetup.com We can use the <code>{meetupr}</code> package.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../../posts/stats/statistics/rladies/index.html" class="no-external">
+<div class="listing-date">
+Mar 12, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="rstats,modeling,linear regression,geom_smooth" data-listing-date-sort="1708902000000" data-listing-file-modified-sort="1709409256461" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1162">
 <div class="thumbnail">
 <p><a href="../../posts/stats/statistics/linear_prediction/index.html" class="no-external"></a></p><a href="../../posts/stats/statistics/linear_prediction/index.html" class="no-external">
-<p class="card-img-top"><img src="statistics/linear_prediction/featured.png"  class="thumbnail-image card-img"/></p>
+<p><img src="../../posts/stats/statistics/linear_prediction/featured.png" class="thumbnail-image"></p>
 </a><p><a href="../../posts/stats/statistics/linear_prediction/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -290,6 +332,12 @@ rstats
 <div class="listing-category" onclick="window.quartoListingCategory('modeling'); return false;">
 modeling
 </div>
+<div class="listing-category" onclick="window.quartoListingCategory('linear regression'); return false;">
+linear regression
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('geom_smooth'); return false;">
+geom_smooth
+</div>
 </div>
 <div class="listing-description">
 <a href="../../posts/stats/statistics/linear_prediction/index.html" class="no-external"><strong>Linear regression</strong> is a statistical technique used to represent the linear relationship between a response <span class="math inline">\((y)\)</span> and a predictor <span class="math inline">\((x)\)</span>.</a>
@@ -303,10 +351,10 @@ Feb 26, 2024
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="rstats,modeling" data-listing-date-sort="1705014000000" data-listing-file-modified-sort="1709054137956" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="411">
+<div class="quarto-post image-right" data-index="2" data-categories="rstats,modeling" data-listing-date-sort="1705014000000" data-listing-file-modified-sort="1709409399756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="411">
 <div class="thumbnail">
 <p><a href="../../posts/stats/statistics/simpson_paradox/index.html" class="no-external"></a></p><a href="../../posts/stats/statistics/simpson_paradox/index.html" class="no-external">
-<p class="card-img-top"><img src="statistics/simpson_paradox/featured.png"  class="thumbnail-image card-img"/></p>
+<p><img src="../../posts/stats/statistics/simpson_paradox/featured.png" class="thumbnail-image"></p>
 </a><p><a href="../../posts/stats/statistics/simpson_paradox/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -336,10 +384,10 @@ Jan 12, 2024
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="rstats,modeling" data-listing-date-sort="1679439600000" data-listing-file-modified-sort="1709054103671" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="37" data-listing-word-count-sort="7338">
+<div class="quarto-post image-right" data-index="3" data-categories="rstats,modeling,bayesian" data-listing-date-sort="1679439600000" data-listing-file-modified-sort="1710369661202" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="36" data-listing-word-count-sort="7087">
 <div class="thumbnail">
 <p><a href="../../posts/stats/statistics/bayesian_statistics/index.html" class="no-external"></a></p><a href="../../posts/stats/statistics/bayesian_statistics/index.html" class="no-external">
-<p class="card-img-top"><img src="statistics/bayesian_statistics/featured.png"  class="thumbnail-image card-img"/></p>
+<p><img src="../../posts/stats/statistics/bayesian_statistics/featured.png" class="thumbnail-image"></p>
 </a><p><a href="../../posts/stats/statistics/bayesian_statistics/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -356,9 +404,12 @@ rstats
 <div class="listing-category" onclick="window.quartoListingCategory('modeling'); return false;">
 modeling
 </div>
+<div class="listing-category" onclick="window.quartoListingCategory('bayesian'); return false;">
+bayesian
+</div>
 </div>
 <div class="listing-description">
-<a href="../../posts/stats/statistics/bayesian_statistics/index.html" class="no-external">In this post I’ll go through some differences between <em>Bayesian statistical packages</em> in R.</a>
+<a href="../../posts/stats/statistics/bayesian_statistics/index.html" class="no-external">In this post I’ll go through some differences between <em>Bayesian statistical packages</em> in R. Bayesian statistics involves probabilities. This means that the probability of an…<strong></strong><strong></strong></a>
 </div>
 </div>
 <div class="metadata">
@@ -369,35 +420,40 @@ Mar 22, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1654380000000" data-listing-file-modified-sort="1709054147699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="512">
+<div class="quarto-post image-right" data-index="4" data-categories="modeling" data-listing-date-sort="1654380000000" data-listing-file-modified-sort="1710367456515" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="506">
 <div class="thumbnail">
-<p><a href="../../posts/stats/statistics/tidymodels/index.html" class="no-external"></a></p><a href="../../posts/stats/statistics/tidymodels/index.html" class="no-external">
-<p class="card-img-top"><img src="statistics/tidymodels/featured.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="../../posts/stats/statistics/tidymodels/index.html" class="no-external"></a></p>
+<p><a href="../../posts/stats/statistics/predictive_modeling/index.html" class="no-external"></a></p><a href="../../posts/stats/statistics/predictive_modeling/index.html" class="no-external">
+<p><img src="../../posts/stats/statistics/predictive_modeling/featured.png" class="thumbnail-image"></p>
+</a><p><a href="../../posts/stats/statistics/predictive_modeling/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../../posts/stats/statistics/tidymodels/index.html" class="no-external">Predictive modeling</a>
+<a href="../../posts/stats/statistics/predictive_modeling/index.html" class="no-external">Predictive modeling</a>
 </h3>
 <div class="listing-subtitle">
-<a href="../../posts/stats/statistics/tidymodels/index.html" class="no-external"></a>
+<a href="../../posts/stats/statistics/predictive_modeling/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('modeling'); return false;">
+modeling
+</div>
 </div>
 <div class="listing-description">
-<a href="../../posts/stats/statistics/tidymodels/index.html" class="no-external">This post is dedicated to make a comparison between <strong>Caret</strong> and <strong>TidyModels</strong> R packages. Data modeling with R pass through data preprocessing and parameters assessments to…</a>
+<a href="../../posts/stats/statistics/predictive_modeling/index.html" class="no-external">This post is dedicated to make a comparison between <strong>Caret</strong> and <strong>TidyModels</strong> R packages. Data modeling with R pass through data preprocessing and parameters assessments to…</a>
 </div>
 </div>
 <div class="metadata">
-<a href="../../posts/stats/statistics/tidymodels/index.html" class="no-external">
+<a href="../../posts/stats/statistics/predictive_modeling/index.html" class="no-external">
 <div class="listing-date">
 Jun 5, 2022
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1652997600000" data-listing-file-modified-sort="1709054126047" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="467">
+<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1652997600000" data-listing-file-modified-sort="1709409793102" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="457">
 <div class="thumbnail">
 <p><a href="../../posts/stats/statistics/multiple_testing/index.html" class="no-external"></a></p><a href="../../posts/stats/statistics/multiple_testing/index.html" class="no-external">
-<p class="card-img-top"><img src="statistics/multiple_testing/featured.png"  class="thumbnail-image card-img"/></p>
+<p><img src="../../posts/stats/statistics/multiple_testing/featured.png" class="thumbnail-image"></p>
 </a><p><a href="../../posts/stats/statistics/multiple_testing/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -423,7 +479,7 @@ May 20, 2022
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -503,6 +559,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/fgazzelloni\.quarto\.pub\/blog");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -821,7 +895,25 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
-      &nbsp;
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://quarto.org">
+<p>This Blog is made with 💜 in <a href="https://quarto.org/">Quarto</a></p>
+</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/fgazzelloni">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/fgazzelloni">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
     </div>
   </div>
 </footer>
@@ -829,4 +921,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

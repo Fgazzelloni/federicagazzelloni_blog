@@ -1,0 +1,21 @@
+### Helmholtz Information & Data Science Academy
+
+**Software Carpentry (Shell, Git, and programming with R)**
+
+Date: February 12-13 2024 | Helmholtz Online
+
+Website: <https://macrobiotus.github.io/2024-02-12-helmholtz-online/>
+
+EtherPad: <https://pad.carpentries.org/2024-02-12-helmholtz-online>
+
+-----------------------------------------
+
+### University of Washington
+
+**Network of the National Library of Medicine (NNLM) Region 5 Library Carpentry**
+
+Date: March 19-21 2024 | Network of the National Library of Medicine (NNLM)
+
+Website: <https://nnlm-ncds.github.io/2024-03-19-nnlm-uw-online/>
+
+EtherPad: <https://pad.carpentries.org/2024-03-19-nnlm-uw-online>

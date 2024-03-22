@@ -1,5 +1,5 @@
 ---
-title: "Welcome to my Blog"
+title: </script><p class= "multipleStrings" >
 image: images/homepage.png
 about: 
   template: trestles
@@ -23,7 +23,11 @@ about:
       icon: youtube
       url: "https://www.youtube.com/@federicagazzelloni"  
     - text: Email
-      url: "mailto:fede.gazzelloni@gmail.com"   
+      url: "mailto:fede.gazzelloni@gmail.com" 
+    - text: "{{< ai orcid size=xl >}}"
+      href: https://orcid.org/0000-0002-4285-611X
+    - text: "{{< ai google-scholar size=xl >}}"
+      href: https://scholar.google.com/citations?hl=en&user=Xes0-r0AAAAJ  
 listing:
   contents: posts
   sort: "date desc"
@@ -34,20 +38,43 @@ listing:
   feed: true
 page-layout: full
 title-block-banner: true
+format:
+  html:
+    include-in-header: 
+      - text: |
+          <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js">
+
+ 
 ---
 
+
+
+::: column-body-outset
 "Hey there, welcome to Federica's Data Science Journey! This blog is my personal platform where I share all things data science. As a statistician and actuary with a passion for advanced statistical methods, I'm on a mission to explore the fascinating world of data modeling, public health, and infectious diseases.
 
 In each article, I dive deep into various topics, from statistical methods to machine learning techniques, offering insights and practical advice for both beginners and seasoned professionals. Whether you're looking to stay updated on the latest trends or seeking guidance on real-world applications, you'll find valuable information right here.
 
 Join me on this journey as we navigate the ever-evolving landscape of data science together. Let's explore, learn, and make a difference with data!"
+:::
 
 <br>
 
 ::: column-page
-::: {style="font-size: 2em; face: bold; color: #343a40;"}
+::: {style="font-size: 2.5em; face: bold; color: #343a40;"}
 Latest content
 :::
 :::
+
+
+
+<script>new TypeIt(".multipleStrings", {
+    strings: ["Welcome to my Blog 💡", "Here you'll find all things Data Science 🕵️️", "Stay tuned for the latest developments 🔍"],
+    breakLines: false,
+    loop: true,
+    speed: 50
+  }).go();
+</script>
+
+
 
 <link rel="me" href="https://fosstodon.org/@fgazzelloni">

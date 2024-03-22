@@ -6,6 +6,8 @@ website:
   favicon: images/profile.png
   site-url: https://fgazzelloni.quarto.pub/blog/
   description: "Data Science"
+  page-navigation: true
+  back-to-top-navigation: true
   cookie-consent:
     type: express
     style: headline
@@ -27,20 +29,47 @@ website:
         href: posts/stats/index.qmd
       - text: "Projects"
         href: posts/proj/index.qmd
+     # - text: "R-Ladies"
+     #   href: posts/rladies/index.qmd
       - text:  "About"
         href: about.qmd
+      - text: "{{< ai orcid size=xl >}}"
+        href: https://orcid.org/0000-0002-4285-611X
       - icon: github
         href: https://github.com/fgazzelloni
-      - icon: twitter
-        href: https://twitter.com/fgazzelloni
+      - text: "{{< ai google-scholar size=xl >}}"
+        href: https://scholar.google.com/citations?hl=en&user=Xes0-r0AAAAJ
       - icon: rss
         href: index.xml  
   page-footer:
     left: "© Copyright 2024 Federica Gazzelloni. CC-BY-NC 4.0."
+    right: 
+      - text: "This Blog is made with 💜 in [Quarto](https://quarto.org/)"
+        href: "https://quarto.org"
+      - icon: github
+        href: https://github.com/fgazzelloni
+      - icon: twitter 
+        href: https://twitter.com/fgazzelloni 
+lang: en    
 format:
   html:
+    smooth-scroll: true
     theme: sandstone
     css: styles.css
+    link-external-icon: false
+    link-external-newwindow: true
+    citations-hover: true
+    footnotes-hover: true
+    toc: true
+    code-link: true
+    title-block-banner: true
+    page-navigation: true
+    back-to-top-navigation: true
+    #include-in-header: 
+     # - text: |
+      #    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js">
+
+         
 
 editor: visual
 

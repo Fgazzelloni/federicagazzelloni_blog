@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.549">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Federica Gazzelloni">
 <meta name="dcterms.date" content="2022-05-20">
-
 <title>Federica Gazzelloni - Multiple Hypothesis Testing</title>
 <style>
 code{white-space: pre-wrap;}
@@ -58,7 +54,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-
 <script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
@@ -78,7 +73,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../../../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -104,18 +100,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-119NQB71C8"></script>
-
-<script type="text/plain" cookie-consent="tracking">
+}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-119NQB71C8"></script><script type="text/plain" cookie-consent="tracking">
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-119NQB71C8', { 'anonymize_ip': true});
-</script>
-
-<script type="text/javascript" charset="UTF-8">
+</script><script type="text/javascript" charset="UTF-8">
 document.addEventListener('DOMContentLoaded', function () {
 cookieconsent.run({
   "notice_banner_type":"headline",
@@ -130,13 +121,8 @@ cookieconsent.run({
 "language":"en"
   });
 });
-</script> 
-  
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
+</script><style>html{ scroll-behavior: smooth; }</style>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
 const typesetMath = (el) => {
   if (window.MathJax) {
     // MathJax Typeset
@@ -161,9 +147,7 @@ const typesetMath = (el) => {
 window.Quarto = {
   typesetMath
 };
-</script>
-
-<link rel="stylesheet" href="../../../../styles.css">
+</script><link rel="stylesheet" href="../../../../styles.css">
 <meta property="og:title" content="Federica Gazzelloni - Multiple Hypothesis Testing">
 <meta property="og:description" content="Data Science">
 <meta property="og:image" content="https://fgazzelloni.quarto.pub/blog/posts/stats/statistics/multiple_testing/featured.png">
@@ -179,13 +163,10 @@ window.Quarto = {
 <meta name="twitter:image-width" content="766">
 <meta name="twitter:card" content="summary_large_image">
 </head>
-
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">Federica Gazzelloni</span>
@@ -197,7 +178,7 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
+<li class="nav-item">
     <a class="nav-link" href="../../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
@@ -217,15 +198,18 @@ window.Quarto = {
     <a class="nav-link" href="../../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0002-4285-611X"> 
+<span class="menu-text"><i class="ai  ai-orcid ai-xl"></i></span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/fgazzelloni"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/fgazzelloni"> <i class="bi bi-twitter" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?hl=en&amp;user=Xes0-r0AAAAJ"> 
+<span class="menu-text"><i class="ai  ai-google-scholar ai-xl"></i></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="../../../../index.xml"> <i class="bi bi-rss" role="img">
@@ -233,15 +217,11 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
+</div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Multiple Hypothesis Testing</h1>
                       </div>
@@ -250,12 +230,6 @@ window.Quarto = {
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Federica Gazzelloni </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
@@ -271,28 +245,29 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#research-questions" id="toc-research-questions" class="nav-link" data-scroll-target="#research-questions">Research questions</a></li>
+  <li>
+<a href="#hypothesis-testing" id="toc-hypothesis-testing" class="nav-link" data-scroll-target="#hypothesis-testing">Hypothesis testing</a>
+  <ul class="collapse">
+<li><a href="#steps-to-hypothesis-testing" id="toc-steps-to-hypothesis-testing" class="nav-link" data-scroll-target="#steps-to-hypothesis-testing">Steps to hypothesis testing</a></li>
+  <li><a href="#step-back-to-modeling" id="toc-step-back-to-modeling" class="nav-link" data-scroll-target="#step-back-to-modeling">Step back to modeling</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  </ul>
+</li>
+  </ul></nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
-
-
-
-
-
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p><em>Multiple testing</em>, what does it means?</p>
 <p>Sometimes answering a research question means evaluating the different combinations of predictors, and this is the case when multiple hypothesis testing is made.</p>
-<p><img src="featured.png" class="img-fluid"></p>
 <p>The following are the fundamental steps for understanding how to proceed when multiple hypothesis testing is needed.</p>
-<p>Image credits: Hypothesis Testing On Linear Regression-medium.com<br>
-<img src="featured.png" class="img-fluid"></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="research-questions" class="level1">
-<h1>Research questions</h1>
+<p>Image credits: Hypothesis Testing On Linear Regression-medium.com</p>
+</section><section id="research-questions" class="level2"><h2 class="anchored" data-anchor-id="research-questions">Research questions</h2>
 <p>In general, hypothesis testing is made for comparing the expected values of two predictors which are the key drivers for explaining the trend of certain variables that are depending on the levels of those predictors.</p>
 <p>Going into more detail, making a real-life example, we might need to evaluate the influence of gender and age on the increase of heart diseases. Under this specification, simple questions to be answered would be:</p>
 <ul>
@@ -301,63 +276,72 @@ window.Quarto = {
 </ul>
 <p>To answer these questions we need to make some assumptions:</p>
 <p>there is no gender difference in heart diseases increasing age is not a cause of heart diseases</p>
-</section>
-<section id="hypothesis-testing" class="level1">
-<h1>Hypothesis testing</h1>
+</section><section id="hypothesis-testing" class="level2"><h2 class="anchored" data-anchor-id="hypothesis-testing">Hypothesis testing</h2>
 <p>The first hypothesis is namely, the <strong>null hypothesis</strong> <span class="math inline">\(H_{0}\)</span>, and in general, it assumes that there would be no difference in mean (expected value) between the levels of the predictors. In case the null hypothesis fails, an alternative hypothesis is considered, such as there is a difference.</p>
 <ol type="1">
 <li>Null hypothesis <span class="math inline">\(H_{0}\)</span>: the difference in mean equals zero</li>
 <li>Alternative hypothesis <span class="math inline">\(H_{a}\)</span>: the difference in mean is not zero</li>
 </ol>
 <p>This is the starting point of making a hypothesis testing, then more variables can be tested, excluded, or kept whether there is a difference in the mean or not. And, so we are talking of multiple testing of hypothesis.</p>
-<section id="steps-to-hypothesis-testing" class="level2">
-<h2 class="anchored" data-anchor-id="steps-to-hypothesis-testing">Steps to hypothesis testing</h2>
+<section id="steps-to-hypothesis-testing" class="level3"><h3 class="anchored" data-anchor-id="steps-to-hypothesis-testing">Steps to hypothesis testing</h3>
 <ol type="1">
 <li>Define the null and alternative hypothesis</li>
 <li>Construct a test statistic against the null hypothesis</li>
 <li>Compute a p-value to quantify the probability to obtain a value that is the same or more extreme than the test statistic under the null hypothesis</li>
 <li>Decide whether to reject the null hypothesis</li>
-</ol>
-</section>
-<section id="step-back-to-modeling" class="level2">
-<h2 class="anchored" data-anchor-id="step-back-to-modeling">Step back to modeling</h2>
+</ol></section><section id="step-back-to-modeling" class="level3"><h3 class="anchored" data-anchor-id="step-back-to-modeling">Step back to modeling</h3>
 <p>Let’s hypothesize that we are investigating the root cause of heart diseases. To be simplistic we hypothesize that only gender and age are the key drivers for high blood pressure, the cause of the disease.</p>
 <p>How would you make a model for answering this question?</p>
 <p>As an example, we use the <strong>heart_disease</strong> dataset from the {cheese} package, and to begin our investigation we consider two predictors <strong>Age</strong> and <strong>Sex</strong>.</p>
 <p><strong>Model function</strong>: <span class="math inline">\(y=\beta_{0}+\beta_{1}x_{1}+\beta_{2}x_{2}\epsilon\)</span></p>
 <p><strong>Hypothesis</strong>:</p>
 <ol type="1">
-<li><span class="math inline">\(\beta_{i}\)</span> equals to zero</li>
+<li>
+<span class="math inline">\(\beta_{i}\)</span> equals to zero</li>
 <li>there is no difference between the mean blood pressure in female and male groups.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cheese)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>heart_disease <span class="sc">%&gt;%</span>head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://zajichek.github.io/cheese/">cheese</a></span><span class="op">)</span></span>
+<span><span class="va">heart_disease</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span><span class="va">head</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 9
+    Age Sex    ChestPain           BP Cholesterol BloodSugar MaximumHR
+  &lt;dbl&gt; &lt;fct&gt;  &lt;fct&gt;            &lt;dbl&gt;       &lt;dbl&gt; &lt;lgl&gt;          &lt;dbl&gt;
+1    63 Male   Typical angina     145         233 TRUE             150
+2    67 Male   Asymptomatic       160         286 FALSE            108
+3    67 Male   Asymptomatic       120         229 FALSE            129
+4    37 Male   Non-anginal pain   130         250 FALSE            187
+5    41 Female Atypical angina    130         204 FALSE            172
+6    56 Male   Atypical angina    120         236 FALSE            178
+# ℹ 2 more variables: ExerciseInducedAngina &lt;fct&gt;, HeartDisease &lt;fct&gt;</code></pre>
+</div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>heart_disease<span class="sc">%&gt;%</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y=</span>HeartDisease,<span class="at">fill=</span><span class="fu">factor</span>(Sex)),<span class="at">color=</span><span class="st">"white"</span>) <span class="sc">+</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">stat=</span><span class="st">"count"</span>,<span class="at">position =</span> <span class="st">"dodge"</span>)<span class="sc">+</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">fill=</span><span class="st">"Sex"</span>)<span class="sc">+</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>()<span class="sc">+</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_test</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">heart_disease</span><span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>y<span class="op">=</span><span class="va">HeartDisease</span>,fill<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">Sex</span><span class="op">)</span><span class="op">)</span>,color<span class="op">=</span><span class="st">"white"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span>stat<span class="op">=</span><span class="st">"count"</span>,position <span class="op">=</span> <span class="st">"dodge"</span><span class="op">)</span><span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>fill<span class="op">=</span><span class="st">"Sex"</span><span class="op">)</span><span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html">scale_fill_brewer</a></span><span class="op">(</span><span class="op">)</span><span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_test</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
 </div>
 <p>To be continued…</p>
 
-<section id="resources" class="level3">
-<h3 class="anchored" data-anchor-id="resources">Resources:</h3>
+</section><section id="resources" class="level3"><h3 class="anchored" data-anchor-id="resources">Resources</h3>
 <ul>
-<li><a href="https://cran.r-project.org/web/packages/cheese/vignettes/cheese.html">HeartDisease</a> dataset</li>
+<li>
+<a href="https://cran.r-project.org/web/packages/cheese/vignettes/cheese.html">HeartDisease</a> dataset</li>
 <li><a href="https://www.gs.washington.edu/academics/courses/akey/56008/lecture/lecture10.pdf">Multiple Testing - Washington</a></li>
 </ul>
 
 
-</section>
-</section>
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -436,6 +420,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/fgazzelloni\.quarto\.pub\/blog");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -745,8 +747,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2024 Federica Gazzelloni. CC-BY-NC 4.0.</p>
 </div>   
@@ -754,12 +755,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
-      &nbsp;
-    </div>
+      <ul class="footer-items list-unstyled">
+<li class="nav-item">
+    <a class="nav-link" href="https://quarto.org">
+<p>This Blog is made with 💜 in <a href="https://quarto.org/">Quarto</a></p>
+</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/fgazzelloni">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/fgazzelloni">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+</div>
   </div>
 </footer>
 
 
-
-
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

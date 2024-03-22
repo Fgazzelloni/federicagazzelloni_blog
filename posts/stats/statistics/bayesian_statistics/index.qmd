@@ -1,49 +1,28 @@
 ---
 title: "Bayesian Statistics model comparison"
 date: '2023-03-22'
+image: featured.png
 slug: bayesian-statistics
 categories:
   - rstats
   - modeling
-tags:
-  - rstats
-  - modeling
+  - bayesian
 summary: "Looking at bayesian model comparisons"
 execute: 
   eval: false
 ---
 
-```{r setup}
-#| include: false
-library(knitr)
-knitr::opts_chunk$set(cache = TRUE, 
-                      cache.lazy = FALSE, 
-                      eval = FALSE,
-                      warning = FALSE, 
-                      message = FALSE, 
-                      echo = TRUE, 
-                      comment = "",
-                      dpi = 180,
-                      fig.width = 7, 
-                      fig.height = 5)
-library(tidyverse)
-# library(silgelib)
-# theme_set(theme_light_plex())
-# update_geom_defaults("rect", list(fill = "midnightblue", alpha = 0.8))
-# update_geom_defaults("line", list(color = "midnightblue", alpha = 0.8))
-# library(wikipediapreview)
-# wp_init()
-## if you don't have fancy fonts like IBM Plex installed, run
-## theme_set(theme_minimal())
-```
-
 # Overview
 
-In this post I'll go through some differences between *Bayesian statistical packages* in R.
+::: columns
+::: {.column width="60%"}
+In this post I'll go through some differences between *Bayesian statistical packages* in R. Bayesian statistics involves probabilities. This means that the probability of an event to occur is considered in the modeling procedure, and is mainly used in for making **inferences**, and can be used for an analysis of the speculation of the root cause of a phenomenon under the term of **causal inference**.
+:::
 
-![](featured.png)
-
-Bayesian statistics involves probabilities. This means that the probability of an event to occur is considered in the modeling procedure, and is mainly used in for making **inferences**, and can be used for an analysis of the speculation of the root cause of a phenomenon under the term of **causal inference**.
+::: {.column width="40%"}
+![](featured.png){width="400px"}
+:::
+:::
 
 In more details, when Bayesian statistics is performed, the response variable is tested against (causal) predictors with the application of suited **prior** distributions, and the use of the **likelihood function**, to finally produce a **posterior** distribution which should be as much as possible close to the real future outcome of the response variable distribution.
 
@@ -71,6 +50,7 @@ This is the original source code that I have updated: <https://www.jstatsoft.org
 Loading required packages
 
 ```{r}
+library(tidyverse)
 library("brms") 
 library("rstanarm")
 library("rethinking") 
@@ -218,14 +198,11 @@ print(c(brms = eff_dye_brms,
         MCMCglmm = eff_dye_MCMCglmm))
 ```
 
-
-
 | brms      | rstanarm  | rethinking | MCMCglmm |
 |-----------|-----------|------------|----------|
 | 559.55398 | 202.97177 | 3660.71429 | 34.11514 |
 
 
-(to be continued...)
 
 ```{r}
 #| echo: false
@@ -235,14 +212,13 @@ library(bayesrules)
 plot_beta_binomial(alpha = 5, beta = 10, y = 26, n = 30)+
   theme_bw()
 ```
-```
-
 
 
 ```{r}
 #| echo: false
 #| include: false
 #| output: false
+#| eval: false
 
 ## ---------- lme4::cake ----------
 # brms
