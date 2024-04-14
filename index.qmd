@@ -43,11 +43,7 @@ format:
     include-in-header: 
       - text: |
           <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js">
-
- 
 ---
-
-
 
 ::: column-body-outset
 "Hey there, welcome to Federica's Data Science Journey! This blog is my personal platform where I share all things data science. As a statistician and actuary with a passion for advanced statistical methods, I'm on a mission to explore the fascinating world of data modeling, public health, and infectious diseases.
@@ -65,8 +61,7 @@ Latest content
 :::
 :::
 
-
-
+```{=html}
 <script>new TypeIt(".multipleStrings", {
     strings: ["Welcome to my Blog 💡", "Here you'll find all things Data Science 🕵️️", "Stay tuned for the latest developments 🔍"],
     breakLines: false,
@@ -74,7 +69,5 @@ Latest content
     speed: 50
   }).go();
 </script>
-
-
-
+```
 <link rel="me" href="https://fosstodon.org/@fgazzelloni">
