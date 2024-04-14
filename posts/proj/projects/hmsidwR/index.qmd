@@ -1,1 +1,26 @@
+---
+title: "HMSID R-package"
+subtitle: "Health Metrics and the Spread of Infectious Diseases: Machine Learning Application and Spatial Modelling Analysis with R"
+excerpt: "Machine learning models"
+date: 2024-04-14
+draft: false
+images: 
+series:
+categories: 
+layout: single
+page-layout: full
+execute: 
+  eval: false
+---
 
+## Overview
+
+::: columns
+::: {.column width="80%"}
+This is the package that covers all datasets used in the **Health Metrics and the Spread of Infectious Diseases: Machine Learning Application and Spatial Modelling Analysis with R** book.
+:::
+
+::: {.column width="20%"}
+![](featured.png)
+:::
+:::

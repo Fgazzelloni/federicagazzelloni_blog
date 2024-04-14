@@ -1,5 +1,5 @@
 ---
-title: "Health metrics and the spread of infectious diseases"
+title: "Infectious R-package"
 excerpt: "Machine learning models"
 date: 2023-03-14
 draft: false

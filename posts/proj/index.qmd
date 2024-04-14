@@ -2,10 +2,7 @@
 title: Projects
 description: "This is my blog section about my on-going projects.\n"
 listing:
-  contents: 
-    - projects/hmsidwR
-    - projects/infectious
-    - projects/oregonfrogs
+  contents: projects
   sort: "date desc"
   type: default
   categories: true
@@ -13,4 +10,6 @@ listing:
   filter-ui: false
 page-layout: full
 title-block-banner: true
+page-navigation: true
+back-to-top-navigation: true
 ---

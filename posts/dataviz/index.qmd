@@ -1,6 +1,6 @@
 ---
 title: Data Visualizations
-description: "This is my blog section about Data Visualizations.\n"
+description: "Here you'll find a collection of my favorite Data Visualizations.\n"
 listing:
   contents: data_visualization
   sort: "date desc"
