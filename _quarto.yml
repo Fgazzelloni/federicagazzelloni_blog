@@ -4,7 +4,7 @@ project:
 website:
   title: "Federica Gazzelloni"
   favicon: images/profile.png
-  site-url: https://fgazzelloni.quarto.pub/blog/
+  site-url: https://federicagazzelloni.com
   description: "Data Science"
   page-navigation: true
   back-to-top-navigation: true
