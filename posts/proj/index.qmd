@@ -3,7 +3,8 @@ title: Projects
 description: "This is my blog section about my on-going projects.\n"
 listing:
   contents: 
-    - projects/health_metrics
+    - projects/hmsidwR
+    - projects/infectious
     - projects/oregonfrogs
   sort: "date desc"
   type: default
