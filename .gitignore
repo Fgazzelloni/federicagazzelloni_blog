@@ -2,9 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
-
+/_site/
 /.quarto/
-.Rdata
 .httr-oauth
 .DS_Store
-.quarto

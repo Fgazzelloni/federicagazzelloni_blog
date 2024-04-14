@@ -14,19 +14,15 @@ execute:
   message: false
 ---
 
-
 ## Overview
 
 *Multiple testing*, what does it means?
 
 Sometimes answering a research question means evaluating the different combinations of predictors, and this is the case when multiple hypothesis testing is made.
 
-
-
 The following are the fundamental steps for understanding how to proceed when multiple hypothesis testing is needed.
 
 Image credits: Hypothesis Testing On Linear Regression-medium.com
-
 
 ## Research questions
 
@@ -87,8 +83,6 @@ heart_disease%>%
   scale_fill_brewer()+
   theme_test()
 ```
-
-To be continued...
 
 </details>
 

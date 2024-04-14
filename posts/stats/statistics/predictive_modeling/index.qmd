@@ -28,19 +28,31 @@ The most important functions for this package, grouped by steps to modeling, are
 
 1.  Preprocessing (data cleaning/wrangling)
 
-    preProcess()
+    -   preProcess()
 
 2.  Data splitting and resampling
 
-    createDataPartition() createResample() createTimeSlices()
+    -   createDataPartition()
+
+    ```{=html}
+    <!-- -->
+    ```
+    -    createResample()
+
+    -   createTimeSlices()
 
 3.  Model fit and prediction
 
-    train() predict()
+    -   train()
+
+    ```{=html}
+    <!-- -->
+    ```
+    -   predict()
 
 4.  Model comparison
 
-    confusionMatrix()
+    -   confusionMatrix()
 
 ------------------------------------------------------------------------
 
@@ -59,23 +71,77 @@ The most important functions for this meta package, grouped by steps to modeling
 
 1.  Preprocessing (data cleaning/wrangling)
 
-    recipes::recipe() recipes::step\_<functions>()
+    -   recipes::recipe()
+
+    -   recipes::step\_<functions>()
 
 2.  Data splitting and resampling
 
-    rsample::initial_split() rsample::training() and rsample::testing() rsample::bootstraps(), rsample::vfold_cv() and others... tune::control_resamples()
+    -   rsample::initial_split()
+
+    -   rsample::training()
+
+    -   rsample::testing()
+
+    -   rsample::bootstraps()
+
+    -   rsample::vfold_cv()
+
+    -    tune::control_resamples()
 
 3.  Model fit and prediction
 
-    parsnip::<model_type>() %\>% set_mode() %\>% set_engine() parsnip::extract_fit_engine() / extract_fit_parsnip() tune::fit_resamples() parsnip::fit() stats::predict()
+    -   parsnip::<model_type>() %\>% set_mode() %\>% set_engine()
+
+    -   parsnip::extract_fit_engine()
+
+    -   parsnip::extract_fit_parsnip()
+
+    -   parsnip::fit() stats::predict()
+
+    -   tune::fit_resamples()
 
 4.  Model workflow
 
-    workflows::workflow() %\>% add_model() workflows::add_formula() workflows::add_recipe() parsnip::fit() stats::predict() workflows::update_formula() workflows::add_variables() / remove_variables() workflowsets::workflow_set() workflowsets::workflow_map() workflowsets/tune::extract_workflow() / extract_recipe() / extract_fit_parsnip() tune::last_fit() workflowsets/tune::collect_metrics() workflowsets/tune::collect_predictions()
+    -   workflows::workflow() %\>% add_model()
+
+    -   workflows::add_formula()
+
+    -   workflows::add_recipe()
+
+    -   parsnip::fit()
+
+    -   stats::predict()
+
+    -   workflows::update_formula()
+
+    -   workflows::add_variables() / remove_variables()
+
+    -   workflowsets::workflow_set()
+
+    -   workflowsets::workflow_map()
+
+    -   workflowsets/tune::extract_workflow() / extract_recipe() / extract_fit_parsnip()
+
+    -   tune::last_fit()
+
+    -   workflowsets/tune::collect_metrics()
+
+    -   workflowsets/tune::collect_predictions()
 
 5.  Model comparison
 
-    yardstick::conf_mat() yardstick::accuracy() yardstick::metric_set() yardstick::roc_curve() yardstick::roc_auc() yardstick::sensitivity()
+    -   yardstick::conf_mat()
+
+    -   yardstick::accuracy()
+
+    -   yardstick::metric_set()
+
+    -   yardstick::roc_curve()
+
+    -   yardstick::roc_auc()
+
+    -   yardstick::sensitivity()
 
 ------------------------------------------------------------------------
 
