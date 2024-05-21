@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.28">
+<meta name="generator" content="quarto-1.4.554">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="dcterms.date" content="2022-10-30">
-<title>Federica Gazzelloni – Oregon spotted a frog: Rana Pretiosa</title>
+<title>Federica Gazzelloni - Oregon spotted a frog: Rana Pretiosa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -193,7 +193,7 @@ cookieconsent.run({
   </li>  
 </ul>
 </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
@@ -271,12 +271,12 @@ cookieconsent.run({
 <span><span class="co"># remotes::install_github("mlr-org/mlr3proba")</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://mlr3viz.mlr-org.com">"mlr3viz"</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>To install <a href="https://fgazzelloni.github.io/oregonfrogs/">oregonfrogs</a>, which is still in its development version you need to install it from github:</p>
+<p>To install <code>{oregonfrogs}</code>, which is still in its development version you need to install it from github:</p>
 <div class="cell">
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># remotes::install_github("fgazzelloni/oregonfrogs")</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://fgazzelloni.github.io/oregonfrogs/">oregonfrogs</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">oregonfrogs</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>I changed the name of the dataset to <strong>oregonfrogs</strong>, so now is <code><a href="https://fgazzelloni.github.io/oregonfrogs/reference/oregonfrogs.html">oregonfrogs::oregonfrogs</a></code> also added some functions, made some modifications, and left the raw data (<code>oregonfrogs_raw</code>) available.</p>
+<p>I changed the name of the dataset to <strong>oregonfrogs</strong>, so now is <code>oregonfrogs::oregonfrogs</code> also added some functions, made some modifications, and left the raw data (<code>oregonfrogs_raw</code>) available.</p>
 <p>Here, I take some selected variables which I’ll use in the model.</p>
 <div class="cell">
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">oregonfrogs_raw</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
@@ -284,7 +284,7 @@ cookieconsent.run({
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="fl">3</span><span class="op">:</span><span class="fl">4</span>, <span class="fl">6</span><span class="op">:</span><span class="fl">8</span>, <span class="fl">10</span><span class="op">:</span><span class="fl">11</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>It’s a practical use to change the <em>utm</em> coordinates into <em>longlat</em>. The package include these changes in the <em>oregonfrogs</em> dataset. As well as, I added a couple of functions that let the user switch back and forth between coordinate systems, <code>utm_to_longlat</code> and <code>longlat_to_utm</code>.</p>
-<p>This is basically what the <code><a href="https://fgazzelloni.github.io/oregonfrogs/reference/utm_to_longlat.html">utm_to_longlat()</a></code> function does:</p>
+<p>This is basically what the <code>utm_to_longlat()</code> function does:</p>
 <div class="cell">
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">oregonfrogs</span> <span class="op">&lt;-</span> <span class="va">oregonfrogs_raw</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">UTME_83</span>, <span class="va">UTMN_83</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
@@ -303,7 +303,7 @@ cookieconsent.run({
 <p>And here is a spec of the two systems in comparison for the <strong>oregonfrogs</strong> data:</p>
 <section id="set-a-task" class="level3"><h3 class="anchored" data-anchor-id="set-a-task">Set a Task</h3>
 <p>The <strong>mlr3 package</strong> provides a <code>task()</code> function, which allows to set the data to use inside the selected model.</p>
-<p>More specifically, here is used <code><a href="https://mlr3spatiotempcv.mlr-org.com/reference/TaskClassifST.html">mlr3spatiotempcv::TaskClassifST()</a></code> specific for <strong>spatial classification</strong> modeling tasks.</p>
+<p>More specifically, here is used <code>mlr3spatiotempcv::TaskClassifST()</code> specific for <strong>spatial classification</strong> modeling tasks.</p>
 <p>Among the function’s <em>options</em>, there are:</p>
 <ul>
 <li>
@@ -315,7 +315,7 @@ cookieconsent.run({
 <li>…</li>
 </ul>
 <div class="cell">
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">task</span> <span class="op">=</span> <span class="fu">mlr3spatiotempcv</span><span class="fu">::</span><span class="va"><a href="https://mlr3spatiotempcv.mlr-org.com/reference/TaskClassifST.html">TaskClassifST</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">task</span> <span class="op">=</span> <span class="fu">mlr3spatiotempcv</span><span class="fu">::</span><span class="va">TaskClassifST</span><span class="op">$</span><span class="fu">new</span><span class="op">(</span></span>
 <span>  id <span class="op">=</span> <span class="st">"lake"</span>,</span>
 <span>  backend <span class="op">=</span> <span class="fu">mlr3</span><span class="fu">::</span><span class="fu"><a href="https://mlr3.mlr-org.com/reference/as_data_backend.html">as_data_backend</a></span><span class="op">(</span><span class="va">oregonfrogs</span><span class="op">)</span>,</span>
 <span>  target <span class="op">=</span> <span class="st">"Water"</span>,</span>
@@ -525,7 +525,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -557,29 +568,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/federicagazzelloni\.com");
@@ -587,7 +576,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

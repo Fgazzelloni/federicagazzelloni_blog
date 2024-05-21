@@ -1,6 +1,18 @@
+### ShinyConf2024 - Shiny4Good Talk
+
+**Date**: April 2024
+
+**Abstract**: This talk will offer insights gained from active participation in the **Data Science Learning Community** through participation in **Shiny book clubs**. By exploring the unique dynamics of these forums, I will highlight the collaborative and knowledge-sharing atmosphere that the Data Science Learning Community cultivates. The talk will draw examples from the book clubs to illustrate how practical discussions and exercises amplify the learning experience.
+
+#beginner #Shiny4Good #shinyapp #showcase #rstats #datascience
+
+{{< video https://youtu.be/10wndNaUtpg >}}
+
+------------------------------------------------------------------------
+
 ### R-Ladies Talks
 
-| Sharing the mission with the open source community
+> Sharing the mission with the open source community
 
 ------------------------------------------------------------------------
 
@@ -42,7 +54,7 @@ This video is perfect for students of science, healthcare professionals, or anyo
 
 {{< video https://www.youtube.com/watch?v=-3mcwchd-w4&t=4684s >}}
 
-------------------------------------------
+------------------------------------------------------------------------
 
 #### `R-Ladies Cambridge`
 
@@ -53,6 +65,6 @@ This video is perfect for students of science, healthcare professionals, or anyo
 **Material**:
 
 -   GitHub Repo: <https://github.com/Fgazzelloni/R-Ladies-Cambridge-Dataviz-lunch-Replicating-Du-Bois-with-R>
-- WebSite Collection: <https://fgazzelloni.quarto.pub/unlocking-the-power-of-data-visualization-with-r/duboischallenge/>
+-   WebSite Collection: <https://fgazzelloni.quarto.pub/unlocking-the-power-of-data-visualization-with-r/duboischallenge/>
 
 {{< video https://www.youtube.com/watch?v=YdzLoshrsI4 >}}

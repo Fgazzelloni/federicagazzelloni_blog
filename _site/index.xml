@@ -13,8 +13,10 @@
 <url>https://federicagazzelloni.com/images/homepage.png</url>
 <title>Federica Gazzelloni</title>
 <link>https://federicagazzelloni.com/</link>
+<height>144</height>
+<width>144</width>
 </image>
-<generator>quarto-1.5.28</generator>
+<generator>quarto-1.4.554</generator>
 <lastBuildDate>Sat, 13 Apr 2024 22:00:00 GMT</lastBuildDate>
 <item>
   <title>HMSID R-package</title>
@@ -67,7 +69,6 @@ background-color: null;
 font-style: inherit;">{</span></span>
 <span>  <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -77,7 +78,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span>  <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -87,7 +87,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span>  <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -97,7 +96,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span>  <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -107,17 +105,15 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span>  <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://github.com/juliasilge/tidytext">tidytext</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://juliasilge.github.io/tidytext/">tidytext</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span>
 <span>  <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -127,7 +123,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span>  <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -137,7 +132,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span>  <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -147,7 +141,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span>  <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -721,7 +714,7 @@ font-style: inherit;">tidytext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/tidytext/man/unnest_tokens.html">unnest_tokens</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">unnest_tokens</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -759,7 +752,7 @@ font-style: inherit;"><a href="https://dplyr.tidyverse.org/reference/filter-join
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/tidytext/man/get_stopwords.html">get_stopwords</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">get_stopwords</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -821,7 +814,7 @@ font-style: inherit;">wordcloud</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/wordcloud/man/wordcloud.html">wordcloud</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">wordcloud</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -867,7 +860,7 @@ background-color: null;
 font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/tidytext/man/document_term_casters.html">cast_dtm</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">cast_dtm</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -894,7 +887,7 @@ font-style: inherit;">topicmodels</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/topicmodels/man/lda.html">LDA</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">LDA</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -1011,7 +1004,7 @@ font-style: inherit;">(</span>term <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/tidytext/man/reorder_within.html">reorder_within</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">reorder_within</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -1056,7 +1049,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/tidytext/man/reorder_within.html">scale_x_reordered</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">scale_x_reordered</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -1671,7 +1664,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -1681,7 +1673,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -3038,7 +3029,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -3048,7 +3038,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -3058,7 +3047,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -3782,7 +3770,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -3792,7 +3779,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -3806,7 +3792,7 @@ font-style: inherit;">sysfonts</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/sysfonts/man/font_add_google.html">font_add_google</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">font_add_google</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -3824,7 +3810,7 @@ font-style: inherit;">showtext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_auto.html">showtext_auto</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">showtext_auto</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -3835,7 +3821,7 @@ font-style: inherit;">showtext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_opts.html">showtext_opts</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">showtext_opts</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>dpi<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -4089,7 +4075,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -4335,7 +4321,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -4720,7 +4706,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -5023,7 +5009,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -5266,7 +5252,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -5552,7 +5537,6 @@ font-style: inherit;">proportion_table</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb12" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -5657,7 +5641,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_pander.html">theme_pander</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_pander.html">theme_pander</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -5713,7 +5697,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -5723,7 +5706,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -5740,7 +5722,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -5750,7 +5731,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -5760,12 +5740,11 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://github.com/r-tmap/tmap">tmap</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://r-tmap.github.io/tmap/">tmap</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="fu" style="color: #4758AB;
@@ -7418,7 +7397,7 @@ font-style: inherit;">folds</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://spatialsample.tidymodels.org/reference/spatial_clustering_cv.html">spatial_clustering_cv</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">spatial_clustering_cv</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -7467,7 +7446,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>base_size <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -7523,7 +7502,6 @@ font-style: inherit;">compute_preds</span> <span class="op" style="color: #5E5E5
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">function</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -7563,7 +7541,7 @@ font-style: inherit;">aids_d_cc</span>,</span>
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rsample.tidymodels.org/reference/as.data.frame.rsplit.html">analysis</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">analysis</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -7582,7 +7560,7 @@ font-style: inherit;">holdout</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rsample.tidymodels.org/reference/as.data.frame.rsplit.html">assessment</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">assessment</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -7653,7 +7631,7 @@ font-style: inherit;">cluster_folds</span> <span class="op" style="color: #5E5E5
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://spatialsample.tidymodels.org/reference/spatial_clustering_cv.html">spatial_clustering_cv</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">spatial_clustering_cv</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -7670,7 +7648,7 @@ font-style: inherit;">block_folds</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://spatialsample.tidymodels.org/reference/spatial_block_cv.html">spatial_block_cv</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">spatial_block_cv</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -8075,7 +8053,6 @@ font-style: inherit;">)</span> </span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -8085,7 +8062,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -8095,7 +8071,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -8381,7 +8356,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -8503,7 +8477,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb12" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -8523,7 +8496,7 @@ font-style: inherit;">rworldmap</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/rworldmap/man/getMap.html">getMap</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">getMap</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>resolution <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -8610,7 +8583,6 @@ font-style: inherit;">class</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb16" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -8953,7 +8925,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_clean.html">theme_clean</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_clean.html">theme_clean</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -8999,7 +8971,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb21" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -9786,7 +9757,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -9992,7 +9963,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -10002,7 +9972,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -10433,7 +10402,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -10567,7 +10536,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -10822,7 +10791,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -11054,7 +11023,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb13" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -11279,7 +11247,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -11680,7 +11648,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -12059,7 +12027,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_map.html">theme_map</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -12316,7 +12284,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -12465,7 +12433,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -12552,7 +12520,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -12694,7 +12662,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -12704,7 +12672,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb27" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -13014,7 +12981,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -13115,7 +13082,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -13257,7 +13224,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -13503,7 +13470,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -13582,7 +13549,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -13592,7 +13558,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
@@ -13602,7 +13567,6 @@ background-color: null;
 font-style: inherit;">)</span> </span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
@@ -13612,7 +13576,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
@@ -13622,12 +13585,11 @@ background-color: null;
 font-style: inherit;">)</span> </span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"MCMCglmm"</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://github.com/jarrodhadfield/MCMCglmm">"MCMCglmm"</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span>  </span></code></pre></div>
 </div>
@@ -13639,7 +13601,6 @@ font-style: inherit;">eff_size</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">function</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -13651,7 +13612,6 @@ background-color: null;
 font-style: inherit;">{</span></span>
 <span>  <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
@@ -13690,10 +13650,8 @@ font-style: inherit;">)</span></span>
 background-color: null;
 font-style: inherit;">}</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">else</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
@@ -13732,10 +13690,8 @@ font-style: inherit;">)</span></span>
 background-color: null;
 font-style: inherit;">}</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">else</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
@@ -13774,10 +13730,8 @@ font-style: inherit;">)</span></span>
 background-color: null;
 font-style: inherit;">}</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">else</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
@@ -13812,10 +13766,8 @@ font-style: inherit;">)</span></span>
 background-color: null;
 font-style: inherit;">}</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">else</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
@@ -13860,13 +13812,11 @@ font-style: inherit;">)</span></span>
 background-color: null;
 font-style: inherit;">}</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">else</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">{</span></span>
 <span>    <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/stop.html">stop</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
@@ -13986,7 +13936,7 @@ font-style: inherit;"><a href="https://rdrr.io/r/base/c.html">c</a></span><span 
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://paul-buerkner.github.io/brms/reference/set_prior.html">set_prior</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">set_prior</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -13999,7 +13949,7 @@ background-color: null;
 font-style: inherit;">)</span>,</span>
 <span>                    <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://paul-buerkner.github.io/brms/reference/set_prior.html">set_prior</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">set_prior</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -14012,7 +13962,7 @@ background-color: null;
 font-style: inherit;">)</span>,</span>
 <span>                    <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://paul-buerkner.github.io/brms/reference/set_prior.html">set_prior</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">set_prior</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -14032,7 +13982,7 @@ font-style: inherit;">dye_brms</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://paul-buerkner.github.io/brms/reference/brm.html">brm</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">brm</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -14061,7 +14011,7 @@ font-style: inherit;">lme4</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/lme4/man/Dyestuff.html">Dyestuff</a></span>, </span>
+font-style: inherit;">Dyestuff</span>, </span>
 <span>                prior <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="va" style="color: #111111;
@@ -14190,7 +14140,7 @@ font-style: inherit;">dye_rstanarm</span> <span class="op" style="color: #5E5E5E
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://mc-stan.org/rstanarm/reference/stan_glmer.html">stan_glmer</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">stan_glmer</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -14218,12 +14168,12 @@ font-style: inherit;">lme4</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/lme4/man/Dyestuff.html">Dyestuff</a></span>,</span>
+font-style: inherit;">Dyestuff</span>,</span>
 <span>                             prior_intercept <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://mc-stan.org/rstanarm/reference/priors.html">normal</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">normal</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fl" style="color: #AD0000;
 background-color: null;
@@ -14304,7 +14254,7 @@ font-style: inherit;">lme4</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/lme4/man/Dyestuff.html">Dyestuff</a></span></span>
+font-style: inherit;">Dyestuff</span></span>
 <span></span>
 <span><span class="va" style="color: #111111;
 background-color: null;
@@ -14598,7 +14548,7 @@ font-style: inherit;">dye_MCMCglmm</span> <span class="op" style="color: #5E5E5E
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/MCMCglmm/man/MCMCglmm.html">MCMCglmm</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">MCMCglmm</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -14621,7 +14571,7 @@ font-style: inherit;">lme4</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/lme4/man/Dyestuff.html">Dyestuff</a></span>, </span>
+font-style: inherit;">Dyestuff</span>, </span>
 <span>                           thin <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="va" style="color: #111111;
@@ -14774,7 +14724,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -14784,12 +14733,11 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://github.com/fgazzelloni/infectious">infectious</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">infectious</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>
@@ -14802,7 +14750,7 @@ font-style: inherit;">infectious</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/infectious/man/Glifetables.html">Glifetables</a></span> <span class="op" style="color: #5E5E5E;
+font-style: inherit;">Glifetables</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="va" style="color: #111111;
 background-color: null;
@@ -14816,7 +14764,7 @@ font-style: inherit;">infectious</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/infectious/man/Germany_lungc.html">Germany_lungc</a></span> <span class="op" style="color: #5E5E5E;
+font-style: inherit;">Germany_lungc</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="va" style="color: #111111;
 background-color: null;
@@ -14902,7 +14850,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/scale_fivethirtyeight.html">scale_fill_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/scale_fivethirtyeight.html">scale_fill_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -14915,7 +14863,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -15176,7 +15124,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/scale_fivethirtyeight.html">scale_fill_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/scale_fivethirtyeight.html">scale_fill_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -15189,7 +15137,7 @@ font-style: inherit;">ggthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggthemes/man/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="http://jrnold.github.io/ggthemes/reference/theme_fivethirtyeight.html">theme_fivethirtyeight</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -15514,7 +15462,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -15524,7 +15471,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -15534,7 +15480,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -15544,7 +15489,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -15901,7 +15845,7 @@ font-style: inherit;">tidytuesdayR</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/tidytuesdayR/man/tt_load.html">tt_load</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">tt_load</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fl" style="color: #AD0000;
 background-color: null;
@@ -15947,7 +15891,7 @@ font-style: inherit;">tigris</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/tigris/man/fips_codes.html">fips_codes</a></span> <span class="op" style="color: #5E5E5E;
+font-style: inherit;">fips_codes</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu" style="color: #4758AB;
@@ -16468,7 +16412,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggstream/man/geom_stream.html">geom_stream</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">geom_stream</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span></span>
 <span>    geom <span class="op" style="color: #5E5E5E;
@@ -16500,7 +16444,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggstream/man/geom_stream.html">geom_stream</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">geom_stream</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>geom <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -16725,7 +16669,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -16735,7 +16678,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -16748,7 +16690,6 @@ background-color: null;
 font-style: inherit;"># remotes::install_github("mlr-org/mlr3spatiotempcv")</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -16758,7 +16699,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -16773,7 +16713,6 @@ background-color: null;
 font-style: inherit;"># remotes::install_github("mlr-org/mlr3extralearners")</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -16783,7 +16722,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -16799,7 +16737,6 @@ background-color: null;
 font-style: inherit;"># remotes::install_github("mlr-org/mlr3proba")</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
@@ -16808,23 +16745,22 @@ font-style: inherit;"><a href="https://mlr3viz.mlr-org.com">"mlr3viz"</a></span>
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>
-<p>To install <a href="https://fgazzelloni.github.io/oregonfrogs/">oregonfrogs</a>, which is still in its development version you need to install it from github:</p>
+<p>To install <code>{oregonfrogs}</code>, which is still in its development version you need to install it from github:</p>
 <div class="cell">
 <div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># remotes::install_github("fgazzelloni/oregonfrogs")</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://fgazzelloni.github.io/oregonfrogs/">oregonfrogs</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">oregonfrogs</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>
-<p>I changed the name of the dataset to <strong>oregonfrogs</strong>, so now is <code><a href="https://fgazzelloni.github.io/oregonfrogs/reference/oregonfrogs.html">oregonfrogs::oregonfrogs</a></code> also added some functions, made some modifications, and left the raw data (<code>oregonfrogs_raw</code>) available.</p>
+<p>I changed the name of the dataset to <strong>oregonfrogs</strong>, so now is <code>oregonfrogs::oregonfrogs</code> also added some functions, made some modifications, and left the raw data (<code>oregonfrogs_raw</code>) available.</p>
 <p>Here, I take some selected variables which I’ll use in the model.</p>
 <div class="cell">
 <div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va" style="color: #111111;
@@ -16870,7 +16806,7 @@ background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>
 <p>It’s a practical use to change the <em>utm</em> coordinates into <em>longlat</em>. The package include these changes in the <em>oregonfrogs</em> dataset. As well as, I added a couple of functions that let the user switch back and forth between coordinate systems, <code>utm_to_longlat</code> and <code>longlat_to_utm</code>.</p>
-<p>This is basically what the <code><a href="https://fgazzelloni.github.io/oregonfrogs/reference/utm_to_longlat.html">utm_to_longlat()</a></code> function does:</p>
+<p>This is basically what the <code>utm_to_longlat()</code> function does:</p>
 <div class="cell">
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va" style="color: #111111;
 background-color: null;
@@ -17045,7 +16981,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 <p>And here is a spec of the two systems in comparison for the <strong>oregonfrogs</strong> data:</p>
 <section id="set-a-task" class="level3"><h3 class="anchored" data-anchor-id="set-a-task">Set a Task</h3>
 <p>The <strong>mlr3 package</strong> provides a <code>task()</code> function, which allows to set the data to use inside the selected model.</p>
-<p>More specifically, here is used <code><a href="https://mlr3spatiotempcv.mlr-org.com/reference/TaskClassifST.html">mlr3spatiotempcv::TaskClassifST()</a></code> specific for <strong>spatial classification</strong> modeling tasks.</p>
+<p>More specifically, here is used <code>mlr3spatiotempcv::TaskClassifST()</code> specific for <strong>spatial classification</strong> modeling tasks.</p>
 <p>Among the function’s <em>options</em>, there are:</p>
 <ul>
 <li>
@@ -17067,7 +17003,7 @@ font-style: inherit;">mlr3spatiotempcv</span><span class="fu" style="color: #475
 background-color: null;
 font-style: inherit;">::</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://mlr3spatiotempcv.mlr-org.com/reference/TaskClassifST.html">TaskClassifST</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">TaskClassifST</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -18117,7 +18053,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -18127,7 +18062,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -18137,7 +18071,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -18147,7 +18080,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -18157,7 +18089,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -18167,7 +18098,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -18177,7 +18107,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -18192,7 +18121,7 @@ font-style: inherit;">showtext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_auto.html">showtext_auto</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">showtext_auto</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -18203,7 +18132,7 @@ font-style: inherit;">showtext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_opts.html">showtext_opts</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">showtext_opts</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>dpi<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -18214,7 +18143,7 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/sysfonts/man/font_add_google.html">font_add_google</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">font_add_google</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>name<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -18228,7 +18157,7 @@ font-style: inherit;">"pangolin"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>
-<p>Helpful tip is how to set the <strong>dpi</strong> option inside the <code><a href="https://rdrr.io/pkg/showtext/man/showtext_opts.html">showtext::showtext_opts</a></code> function. This sets the size of your text, and it can be very useful when used in conjunction with the same option inside the <code>ggsave</code> function. If <code>showtxet</code> dpi is of a certain value, then you should set the <code>ggsave</code> dpi lower than that value to balance the text size outcome in your final .png file.</p>
+<p>Helpful tip is how to set the <strong>dpi</strong> option inside the <code>showtext::showtext_opts</code> function. This sets the size of your text, and it can be very useful when used in conjunction with the same option inside the <code>ggsave</code> function. If <code>showtxet</code> dpi is of a certain value, then you should set the <code>ggsave</code> dpi lower than that value to balance the text size outcome in your final .png file.</p>
 <p>A perfect result comes from a nice balance trade-off between the <strong>dpi</strong> of the two functions.</p>
 <p>Let’s have a look at the data, there are 100000 observation and 24 variables referring to the various types of yarns, companies, names, yardage, weights, textures, ratings, …</p>
 <div class="cell">
@@ -19174,7 +19103,6 @@ font-style: inherit;">node_ang_adj</span> <span class="op" style="color: #5E5E5E
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">function</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -19258,7 +19186,6 @@ font-style: inherit;">node_hjust_adj</span> <span class="op" style="color: #5E5E
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">function</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -19891,12 +19818,11 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://fgazzelloni.github.io/oregonfrogs/">oregonfrogs</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">oregonfrogs</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="fu" style="color: #4758AB;
@@ -19961,7 +19887,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -20763,7 +20688,6 @@ font-style: inherit;">df</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -20773,7 +20697,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -20854,11 +20777,11 @@ background-color: null;
 font-style: inherit;">%&gt;%</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">ggplot</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">aes</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>fill <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -20877,7 +20800,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/waffle/man/geom_waffle.html">geom_waffle</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">geom_waffle</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>n_rows <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -20915,7 +20838,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html">facet_wrap</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">facet_wrap</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -20932,7 +20855,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/coord_fixed.html">coord_equal</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">coord_equal</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -20941,7 +20864,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_fill_manual</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">scale_fill_manual</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>values<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -20975,7 +20898,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/waffle/man/theme_enhance_waffle.html">theme_enhance_waffle</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">theme_enhance_waffle</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -20984,13 +20907,13 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">theme</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>strip.text <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_blank</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">element_blank</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -20999,7 +20922,7 @@ font-style: inherit;">)</span>,</span>
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_blank</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">element_blank</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -21008,7 +20931,7 @@ font-style: inherit;">)</span>,</span>
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_blank</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">element_blank</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -21345,11 +21268,11 @@ background-color: null;
 font-style: inherit;">%&gt;%</span> </span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">ggplot</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">aes</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>x <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -21443,7 +21366,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_fill_manual</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">scale_fill_manual</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>values <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -21493,7 +21416,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/coord_flip.html">coord_flip</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">coord_flip</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>expand <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -21506,13 +21429,13 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">theme</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>axis.text <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_blank</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">element_blank</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -21521,7 +21444,7 @@ font-style: inherit;">)</span>,</span>
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_blank</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">element_blank</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -21530,7 +21453,7 @@ font-style: inherit;">)</span>,</span>
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_blank</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">element_blank</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -21539,7 +21462,7 @@ font-style: inherit;">)</span>,</span>
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_blank</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">element_blank</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -21558,7 +21481,6 @@ font-style: inherit;">sankey</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb9" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -21814,11 +21736,10 @@ font-style: inherit;">)</span></span>
 background-color: null;
 font-style: inherit;">combo</span></span></code></pre></div>
 </div>
-<p>Use {ggpubr} for arranging the grid of the main visualization, so it can be annotate with <code><a href="https://rpkgs.datanovia.com/ggpubr/reference/annotate_figure.html">annotate_figure()</a></code> to making it a bit more standing out with spaces around the plot and top and bottmo annotations already at the right distance/position.</p>
+<p>Use {ggpubr} for arranging the grid of the main visualization, so it can be annotate with <code>annotate_figure()</code> to making it a bit more standing out with spaces around the plot and top and bottmo annotations already at the right distance/position.</p>
 <div class="cell">
 <div class="sourceCode" id="cb11" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -21827,7 +21748,7 @@ font-style: inherit;"><a href="https://rpkgs.datanovia.com/ggpubr/">ggpubr</a></
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>
-<p><code><a href="https://rpkgs.datanovia.com/ggpubr/reference/annotate_figure.html">ggpubr::annotate_figure()</a></code> provides a framework for annotating the plot on the four sides top, bottom, left and right. It comes a handy function when you’d like to position notes or even rich text at specified positions. To use it, it requires an object from <code><a href="https://rpkgs.datanovia.com/ggpubr/reference/ggarrange.html">ggpubr::ggarrange()</a></code>.</p>
+<p><code>ggpubr::annotate_figure()</code> provides a framework for annotating the plot on the four sides top, bottom, left and right. It comes a handy function when you’d like to position notes or even rich text at specified positions. To use it, it requires an object from <code>ggpubr::ggarrange()</code>.</p>
 <div class="cell">
 <div class="sourceCode" id="cb12" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va" style="color: #111111;
 background-color: null;
@@ -21839,7 +21760,7 @@ font-style: inherit;">ggpubr</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rpkgs.datanovia.com/ggpubr/reference/ggarrange.html">ggarrange</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">ggarrange</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -21853,7 +21774,7 @@ font-style: inherit;">ggpubr</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rpkgs.datanovia.com/ggpubr/reference/annotate_figure.html">annotate_figure</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">annotate_figure</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -21862,7 +21783,7 @@ font-style: inherit;">plot</span>,</span>
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rpkgs.datanovia.com/ggpubr/reference/text_grob.html">text_grob</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">text_grob</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -21901,7 +21822,7 @@ font-style: inherit;">)</span>,</span>
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rpkgs.datanovia.com/ggpubr/reference/text_grob.html">text_grob</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">text_grob</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -21939,7 +21860,7 @@ font-style: inherit;">)</span>,</span>
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rpkgs.datanovia.com/ggpubr/reference/text_grob.html">text_grob</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">text_grob</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -21968,7 +21889,7 @@ font-style: inherit;">)</span>,</span>
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rpkgs.datanovia.com/ggpubr/reference/text_grob.html">text_grob</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">text_grob</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -22011,12 +21932,12 @@ font-style: inherit;">"bold"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>
-<p>Then finally, save it as .png file with <code><a href="https://ggplot2.tidyverse.org/reference/ggsave.html">ggsave()</a></code> function. I specified a height a little bit more than the default values provided as I needed more space.</p>
+<p>Then finally, save it as .png file with <code>ggsave()</code> function. I specified a height a little bit more than the default values provided as I needed more space.</p>
 <p>The other arguments, <code>dpi</code> and <code>bg</code> are to set the pixels and the background color.</p>
 <div class="cell">
 <div class="sourceCode" id="cb13" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/ggsave.html">ggsave</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">ggsave</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -22176,7 +22097,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -22185,7 +22105,6 @@ font-style: inherit;"><a href="https://github.com/topepo/caret/">caret</a></span
 background-color: null;
 font-style: inherit;">)</span>; <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -22207,7 +22126,7 @@ font-style: inherit;">inTrain</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/caret/man/createDataPartition.html">createDataPartition</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">createDataPartition</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>y<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -22276,7 +22195,7 @@ font-style: inherit;">modelFit</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/caret/man/train.html">train</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">train</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -22326,7 +22245,7 @@ font-style: inherit;">cm</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/caret/man/confusionMatrix.html">confusionMatrix</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">confusionMatrix</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -22365,7 +22284,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -22549,7 +22467,7 @@ background-color: null;
 font-style: inherit;">cm</span></span>
 <span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://ggplot2.tidyverse.org/reference/autoplot.html">autoplot</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">autoplot</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -22609,7 +22527,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -22619,7 +22536,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -22763,7 +22679,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -22776,7 +22691,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -22834,7 +22748,7 @@ font-style: inherit;">kableExtra</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">kable</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -22962,7 +22876,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -22983,7 +22896,6 @@ font-style: inherit;"># loadfonts()</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -22993,7 +22905,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -23139,7 +23050,7 @@ font-style: inherit;">tvthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/tvthemes/man/hilda_pal.html">scale_fill_hilda</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">scale_fill_hilda</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -23199,7 +23110,7 @@ font-style: inherit;">tvthemes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/tvthemes/man/theme_avatar.html">theme_avatar</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">theme_avatar</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -23333,14 +23244,12 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">if</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">!</span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -23442,7 +23351,7 @@ font-style: inherit;">kableExtra</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">kable</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -23823,7 +23732,7 @@ font-style: inherit;">kableExtra</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">kable</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -23844,7 +23753,7 @@ font-style: inherit;">kableExtra</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/kableExtra/man/kable_styling.html">kable_styling</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">kable_styling</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>latex_options <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -23858,7 +23767,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -23876,7 +23784,7 @@ font-style: inherit;">ISOcodes</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ISOcodes/man/ISO_3166.html">ISO_3166_1</a></span></span>
+font-style: inherit;">ISO_3166_1</span></span>
 <span><span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">isocodes2</span> <span class="op" style="color: #5E5E5E;
@@ -25028,7 +24936,6 @@ font-style: inherit;">head</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb18" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -25038,7 +24945,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -25048,7 +24954,6 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -25063,7 +24968,7 @@ font-style: inherit;">showtext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_auto.html">showtext_auto</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">showtext_auto</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -25074,7 +24979,7 @@ font-style: inherit;">showtext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_opts.html">showtext_opts</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">showtext_opts</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>dpi<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -25086,7 +24991,7 @@ font-style: inherit;">)</span></span>
 <span></span>
 <span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/sysfonts/man/font_add_google.html">font_add_google</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">font_add_google</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>name<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -25185,7 +25090,7 @@ font-style: inherit;">ggbump</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggbump/man/geom_sigmoid.html">geom_sigmoid</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">geom_sigmoid</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -25477,12 +25382,11 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb21" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="https://github.com/jrnold/ggthemes">ggthemes</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://jrnold.github.io/ggthemes/">ggthemes</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span>
 <span></span>
@@ -25743,7 +25647,7 @@ font-style: inherit;">wesanderson</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/wesanderson/man/wes_palette.html">wes_palette</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">wes_palette</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fl" style="color: #AD0000;
 background-color: null;
@@ -26389,7 +26293,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -26507,7 +26410,6 @@ font-style: inherit;">x_axis</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -26517,7 +26419,7 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/sysfonts/man/font_add.html">font_add</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">font_add</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>family <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -26534,7 +26436,7 @@ font-style: inherit;">)</span></span>
 <span></span>
 <span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/sysfonts/man/font_add.html">font_add</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">font_add</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>family <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -26551,7 +26453,7 @@ font-style: inherit;">)</span></span>
 <span> </span>
 <span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_auto.html">showtext_auto</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">showtext_auto</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -26561,7 +26463,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell">
 <div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
@@ -26725,7 +26626,7 @@ background-color: null;
 font-style: inherit;"># with ggstar add the triangular shape</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/ggstar/man/geom_star.html">geom_star</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">geom_star</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>starshape <span class="op" style="color: #5E5E5E;
 background-color: null;
