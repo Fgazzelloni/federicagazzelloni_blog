@@ -14687,7 +14687,7 @@ font-style: inherit;">)</span></span></code></pre></div>
   <media:content url="https://federicagazzelloni.com/posts/stats/statistics/bayesian_statistics/featured.png" medium="image" type="image/png" height="90" width="144"/>
 </item>
 <item>
-  <title>Health metrics and the spread of infectious diseases</title>
+  <title>Infectious R-package</title>
   <link>https://federicagazzelloni.com/posts/proj/projects/infectious/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <div class="columns">
@@ -22543,9 +22543,13 @@ background-color: null;
 font-style: inherit;"><a href="https://zajichek.github.io/cheese/">cheese</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span>
-<span><span class="va" style="color: #111111;
+<span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">heart_disease</span> <span class="op" style="color: #5E5E5E;
+font-style: inherit;">cheese</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;"><a href="https://zajichek.github.io/cheese/reference/heart_disease.html">heart_disease</a></span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span><span class="va" style="color: #111111;
 background-color: null;
@@ -22748,7 +22752,7 @@ font-style: inherit;">kableExtra</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">kable</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -23351,7 +23355,7 @@ font-style: inherit;">kableExtra</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">kable</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -23732,7 +23736,7 @@ font-style: inherit;">kableExtra</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">kable</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -23753,7 +23757,7 @@ font-style: inherit;">kableExtra</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">kable_styling</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/kableExtra/man/kable_styling.html">kable_styling</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>latex_options <span class="op" style="color: #5E5E5E;
 background-color: null;

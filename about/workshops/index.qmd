@@ -1,12 +1,12 @@
-### Helmholtz Information & Data Science Academy
+### CDC Centers for Disease Control
 
-**Software Carpentry (Shell, Git, and programming with R)**
+**Data Carpentry Genomics**
 
-Date: February 12-13 2024 \| Helmholtz Online
+Date: 2024-06-10 to 2024-06-13 \| Centers for Disease Control
 
-Website: <https://macrobiotus.github.io/2024-02-12-helmholtz-online/>
+Website: <https://fgazzelloni.github.io/2024-06-10-cdc-online/>
 
-EtherPad: <https://pad.carpentries.org/2024-02-12-helmholtz-online>
+EtherPad: <https://pad.carpentries.org/2024-06-10-cdc-online>
 
 ------------------------------------------------------------------------
 
@@ -22,12 +22,12 @@ EtherPad: <https://pad.carpentries.org/2024-03-19-nnlm-uw-online>
 
 ------------------------------------------------------------------------
 
-### CDC Centers for Disease Control
+### Helmholtz Information & Data Science Academy
 
-**Data Carpentry Genomics**
+**Software Carpentry (Shell, Git, and programming with R)**
 
-Date:  2024-06-10 to 2024-06-13 \| Centers for Disease Control
+Date: February 12-13 2024 \| Helmholtz Online
 
-Website: <https://fgazzelloni.github.io/2024-06-10-cdc-online/>
+Website: <https://macrobiotus.github.io/2024-02-12-helmholtz-online/>
 
-EtherPad: <https://pad.carpentries.org/2024-06-10-cdc-online>
+EtherPad: <https://pad.carpentries.org/2024-02-12-helmholtz-online>

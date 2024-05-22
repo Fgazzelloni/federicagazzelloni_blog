@@ -72,7 +72,7 @@ As an example, we use the **heart_disease** dataset from the {cheese} package, a
 ```{r}
 library(tidyverse)
 library(cheese)
-heart_disease %>%head
+cheese::heart_disease %>%head
 ```
 
 ```{r}

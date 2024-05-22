@@ -242,7 +242,7 @@ cookieconsent.run({
 <span>         <span class="va">academic_year</span>,<span class="va">mobility_duration</span>,</span>
 <span>         <span class="va">participant_gender</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">kableExtra</span><span class="fu">::</span><span class="fu">kable</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">df</span><span class="op">)</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="fu">kableExtra</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">df</span><span class="op">)</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Looking at the <code>participant_age</code> we see that we have some misleading data:</p>
 <div class="cell">
@@ -279,8 +279,8 @@ cookieconsent.run({
 <span>  <span class="fu">ungroup</span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">select</span><span class="op">(</span><span class="op">-</span><span class="va">m_participants</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">distinct</span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="fu">kableExtra</span><span class="fu">::</span><span class="fu">kable</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">df</span><span class="op">)</span><span class="op">)</span><span class="op">%&gt;%</span></span>
-<span>  <span class="fu">kableExtra</span><span class="fu">::</span><span class="fu">kable_styling</span><span class="op">(</span>latex_options <span class="op">=</span> <span class="st">"scale_down"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="fu">kableExtra</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">df</span><span class="op">)</span><span class="op">)</span><span class="op">%&gt;%</span></span>
+<span>  <span class="fu">kableExtra</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kable_styling.html">kable_styling</a></span><span class="op">(</span>latex_options <span class="op">=</span> <span class="st">"scale_down"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>At this point I’d like to have the full country’s name, and use {ISOcodes} package. I do that because I’d like to make a spatial visualization as well. The package contains the values for the countries’ abbreviations coded as “Alpha_2”. I needed to adjust UK and Greece. To verify this you might need to use the <code>count()</code> function and the <code>str_detect()</code> a couple of times before identifying all the values that needs an adjustment.</p>
 <div class="cell">
