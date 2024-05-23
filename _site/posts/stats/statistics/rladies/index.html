@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.4.553">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="dcterms.date" content="2024-03-12">
 <title>Federica Gazzelloni - R-Ladies Events Stats</title>
@@ -269,7 +269,7 @@ dat &lt;- dplyr::bind_rows(events)</code></pre>
 <section id="r-ladies-rome-events" class="level3"><h3 class="anchored" data-anchor-id="r-ladies-rome-events">R-Ladies Rome Events</h3>
 <div class="cell">
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">urlname</span> <span class="op">&lt;-</span> <span class="st">"rladies-rome"</span></span>
-<span><span class="va">events</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/meetupr/man/get_events.html">get_events</a></span><span class="op">(</span><span class="va">urlname</span><span class="op">)</span></span>
+<span><span class="va">events</span> <span class="op">&lt;-</span> <span class="fu">get_events</span><span class="op">(</span><span class="va">urlname</span><span class="op">)</span></span>
 <span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">events</span>, <span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span><span class="op">(</span><span class="va">time</span><span class="op">)</span><span class="op">)</span><span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
