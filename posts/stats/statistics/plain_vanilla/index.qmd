@@ -1,0 +1,439 @@
+---
+title: "Understanding Plain Vanilla - from Scratch"
+date: '2024-06-28'
+summary: "This is a simple introduction to Artificial Neural Networks (ANN) from scratch using R outside the library boxes | used in Ch10 ISLR Book-Club."
+image: featured.png
+slug: ann-plain-vanilla
+categories:
+  - rstats
+  - modeling
+  - machine-learning
+  - artificial-neural-networks
+margin-header: |
+     ![By giphy.com](https://i.giphy.com/media/KX5nwoDX97AtPvKBF6/giphy.gif)
+---
+
+## Overview
+
+In the world of artificial intelligence, understanding the fundamentals of neural networks is essential. One of the simplest yet powerful architectures is the **Artificial Neural Network (ANN) with a single hidden layer, often referred to as a "plain vanilla" network**. This blog post aims to provide a comprehensive guide to building such a network from scratch, focusing on key concepts like activation functions, weights, and the backpropagation algorithm outside the library boxes.
+
+## Example of construction of Plain vanilla network architecture
+
+ANN's (Artificial Neural Networks) is the simplest implementation of deep learning model architectures with only `one hidden layer`.
+
+<center>![](images/10_02_single-layer.png){width="400"}</center>
+
+In the image above, we have some predictors $x_i$ that are fed into the hidden layer, which then transforms them into a new set of features $h_k(x)$, which are then used to predict the response variable $y$.
+
+```{r}
+rm(list=ls())
+suppressMessages(library(tidyverse))
+theme_set(theme_minimal())
+```
+
+### Build synthetic data:
+
+-   `Predictors` as `Uniform` distributed variables ranging between `[-2, 2]`:
+
+```{r}
+set.seed(100)
+x <- runif(60, min=-2, max=2)
+```
+
+-   `Response` Variable as function of the predictors:
+
+```{r}
+y <- function(x) {
+  Y = (cos(2*x + 1))
+  return(Y)
+}
+```
+
+```{r}
+#| message: false
+#| warning: false
+data <- tibble(y=y(x),x)
+head(data)
+```
+
+
+```{r}
+data %>% summary()
+```
+
+### EDA - Exploratory Data Analysis
+
+Let's visualize our synthetic data:
+
+```{r}
+#| fig-width: 6
+#| fig-height: 4
+#| fig-cap: "Synthetic Data"
+#| fig-align: center
+data %>%
+  ggplot(aes(x, y)) +
+  geom_line() +
+  geom_point() +
+  geom_hline(yintercept=0, 
+             linetype="dashed", color="grey")
+```
+
+### Parameters estimation
+
+Now that we have the data we attempt to replicate the distribution of this data with a model using artificial neural network technique with a single hidden layer. 
+
+Formula of the model: $$f(X)=\beta_0+\sum_{k=1}^K{\beta_kh_k(X)}$$
+
+Where, $h_k$ is the hidden layer, $k=1,...,K$ the number of activations, $\beta_0,\beta_1,...,\beta_K$ the coefficients , and $w_{10},...,w_{kp}$ the weights.
+
+The hidden layer computes a number of activations.
+
+#### Number of activations
+
+Initialize the number of hidden neurons $k$:
+
+```{r}
+hidden_neurons = 5
+```
+
+#### Activation Function
+
+It is a non-linear transformation of the input layers $X_1,X_2,...,X_p$ which transform to $h_k(X)$ while learning during the training of the network.
+
+$$A_k=h_k(X)=g(z)$$
+
+$g(z)$ is a function used in `logistic regression` to **convert** a `linear function` **into probabilities** between zero and one.
+
+#### Type of Activation functions
+
+-   `Sigmoid` function
+
+$$g(z)=\frac{e^z}{1+e^z}=\frac{1}{1+ e^{-z}}$$
+
+```{r}
+sigmoid <- function(x) {
+  z = (1 / (1 + exp(-x)))
+  return(z)
+}
+```
+
+-   `ReLU` (Rectified Linear Unit) function
+
+$$g(z) = max(0, z)$$
+
+```{r}
+relu <- function(x) {
+  z = ifelse(x < 0, 0, x)
+  return(z)
+}
+```
+
+
+-   `SoftPlus` Function
+
+$$g(z) = \log(1 + e^z)$$
+
+A smooth approximation to the ReLU function. It is firstly introduced in 2001. `Softplus` is an alternative to traditional functions because it is differentiable and its derivative is easy to demonstrate. source: <https://sefiks.com/2017/08/11/softplus-as-a-neural-networks-activation-function/>
+
+```{r}
+softplus <- function(x) {
+  z = log(1 + exp(x))
+  return(z)
+}
+```
+
+-   Other types such as:
+    -   $x^2$, or polynomials/splines
+    -   Hyperbolic tanh $tanh(x) = (e^x – e^-x) / (e^x + e^-x)$
+
+Let's compare the `activation functions`:
+```{r}
+#| layout-ncol: 3
+#| fig-cap: 
+#|   - "Sigmoid function"
+#|   - "ReLU function"
+#|   - "SoftPlus function"
+
+data %>%
+  mutate(z=sigmoid(x)) %>%
+  ggplot() +
+  geom_line(aes(x, z)) +
+  ylim(0, 1)
+
+data %>%
+  ggplot() +
+  geom_line(aes(x, relu(x) * 1/2.4))
+
+data %>%
+  ggplot() +
+  geom_line(aes(x, softplus(x)))
+```
+
+::::{.columns}
+
+:::{.column}
+
+And now look at `Sigmoid vs ReLU` functions:
+```{r}
+#| fig-cap: "Sigmoid vs ReLU"
+#| fig-width: 6
+#| fig-height: 4
+#| fig-align: center
+#| eval: false
+data %>%
+  ggplot() +
+  geom_line(aes(x, sigmoid(x))) +
+  # relu resized for comparison
+  geom_line(aes(x, relu(x) * 1/2.4))+
+  labs(y="Sigmoid vs ReLU")
+```
+
+:::
+
+:::{.column}
+```{r}
+#| fig-cap: "Sigmoid vs ReLU"
+#| fig-width: 6
+#| fig-height: 4
+#| fig-align: center
+#| echo: false
+data %>%
+  ggplot() +
+  geom_line(aes(x, sigmoid(x))) +
+  # relu resized for comparison
+  geom_line(aes(x, relu(x) * 1/2.4))+
+  labs(y="Sigmoid vs ReLU")
+```
+
+:::
+
+::::
+
+
+**Our model is a model in the model:**
+
+$$f(X)=\beta_0+\sum_{k=1}^K{\beta_kh_k(X)}$$ $$A_k=h_k(X)=g(z)=g(w_{k0}+\sum_{j=1}^p{w_{kj}X_j})$$
+
+$$f(X)=\beta_0+\sum_{k=1}^K{\beta_kg(w_{k0}+\sum_{wkj}^p{X_j})}$$
+
+#### Weights
+
+Randomly initializing the `weights` as i.i.d. $N(0,1)$
+
+```{r}
+w1 = matrix(rnorm(2*hidden_neurons), nrow=hidden_neurons, ncol=2)
+w2 = matrix(rnorm(hidden_neurons + 1), nrow=1, ncol=(hidden_neurons + 1))
+```
+
+The constant term $w_{k0}$ will shift the inflection point, we are going from a linear function to a non-linear one.
+
+The model derives five new features by computing five different linear combinations of X, and then squashes each through an activation function $g(·)$ to transform it.
+
+$$y=\text{intercept} + \text{slope }X$$
+
+```{r}
+#| message: false
+#| warning: false
+# use the simulation in the manipulate-data.R file
+data %>%
+  ggplot(aes(x, y)) +
+  geom_point(shape=21, stroke=0.5, fill="grey", color="grey20") +
+  geom_line(linewidth=0.2) +
+  geom_smooth(method = "lm", color="steelblue", se=F) +
+  geom_line(aes(x, sigmoid(y)), linetype="dashed", color="steelblue")
+```
+
+### FeedForward
+
+Function to obtain predicted outputs.
+
+```{r}
+feedForward <- function(x, w1, w2, activation) {
+  output <- rep(0, length(x))
+
+  for (i in 1:length(x)) {
+    a1 = w1 %*% matrix(rbind(1, x[i]), ncol=1)
+    z1 = activation(a1)
+    a2 = w2 %*% matrix(rbind(1, z1), ncol=1)
+    output[i] = a2
+  }
+
+  return(output)
+}
+```
+
+### Derivative Activation
+
+> `Backpropagation algorithm` multiplies the derivative of the activation function.
+
+<center>![](images/10_derivative.png){width="400"}</center>
+
+So, it is fundamental to define the derivative of the activation function needed for computing the gradient.
+
+```{r}
+derivativeActivation <- function(x) {
+  g = (sigmoid(x) * (1 - sigmoid(x)))
+  return(g)
+}
+```
+
+### Model Error
+
+Function for computing model error.
+
+```{r}
+modelError <- function(x, y, w1, w2, activation) {
+  # Predictions
+  preds <- feedForward(x, w1, w2, activation)
+
+  # Error calculation
+  SSE <- sum((y - preds) ** 2)
+
+  return (SSE)
+}
+```
+
+### Back-Propagation
+
+Function for computing the gradients.
+
+```{r}
+backPropagation <- function(x, y, w1, w2, activation, derivativeActivation) {
+  preds <- feedForward(x, w1, w2, activation) #predicted values
+
+  derivCost <- -2 * (y - preds) #Derivative of the cost function (first term)
+
+  dW1 <- matrix(0, ncol=2, nrow=nrow(w1)) #Gradient for w1
+  dW2 <- matrix(rep(0, length(x) * (dim(w2)[2])), nrow=length(x)) #Gradient matrix for w2
+
+  # Computing the Gradient for W2
+  for (i in 1:length(x)) {
+    a1 = w1 %*% matrix(rbind(1, x[i]), ncol=1)
+    da2dW2 = matrix(rbind(1, activation(a1)), nrow=1)
+    dW2[i,] = derivCost[i] * da2dW2
+  }
+
+  # Computing the gradient for W1
+  for (i in 1:length(x)) {
+    a1 = w1 %*% matrix(rbind(1, x[i]), ncol=1)
+    da2da1 = derivativeActivation(a1) * matrix(w2[,-1], ncol=1)
+    da2dW1 = da2da1 %*% matrix(rbind(1, x[i]), nrow=1)
+    dW1 = dW1 + derivCost[i] * da2dW1
+  }
+
+  # Storing gradients for w1, w2 in a list
+  gradient <- list(dW1, colSums(dW2))
+
+  return (gradient)
+}
+```
+
+### Stochastic Gradient Descent
+
+Defining our `Stochastic Gradient Descent algorithm` which will adjust our weight matrices.
+
+```{r}
+SGD <- function(x, y, w1, w2, activation, derivative, learnRate, epochs) {
+  SSEvec <- rep(NA, epochs) # Empty array to store SSE values after each epoch
+  SSEvec[1] = modelError(x, y, w1, w2, activation)
+
+  for (j in 1:epochs) {
+    for (i in 1:length(x)) {
+      gradient <- backPropagation(x[i], y[i], w1, w2, activation, derivative)
+      # Adjusting model parameters for a given number of epochs
+      w1 <- w1 - learnRate * gradient[[1]]
+      w2 <- w2 - learnRate * gradient[[2]]
+    }
+    SSEvec[j+1] <- modelError(x, y, w1, w2, activation) 
+    # Storing SSE values after each iteration
+    }
+    # Beta vector holding model parameters
+    B <- list(w1, w2)
+    result <- list(B, SSEvec)
+    return(result)
+}
+```
+
+### Modeling
+
+Running the SGD function to obtain our optimized model and parameters:
+
+```{r}
+model <- SGD(x, y(x), w1, w2, 
+             activation = sigmoid, 
+             derivative = derivativeActivation,
+             learnRate = 0.01, 
+             epochs = 200)
+```
+
+Obtaining our adjusted SSE's for each epoch:
+
+```{r}
+SSE <- model[[2]]
+```
+
+### Model Visualization
+
+Plotting the SSE from each epoch vs number of epochs
+
+```{r}
+model_data <- tibble(x=seq(0, 200, 1), SSE)
+
+ggplot(model_data,aes(x, SSE)) +
+  geom_line(linewidth=0.1)+
+  geom_point(shape=21, 
+             stroke=0.2, 
+             fill=alpha("steelblue", 0.3),
+             color="brown") +
+  labs(title="Model SSE by Number of Epochs",
+       x = "Epochs", y = "Error")
+```
+
+### Parameters optimization
+
+Extracting our `new parameters` from our model.
+
+```{r}
+new_w1 <- model[[1]][[1]]
+new_w2 <- model[[1]][[2]]
+```
+
+Comparing our `old weight` matrices against the `new ones`.
+
+```{r}
+par(mfrow=c(1,2))
+plot(w1,new_w1)
+abline(0,1)
+
+plot(w2,new_w2)
+abline(0,1)
+```
+
+### New Predictions
+
+Obtaining our new predictions using our optimized parameters.
+
+```{r}
+y_pred <- feedForward(x, new_w1, new_w2, sigmoid)
+```
+
+Plotting training data against our model predictions
+
+```{r}
+data %>%
+  mutate(y_pred=y_pred) %>%
+  pivot_longer(cols = c(y, y_pred)) %>%
+  ggplot(aes(x, value, group=name, color=name)) +
+  geom_point(shape=21, stroke=0.5) +
+  geom_line() +
+  scale_color_discrete(type = c("steelblue", "red")) +
+  labs(title= "Target Response vs. Predictions",
+       x="Observations", 
+       y="Responses")
+```
+
+## Resources
+
+1.  The code used for this example is customized from `tristanoprofetto` github repository: <https://github.com/tristanoprofetto/neural-networks/blob/main/ANN/Regressor/feedforward.R>
+2.  StatQuest: Neural Networks Pt. 1: Inside the Black Box <https://www.youtube.com/watch?v=CqOfi41LfDw>
+3.  Other-Resources: <https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464>

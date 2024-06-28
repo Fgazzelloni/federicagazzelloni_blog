@@ -1,13 +1,5 @@
 [
   {
-    "listing": "/posts/proj/index.html",
-    "items": [
-      "/posts/proj/projects/hmsidwR/index.html",
-      "/posts/proj/projects/infectious/index.html",
-      "/posts/proj/projects/oregonfrogs/index.html"
-    ]
-  },
-  {
     "listing": "/posts/dataviz/index.html",
     "items": [
       "/posts/dataviz/data_visualization/dubois2024/challenge01/index.html",
@@ -26,8 +18,17 @@
     ]
   },
   {
+    "listing": "/posts/proj/index.html",
+    "items": [
+      "/posts/proj/projects/hmsidwR/index.html",
+      "/posts/proj/projects/infectious/index.html",
+      "/posts/proj/projects/oregonfrogs/index.html"
+    ]
+  },
+  {
     "listing": "/posts/stats/index.html",
     "items": [
+      "/posts/stats/statistics/plain_vanilla/index.html",
       "/posts/stats/statistics/rladies/index.html",
       "/posts/stats/statistics/linear_prediction/index.html",
       "/posts/stats/statistics/simpson_paradox/index.html",
@@ -42,6 +43,7 @@
       "/posts/proj/index.html",
       "/posts/dataviz/index.html",
       "/posts/stats/index.html",
+      "/posts/stats/statistics/plain_vanilla/index.html",
       "/posts/proj/projects/hmsidwR/index.html",
       "/posts/stats/statistics/rladies/index.html",
       "/posts/stats/statistics/linear_prediction/index.html",
