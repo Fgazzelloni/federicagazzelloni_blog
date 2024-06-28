@@ -13,6 +13,7 @@ margin-header: |
      ![By giphy.com](https://i.giphy.com/media/KX5nwoDX97AtPvKBF6/giphy.gif)
 ---
 
+
 ## Overview
 
 In the world of artificial intelligence, understanding the fundamentals of neural networks is essential. One of the simplest yet powerful architectures is the **Artificial Neural Network (ANN) with a single hidden layer, often referred to as a "plain vanilla" network**. This blog post aims to provide a comprehensive guide to building such a network from scratch, focusing on key concepts like activation functions, weights, and the backpropagation algorithm outside the library boxes.
@@ -25,11 +26,13 @@ ANN's (Artificial Neural Networks) is the simplest implementation of deep learni
 
 In the image above, we have some predictors $x_i$ that are fed into the hidden layer, which then transforms them into a new set of features $h_k(x)$, which are then used to predict the response variable $y$.
 
+
 ```{r}
 rm(list=ls())
 suppressMessages(library(tidyverse))
 theme_set(theme_minimal())
 ```
+
 
 ### Build synthetic data
 
@@ -37,12 +40,15 @@ Let's create a synthetic dataset to demonstrate the construction of a plain vani
 
 -   `Predictors` as `Uniform` distributed variables ranging between `[-2, 2]`:
 
+
 ```{r}
 set.seed(100)
 x <- runif(60, min=-2, max=2)
 ```
 
+
 -   `Response` Variable as function of the predictors:
+
 
 ```{r}
 y <- function(x) {
@@ -62,9 +68,11 @@ head(data)
 data %>% summary()
 ```
 
+
 ### EDA - Exploratory Data Analysis
 
 Let's visualize our synthetic data:
+
 
 ```{r}
 #| fig-width: 6
@@ -78,6 +86,7 @@ data %>%
   geom_hline(yintercept=0, 
              linetype="dashed", color="grey")
 ```
+
 
 ### Parameters estimation
 
@@ -95,9 +104,11 @@ The hidden layer computes a number of activations.
 
 Initialize the number of hidden neurons $k$, which is the number of activations in the hidden layer:
 
+
 ```{r}
 hidden_neurons = 5
 ```
+
 
 The number of hidden neurons is a hyperparameter that needs to be tuned. The more neurons, the more complex the model, but it can also lead to overfitting. You can think of a neuron as a connection between the input and output layers. The more neurons, the more connections, and the more complex the model.
 
@@ -127,6 +138,7 @@ Some of the most common types of activation functions are:
 
 $$g(z)=\frac{e^z}{1+e^z}=\frac{1}{1+ e^{-z}}$$
 
+
 ```{r}
 sigmoid <- function(x) {
   z = (1 / (1 + exp(-x)))
@@ -134,9 +146,11 @@ sigmoid <- function(x) {
 }
 ```
 
+
 -   `ReLU` (Rectified Linear Unit) function:
 
 $$g(z) = max(0, z)$$
+
 
 ```{r}
 relu <- function(x) {
@@ -145,11 +159,13 @@ relu <- function(x) {
 }
 ```
 
+
 -   `SoftPlus` Function
 
 $$g(z) = \log(1 + e^z)$$
 
 This is a smooth approximation to the ReLU function. Firstly introduced in 2001, `Softplus` is an alternative to traditional functions because it is differentiable and its derivative is easy to demonstrate (see source: <https://sefiks.com/2017/08/11/softplus-as-a-neural-networks-activation-function/>).
+
 
 ```{r}
 softplus <- function(x) {
@@ -158,11 +174,13 @@ softplus <- function(x) {
 }
 ```
 
+
 -   Other types are:
     -   Polynomials/Splines: $x^2$
     -   Hyperbolic tanh: $tanh(x) = (e^x – e^-x) / (e^x + e^-x)$
 
 Let's compare the `activation functions`:
+
 
 ```{r}
 #| layout-ncol: 3
@@ -186,10 +204,12 @@ data %>%
   geom_line(aes(x, softplus(x)))
 ```
 
+
 ::: columns
 And now look at how the `Sigmoid` differs from the `ReLU` function:
 
 ::: column
+
 ```{r}
 #| fig-cap: "Sigmoid vs ReLU"
 #| fig-width: 6
@@ -203,9 +223,11 @@ data %>%
   geom_line(aes(x, relu(x) * 1/2.4))+
   labs(y="Sigmoid vs ReLU")
 ```
+
 :::
 
 ::: column
+
 ```{r}
 #| fig-cap: "Sigmoid vs ReLU"
 #| fig-width: 6
@@ -219,6 +241,7 @@ data %>%
   geom_line(aes(x, relu(x) * 1/2.4))+
   labs(y="Sigmoid vs ReLU")
 ```
+
 :::
 :::
 
@@ -242,6 +265,7 @@ The weights are initialized randomly to break the symmetry and prevent the model
 
 Randomly initializing the `weights` as i.i.d. $W \sim N(0,1)$:
 
+
 ```{r}
 w1 = matrix(rnorm(2*hidden_neurons), 
             nrow=hidden_neurons, 
@@ -251,9 +275,11 @@ w2 = matrix(rnorm(hidden_neurons + 1),
             ncol=(hidden_neurons + 1))
 ```
 
+
 The constant term $w_{k0}$ will shift the inflection point, and transform a linear function to a non-linear one. The weights are adjusted during the training process to minimize the error between the predicted and actual values.
 
 The model derives five new features by computing five different linear combinations of $X$, and then squashes each through an activation function $g(·)$ to transform it.
+
 
 ```{r}
 #| message: false
@@ -275,11 +301,13 @@ data %>%
             color="steelblue")
 ```
 
+
 ### FeedForward
 
 The meaning of `feedforward` is used to describe the process of moving the input data through the network to obtain the predicted output. The `feedforward` process is the first step in the training process of the neural network.
 
 Here is a function that computes the output of the model given the inputs: `data`, `weights`, and number of `activations`. It computes the output by multiplying the input data by the weights and applying the activation function to the result. It is a matrix multiplication (`%*%`), which is a common operation in unsupervised learning algorithms.
+
 
 ```{r}
 feedForward <- function(x, w1, w2, activation) {
@@ -296,6 +324,7 @@ feedForward <- function(x, w1, w2, activation) {
 }
 ```
 
+
 ### Derivative Activation Function
 
 Now, that we have the `feedforward` function, we need to compute the derivative of the activation function. The `backpropagation algorithm` multiplies the derivative of the activation function.
@@ -308,6 +337,7 @@ Here is a recap of the definition of derivative formula, which is applied any ti
 
 So, it is fundamental to define the derivative of the activation function needed for computing the gradient. For this example, we will use the derivative of the `sigmoid` function.
 
+
 ```{r}
 derivativeActivation <- function(x) {
   g = (sigmoid(x) * (1 - sigmoid(x)))
@@ -315,9 +345,11 @@ derivativeActivation <- function(x) {
 }
 ```
 
+
 ### Model Error
 
 Function for computing model error is the sum of squared errors (SSE) between the predicted and actual values.
+
 
 ```{r}
 modelError <- function(x, y, w1, w2, activation) {
@@ -329,6 +361,7 @@ modelError <- function(x, y, w1, w2, activation) {
 }
 ```
 
+
 ### Back-Propagation
 
 So, this is the time for computing the gradients.
@@ -338,6 +371,7 @@ So, this is the time for computing the gradients.
 The gradients are the **derivatives of the cost function** with respect to the weights. The `backpropagation algorithm` computes the gradient of the loss function with respect to the weights.
 
 The gradients are then used to update the weights using the `gradient descent algorithm`.
+
 
 ```{r}
 backPropagation <- function(x, y, w1, w2, 
@@ -372,9 +406,11 @@ backPropagation <- function(x, y, w1, w2,
 }
 ```
 
+
 ### Stochastic Gradient Descent
 
 Defining our `Stochastic Gradient Descent algorithm` which will adjust our weight matrices.
+
 
 ```{r}
 SGD <- function(x, y, w1, w2, activation, derivative, learnRate, epochs) {
@@ -398,9 +434,11 @@ SGD <- function(x, y, w1, w2, activation, derivative, learnRate, epochs) {
 }
 ```
 
+
 ### Modeling
 
 Running the SGD function to obtain our optimized model and parameters:
+
 
 ```{r}
 model <- SGD(x, y(x), w1, w2, 
@@ -410,15 +448,19 @@ model <- SGD(x, y(x), w1, w2,
              epochs = 200)
 ```
 
+
 Obtaining our adjusted SSE's for each epoch:
+
 
 ```{r}
 SSE <- model[[2]]
 ```
 
+
 ### Model Visualization
 
 Plotting the SSE from each epoch vs number of epochs
+
 
 ```{r}
 model_data <- tibble(x=seq(0, 200, 1), SSE)
@@ -433,16 +475,20 @@ ggplot(model_data,aes(x, SSE)) +
        x = "Epochs", y = "Error")
 ```
 
+
 ### Parameters optimization
 
 Extracting our `new parameters` from our model.
+
 
 ```{r}
 new_w1 <- model[[1]][[1]]
 new_w2 <- model[[1]][[2]]
 ```
 
+
 Comparing our `old weight` matrices against the `new ones`.
+
 
 ```{r}
 par(mfrow=c(1,2))
@@ -453,15 +499,19 @@ plot(w2,new_w2)
 abline(0,1)
 ```
 
+
 ### New Predictions
 
 Obtaining our new predictions using our optimized parameters.
+
 
 ```{r}
 y_pred <- feedForward(x, new_w1, new_w2, sigmoid)
 ```
 
+
 Plotting training data against our model predictions
+
 
 ```{r}
 data %>%
@@ -476,8 +526,10 @@ data %>%
        y="Responses")
 ```
 
+
 ## Resources
 
 1.  The code used for this example is customized from `tristanoprofetto` github repository: <https://github.com/tristanoprofetto/neural-networks/blob/main/ANN/Regressor/feedforward.R>
 2.  StatQuest: Neural Networks Pt. 1: Inside the Black Box <https://www.youtube.com/watch?v=CqOfi41LfDw>
 3.  Other-Resources: <https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464>
+
