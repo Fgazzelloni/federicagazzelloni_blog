@@ -3,11 +3,11 @@ project:
 
 website:
   title: "Federica Gazzelloni"
+  description: "Data Science"
   favicon: images/profile.png
   site-url: https://federicagazzelloni.com
-  description: "Data Science"
-  page-navigation: true
-  back-to-top-navigation: true
+  repo-url: https://github.com/fgazzelloni
+  repo-actions: [issue]
   cookie-consent:
     type: express
     style: headline
@@ -19,6 +19,9 @@ website:
     locale: en_US
   twitter-card:
     creator: "@fgazzelloni"
+  page-navigation: true
+  back-to-top-navigation: true 
+  reader-mode: true
   navbar:
     right:
       - text: "Home"
@@ -42,7 +45,7 @@ website:
       - icon: rss
         href: index.xml  
   page-footer:
-    left: "© Copyright 2024 Federica Gazzelloni. CC-BY-NC 4.0."
+    left: "© Copyright &copy; CC-By [Federica Gazzelloni](https://github.com/Fgazzelloni). CC-BY-NC 4.0."
     right: 
       - text: "This Blog is made with 💜 in [Quarto](https://quarto.org/)"
         href: "https://quarto.org"
@@ -56,12 +59,13 @@ format:
     smooth-scroll: true
     theme: sandstone
     css: styles.css
+    toc: true
     link-external-icon: false
     link-external-newwindow: true
     citations-hover: true
     footnotes-hover: true
-    toc: true
     code-link: true
+    code-overflow: wrap
     title-block-banner: true
     page-navigation: true
     back-to-top-navigation: true
@@ -69,7 +73,6 @@ format:
      # - text: |
       #    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js">
 
-         
 
 editor: visual
 execute: 

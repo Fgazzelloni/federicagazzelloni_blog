@@ -70,6 +70,14 @@ List of my talks
 
 {{< include about/talks/index.qmd >}}
 
+## R-Ladies
+
+::: {style="margin-top: 10px; face: bold;font-size: 2em; color: #343a40;"}
+List of my R-Ladies talks
+:::
+
+{{< include about/rladies/index.qmd >}}
+
 ## Papers
 
 ::: {style="margin-top: 10px; face: bold;font-size: 2em; color: #343a40;"}
