@@ -42,6 +42,8 @@ Coming soon!
 
 ### Health Metrics and the Spread of Infectious Diseases: Machine Learning Applications and Spatial Modelling Analysis with R
 
+🔗 <https://bookdown.org/fede_gazzelloni/hmsidR/>
+
 ##### Editor CRC Press - Chapman & Hall
 
 \

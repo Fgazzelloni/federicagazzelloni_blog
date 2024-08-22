@@ -16,7 +16,7 @@
 <height>144</height>
 <width>144</width>
 </image>
-<generator>quarto-1.5.52</generator>
+<generator>quarto-1.5.55</generator>
 <lastBuildDate>Thu, 27 Jun 2024 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Understanding Plain Vanilla - from Scratch</title>
@@ -6456,7 +6456,7 @@ font-style: inherit;">sysfonts</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">font_add_google</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/sysfonts/man/font_add_google.html">font_add_google</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -6474,7 +6474,7 @@ font-style: inherit;">showtext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">showtext_auto</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_auto.html">showtext_auto</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -6485,7 +6485,7 @@ font-style: inherit;">showtext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">showtext_opts</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_opts.html">showtext_opts</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>dpi<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -20842,7 +20842,7 @@ font-style: inherit;">showtext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">showtext_auto</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_auto.html">showtext_auto</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -20853,7 +20853,7 @@ font-style: inherit;">showtext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">showtext_opts</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_opts.html">showtext_opts</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>dpi<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -20864,7 +20864,7 @@ background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">font_add_google</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/sysfonts/man/font_add_google.html">font_add_google</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>name<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -20878,7 +20878,7 @@ font-style: inherit;">"pangolin"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>
-<p>Helpful tip is how to set the <strong>dpi</strong> option inside the <code>showtext::showtext_opts</code> function. This sets the size of your text, and it can be very useful when used in conjunction with the same option inside the <code>ggsave</code> function. If <code>showtxet</code> dpi is of a certain value, then you should set the <code>ggsave</code> dpi lower than that value to balance the text size outcome in your final .png file.</p>
+<p>Helpful tip is how to set the <strong>dpi</strong> option inside the <code><a href="https://rdrr.io/pkg/showtext/man/showtext_opts.html">showtext::showtext_opts</a></code> function. This sets the size of your text, and it can be very useful when used in conjunction with the same option inside the <code>ggsave</code> function. If <code>showtxet</code> dpi is of a certain value, then you should set the <code>ggsave</code> dpi lower than that value to balance the text size outcome in your final .png file.</p>
 <p>A perfect result comes from a nice balance trade-off between the <strong>dpi</strong> of the two functions.</p>
 <p>Let’s have a look at the data, there are 100000 observation and 24 variables referring to the various types of yarns, companies, names, yardage, weights, textures, ratings, …</p>
 <div class="cell">
@@ -23428,7 +23428,7 @@ font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a><
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;">ggsankey</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://github.com/davidsjoberg/ggsankey">ggsankey</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>
@@ -23442,7 +23442,7 @@ font-style: inherit;">&lt;-</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">df</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span></span>
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span><span class="op" style="color: #5E5E5E;
@@ -23459,7 +23459,7 @@ font-style: inherit;">tot</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># this is the remaining part of the 100 set of cubes in the waffle</span></span>
 <span>  <span class="fu" style="color: #4758AB;
@@ -23490,7 +23490,7 @@ font-style: inherit;">"values"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">arrange</span><span class="op" style="color: #5E5E5E;
@@ -23501,7 +23501,7 @@ font-style: inherit;">state_name</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span></span>
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">ggplot</span><span class="op" style="color: #5E5E5E;
@@ -23612,7 +23612,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">theme_sankey</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/ggsankey/man/theme_sankey.html">theme_sankey</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>base_size <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -23672,7 +23672,7 @@ font-style: inherit;">waffle</span></span></code></pre></div>
 </div>
 <section id="sankey" class="level4"><h4 class="anchored" data-anchor-id="sankey">Sankey</h4>
 <p>The purpose of this <strong>sankey</strong> is to show the differences among selected countries on number of airports and number of flights, from 2016 to 2022 for 6 selected countries.</p>
-<p>The {ggsankey} package uses an interesting function <code>make_long()</code> which transform provided object into a longer data frame, with vectors named as:</p>
+<p>The {ggsankey} package uses an interesting function <code><a href="https://rdrr.io/pkg/ggsankey/man/make_long.html">make_long()</a></code> which transform provided object into a longer data frame, with vectors named as:</p>
 <ul>
 <li>x, next_x, node, and next_node</li>
 </ul>
@@ -23686,7 +23686,7 @@ font-style: inherit;">&lt;-</span> <span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">df</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span></span>
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">left_join</span><span class="op" style="color: #5E5E5E;
@@ -23695,7 +23695,7 @@ font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">flights</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span> <span class="fu" style="color: #4758AB;
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">select</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -23713,7 +23713,7 @@ font-style: inherit;">"state_name"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span></span>
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">group_by</span><span class="op" style="color: #5E5E5E;
@@ -23726,7 +23726,7 @@ font-style: inherit;">tot</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span></span>
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">summarize</span><span class="op" style="color: #5E5E5E;
@@ -23749,7 +23749,7 @@ font-style: inherit;">"drop"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span></span>
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">ungroup</span><span class="op" style="color: #5E5E5E;
@@ -23758,7 +23758,7 @@ font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span></span>
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span><span class="op" style="color: #5E5E5E;
@@ -23830,7 +23830,7 @@ font-style: inherit;">)</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#count(tot_class)</span></span>
 <span>  <span class="fu" style="color: #4758AB;
@@ -23947,7 +23947,7 @@ font-style: inherit;">)</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span></span>
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span><span class="op" style="color: #5E5E5E;
@@ -23974,13 +23974,13 @@ font-style: inherit;">)</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span></span>
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># function to make the object ready to be used in the geom_sankey</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">make_long</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/ggsankey/man/make_long.html">make_long</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
@@ -23992,7 +23992,7 @@ font-style: inherit;">state_name</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
+font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">ggplot</span><span class="op" style="color: #5E5E5E;
@@ -24049,7 +24049,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">geom_sankey</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/ggsankey/man/geom_sankey.html">geom_sankey</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>flow.alpha <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -24072,7 +24072,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">geom_sankey_text</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/ggsankey/man/geom_sankey_label.html">geom_sankey_text</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>angle<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -24130,7 +24130,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span>  <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">theme_sankey</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/ggsankey/man/theme_sankey.html">theme_sankey</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>base_size <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -27717,7 +27717,7 @@ font-style: inherit;">showtext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">showtext_auto</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_auto.html">showtext_auto</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -27728,7 +27728,7 @@ font-style: inherit;">showtext</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">showtext_opts</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/showtext/man/showtext_opts.html">showtext_opts</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>dpi<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -27740,7 +27740,7 @@ font-style: inherit;">)</span></span>
 <span></span>
 <span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">font_add_google</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://rdrr.io/pkg/sysfonts/man/font_add_google.html">font_add_google</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span>name<span class="op" style="color: #5E5E5E;
 background-color: null;
