@@ -1,5 +1,5 @@
 ---
-title: "Infectious R-package"
+title: "Measuring Health Performance"
 excerpt: "Machine learning models"
 date: 2023-03-14
 draft: false
@@ -8,15 +8,13 @@ series:
 categories: 
 layout: single
 page-layout: full
-execute: 
-  eval: false
 ---
 
 ## Overview
 
 ::: columns
 ::: {.column width="80%"}
-These days measuring performances is very appropriate for many different topics. Thinking about health and the fast changing environments, including climate changes, require a ready tool for identifying possible future outcomes. On health, interesting simple metrics are used to classify the state of health of a population, so to be comparable with other near and far.
+These days measuring performance is very appropriate for many different topics. Thinking about health and the fast changing environments, including climate changes, require a ready tool for identifying possible future outcomes. On health, interesting simple metrics are used to classify the state of health of a population, so to be comparable with other near and far.
 
 Here is a spec of my latest project where I am collecting all that I learned since the start of the Covid19 pandemic on a summary of the techniques used for measuring the health status of a population when in conjunction with an extreme event. Many tools are available and ready to use for the most exceptional purpose someone might had in mind, and I had difficulties choosing one on top of the other. But, why choosing if you can combine them?
 :::
@@ -36,15 +34,18 @@ The [WHO](https://bit.ly/3mU4tbJ) constitution states:
 
 An important implication of this definition is that mental health is more than just the absence of mental disorders or disabilities.
 
-Let's load the {infectious} package, still at its very early stages; a development version can be installed from GitHub:
+Let's load the {hmsidwR} package, still at its very early stages; a development version can be installed from GitHub:
 
-```{r eval=FALSE}
-devtools::install_github("Fgazzelloni/infectious")
+```{r}
+#| eval: false
+devtools::install_github("Fgazzelloni/hmsidwR")
 ```
 
-```{r warning=FALSE,message=FALSE}
+```{r}
+#| warning: false
+#| message: false
 library(tidyverse)
-library(infectious)
+library(hmsidwR)
 ```
 
 It contains some interesting datasets:
@@ -52,18 +53,19 @@ It contains some interesting datasets:
 The Global life tables: **Glifetables**. A dataset provided by the **World Health Organization (WHO)**. [Global Health Observatory data repository](https://apps.who.int/gho/data/)
 
 ```{r}
-infectious::Glifetables %>% head
+#| eval: false
+?hmsidwR
 ```
 
 And the Germany lung cancer: **Germany_lungc**. A dataset provided by the **Institute for Health Metrics and Evaluation (IHME)**. [GBD Results](https://bit.ly/3YMfol8)
 
 ```{r}
-infectious::Germany_lungc %>% head
+hmsidwR::germany_lungc %>% head
 ```
 
 ```{r}
-Germany_lungc %>%
-  ggplot(aes(age_group, val, fill = sex)) +
+germany_lungc %>%
+  ggplot(aes(age, dx, fill = sex)) +
   geom_col() +
   facet_wrap( ~ sex) +
   scale_x_discrete(breaks = c("35-39", "65-69", "85+")) +
@@ -78,17 +80,16 @@ The combination of this to piece of information, the life expectancy and the exp
 In this case for Germany data is available from the age class 10-14, if we would like to improve this analysis it required some missing value imputation, through data feature engineering.
 
 ```{r}
-yll <- Germany_lungc %>%
+yll <- germany_lungc %>%
   full_join(
-    Glifetables %>%
+    gho_lifetables %>%
       filter(year == 2019,
-             indicator == "ex - expectation of life at age x") %>%
+             indicator == "ex") %>%
       rename(life_expectancy = value),
-    by = c("age_group", "sex")
+    by = c("age", "sex")
   ) %>%
-  select(-upper,-lower,-year,-indicator) %>%
-  group_by(age_group) %>%
-  mutate(yll = val * life_expectancy) %>%
+  group_by(age, sex) %>%
+  reframe(yll = dx * life_expectancy) %>%
   filter(!is.na(yll))
 
 yll %>%
@@ -97,7 +98,7 @@ yll %>%
 
 ```{r}
 yll %>%
-  ggplot(aes(age_group, yll, fill = sex)) +
+  ggplot(aes(age, yll, fill = sex)) +
   geom_col() +
   facet_wrap( ~ sex) +
   scale_x_discrete(breaks = c("35-39", "65-69", "85+")) +
@@ -113,7 +114,7 @@ source:
 
 -   [disability weights](https://ghdx.healthdata.org/record/ihme-data/gbd-2019-disability-weights)
 
-Then, the sum of the YLL and the YLD provides the overall value of the DALY which is the key metric used to state the health of a population, and it is used to make comparisons among population of different countries, as well as bein used to provide a comprehensive assessment of the impact of disease and injury on a population, and help prioritize public health interventions and evaluate the effectiveness of public health programs.
+Then, the sum of the YLL and the YLD provides the overall value of the DALY which is the key metric used to state the health of a population, and it is used to make comparisons among population of different countries, as well as begin used to provide a comprehensive assessment of the impact of disease and injury on a population, and help prioritize public health interventions and evaluate the effectiveness of public health programs.
 
 Let's now have a look at how **infectious diseases** can affect the DALYs. The COVID-19 pandemic has had a significant impact on DALYs metrics worldwide.
 
@@ -133,16 +134,19 @@ According to the Global Health Data Exchange (GHDx), the estimated global DALY r
 
 Import data on global burden of disease (GBD) for a given year, here I already downloaded the cvs file and save it as RData.
 
-```{r eval=FALSE,echo=FALSE}
-df_gbd_2019 <- read_csv("~/Documents/R/GBD/IHME/DALY/IHME-GBD_2019_DATA-b377ea9a-1.csv")
-
+```{r}
+#| eval: false
+#| echo: false
+# df_gbd_2019 <- read_csv("~/Documents/R/GBD/IHME/DALY/IHME-GBD_2019_DATA-b377ea9a-1.csv")
 # save(df_gbd_2019,file = "data/df_gbd_2019.RData")
 ```
 
 ```{r}
+#| echo: false
 load("data/df_gbd_2019.RData")
+```
 
-
+```{r}
 # Subset data to only include 
 df_dalys_2019 <- df_gbd_2019 %>%
   filter(location_name == "Global",
@@ -167,16 +171,19 @@ total_dalys_2019
 
 Import data on infectious diseases, and select Global, Ebola, both sex.
 
-```{r eval=FALSE,echo=FALSE}
-infectious_diseases <- read_csv("~/Documents/R/GBD/IHME/DALY/infectious_diseases.csv")
-
+```{r}
+#| eval: false
+#| echo: false
+# infectious_diseases <- read_csv("~/Documents/R/GBD/IHME/DALY/infectious_diseases.csv")
 # save(infectious_diseases,file = "data/infectious_diseases.RData")
 ```
 
 ```{r}
+#| echo: false
 load("data/infectious_diseases.RData")
+```
 
-
+```{r}
 ebola_global_2019 <- infectious_diseases %>%
   filter(location_name == "Global",
          sex_name == "Both",
