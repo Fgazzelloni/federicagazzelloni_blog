@@ -46,15 +46,19 @@ format:
 ---
 
 ::: column-body-outset
-*"Hey there, welcome to Federica's Data Science Journey! This website is my personal platform where I share all things data science. As a statistician and actuary with a passion for advanced statistical methods, I'm on a mission to explore the fascinating world of data modeling, public health, and infectious diseases."*
+*"Welcome to my Data Science Hub! This platform is dedicated to sharing insights, resources, and projects in data science. With expertise in advanced statistical methods, data modeling, and public health analytics, I focus on topics like health metrics and the dynamics of infectious diseases."*
 
 ## News: My Upcoming Book Is Now Online!
 
-I’m thrilled to announce that my book is now available online! 
+I’m thrilled to announce that my book is now available online!
 
-Title: **Health Metrics and the Spread of Infectious Diseases: Machine Learning Application and Spatial modeling Analysis with R** 
+Title: **Health Metrics and the Spread of Infectious Diseases: Machine Learning Application and Spatial modelling Analysis with R**
 
-🎉 Check it out here: <https://bookdown.org/fede_gazzelloni/hmsidR/>
+🎉 Check it out here:
+
+- <https://bookdown.org/fede_gazzelloni/hmsidR/>
+- <https://fgazzelloni.quarto.pub/hmsidr/>
+
 
 It’s been an incredible journey, and while the book is nearing its completion, I feel a mix of emotions—both the excitement of sharing it with you and a touch of sadness that this creative process is coming to an end. 😌
 
@@ -73,11 +77,11 @@ Happy reading! 📚✨
 
 <br>
 
-::: column-page
+:::: column-page
 ::: {style="font-size: 2.5em; face: bold; color: #343a40;"}
 Latest content
 :::
-:::
+::::
 
 ```{=html}
 <script>new TypeIt(".multipleStrings", {
@@ -88,4 +92,5 @@ Latest content
   }).go();
 </script>
 ```
+
 <link rel="me" href="https://fosstodon.org/@fgazzelloni">

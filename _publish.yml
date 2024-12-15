@@ -1,7 +1,4 @@
 - source: project
-  quarto-pub:
-    - id: 82e7f658-5759-49be-bfb2-1d81fa74d0c4
-      url: 'https://fgazzelloni.quarto.pub/blog'
   netlify:
     - id: 2e70a0f4-dcb1-40bc-a3dc-bed294c01e3f
       url: 'https://federicagazzelloni.com'

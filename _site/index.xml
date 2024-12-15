@@ -16,7 +16,7 @@
 <height>144</height>
 <width>144</width>
 </image>
-<generator>quarto-1.5.55</generator>
+<generator>quarto-1.6.32</generator>
 <lastBuildDate>Thu, 27 Jun 2024 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Understanding Plain Vanilla - from Scratch</title>
@@ -2700,6 +2700,9 @@ font-style: inherit;">)</span></span></code></pre></div>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Health Metrics</category>
+  <category>Data Science</category>
+  <category>Machine Learning</category>
   <guid>https://federicagazzelloni.com/posts/proj/projects/hmsidwR/</guid>
   <pubDate>Sat, 13 Apr 2024 22:00:00 GMT</pubDate>
 </item>
@@ -19465,7 +19468,7 @@ font-style: inherit;"><a href="https://rdrr.io/r/base/library.html">library</a><
 background-color: null;
 font-style: inherit;">(</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;"><a href="http://imbs-hl.github.io/ranger/">ranger</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://imbs-hl.github.io/ranger/">ranger</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span>
 <span><span class="co" style="color: #5E5E5E;
@@ -19722,7 +19725,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 <p>And here is a spec of the two systems in comparison for the <strong>oregonfrogs</strong> data:</p>
 <section id="set-a-task" class="level3"><h3 class="anchored" data-anchor-id="set-a-task">Set a Task</h3>
 <p>The <strong>mlr3 package</strong> provides a <code>task()</code> function, which allows to set the data to use inside the selected model.</p>
-<p>More specifically, here is used <code>mlr3spatiotempcv::TaskClassifST()</code> specific for <strong>spatial classification</strong> modeling tasks.</p>
+<p>More specifically, here is used <code><a href="https://mlr3spatiotempcv.mlr-org.com/reference/TaskClassifST.html">mlr3spatiotempcv::TaskClassifST()</a></code> specific for <strong>spatial classification</strong> modeling tasks.</p>
 <p>Among the function’s <em>options</em>, there are:</p>
 <ul>
 <li>
@@ -19744,7 +19747,7 @@ font-style: inherit;">mlr3spatiotempcv</span><span class="fu" style="color: #475
 background-color: null;
 font-style: inherit;">::</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;">TaskClassifST</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://mlr3spatiotempcv.mlr-org.com/reference/TaskClassifST.html">TaskClassifST</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -20778,7 +20781,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 
 
 </section></section></section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <category>machine learning</category>
+  <category>Machine Learning</category>
   <category>mlr3</category>
   <guid>https://federicagazzelloni.com/posts/proj/projects/oregonfrogs/</guid>
   <pubDate>Sat, 29 Oct 2022 22:00:00 GMT</pubDate>

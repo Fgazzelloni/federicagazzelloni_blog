@@ -7,13 +7,16 @@ draft: false
 images: 
 series:
 categories: 
+  - Health Metrics
+  - Data Science
+  - Machine Learning
 layout: single
 page-layout: full
 ---
 
 ## Overview
 
-::: columns
+::::: columns
 ::: {.column width="80%"}
 This is the package that covers all datasets used in the **Health Metrics and the Spread of Infectious Diseases: Machine Learning Application and Spatial Modelling Analysis with R** book.
 
@@ -27,7 +30,8 @@ VIGNETTE: <https://fgazzelloni.github.io/hmsidwR/>
 ::: {.column width="20%"}
 ![](featured.png)
 :::
-:::
+:::::
+
 \
 "It’s been an incredible journey, and while the book is nearing its completion, I feel a mix of emotions—both the excitement of sharing it with you and a touch of sadness that this creative process is coming to an end. 😌
 
