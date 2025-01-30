@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Federica Gazzelloni"
+  title: "Federica Gazzelloni's Website"
   description: "Data Science"
   favicon: images/profile.png
   site-url: https://federicagazzelloni.com
@@ -11,7 +11,7 @@ website:
   cookie-consent:
     type: express
     style: headline
-    palette: dark
+    palette: light
   google-analytics:
     tracking-id: "G-119NQB71C8"
     anonymize-ip: true
@@ -22,16 +22,28 @@ website:
   page-navigation: true
   back-to-top-navigation: true 
   reader-mode: true
-  navbar:
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: "**Health Metrics and the Spread of Infectious Diseases** is now available online! [Check it out](https://bookdown.org/fede_gazzelloni/hmsidR/)"
+    type: danger
+    position: below-navbar
+  #body-header: | 
+  #  This page brought to you by <https://federicagazzelloni.com>
+  #margin-header: |
+  #  ![FG](/images/profile.png)
+  body-footer: | 
+    Contacts and Information: <fede.gazzelloni@gmail.com>
+  #margin-footer: |
+  #  ![FG](/images/profile.png)  
+  navbar: 
     right:
-      - text: "Home"
-        href: index.html
       - text: "Data Visualization"
-        href: posts/dataviz/index.qmd
+        href: content/dataviz/index.qmd
       - text: "Statistics"
-        href: posts/stats/index.qmd
+        href: content/stats/index.qmd
       - text: "Projects"
-        href: posts/proj/index.qmd
+        href: content/proj/index.qmd
      # - text: "R-Ladies"
      #   href: posts/rladies/index.qmd
       - text:  "About"
@@ -47,7 +59,7 @@ website:
   page-footer:
     left: "© Copyright &copy; CC-By [Federica Gazzelloni](https://github.com/Fgazzelloni). CC-BY-NC 4.0."
     right: 
-      - text: "This Blog is made with 💜 in [Quarto](https://quarto.org/)"
+      - text: "This Blog is made with 💜 in Quarto"
         href: "https://quarto.org"
       - icon: github
         href: https://github.com/fgazzelloni

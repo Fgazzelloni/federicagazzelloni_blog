@@ -1,35 +1,12 @@
 ---
 title: </script><p class= "multipleStrings" >
-image: images/homepage.png
-about: 
-  template: trestles
-  image-width: 25em
-  image-shape: round
-  links: 
-    - text: LinkedIn
-      url: "https://linkedin.com/in/federicagazzelloni"
-    - text: Twitter (X)
-      icon: twitter
-      url: "https://twitter.com/FGazzelloni"  
-    - text: 🦋 Bluesky
-      url: "https://bsky.app/profile/fgazzelloni.bsky.social"
-    - text: Mastodon
-      icon: mastodon
-      url:  "https://fosstodon.org/@fgazzelloni"
-    - text: GitHub
-      icon: github
-      url: "https://github.com/fgazzelloni"
-    - text: Youtube
-      icon: youtube
-      url: "https://www.youtube.com/@federicagazzelloni"  
-    - text: Email
-      url: "mailto:fede.gazzelloni@gmail.com" 
-    - text: "{{< ai orcid size=xl >}}"
-      href: https://orcid.org/0000-0002-4285-611X
-    - text: "{{< ai google-scholar size=xl >}}"
-      href: https://scholar.google.com/citations?hl=en&user=Xes0-r0AAAAJ  
+#image: images/homepage2.png
+#about: 
+#  template: trestles
+#  image-width: 28em
+#  image-shape: rectangle
 listing:
-  contents: posts
+  contents: content
   sort: "date desc"
   type: default
   image-height: "200"
@@ -45,7 +22,21 @@ format:
           <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js">
 ---
 
-::: column-body-outset
+:::: column-page
+
+:::: {.columns}
+
+::: {.column}
+
+```{=html}
+<video width="80%" height="auto" autoplay loop muted playsinline>
+  <source src="images/video-homepage.mp4" type="video/mp4">
+</video>
+```
+
+:::
+
+::: {.column}
 *"Welcome to my Data Science Hub! This platform is dedicated to sharing insights, resources, and projects in data science. With expertise in advanced statistical methods, data modeling, and public health analytics, I focus on topics like health metrics and the dynamics of infectious diseases."*
 
 ## News: My Upcoming Book Is Now Online!
@@ -56,9 +47,8 @@ Title: **Health Metrics and the Spread of Infectious Diseases: Machine Learning 
 
 🎉 Check it out here:
 
-- <https://bookdown.org/fede_gazzelloni/hmsidR/>
-- <https://fgazzelloni.quarto.pub/hmsidr/>
-
+-   <https://bookdown.org/fede_gazzelloni/hmsidR/>
+-   <https://fgazzelloni.quarto.pub/hmsidr/>
 
 It’s been an incredible journey, and while the book is nearing its completion, I feel a mix of emotions—both the excitement of sharing it with you and a touch of sadness that this creative process is coming to an end. 😌
 
@@ -75,6 +65,10 @@ Thank you for being a part of this journey. I hope the book serves as a valuable
 Happy reading! 📚✨
 :::
 
+::::
+
+:::::
+
 <br>
 
 :::: column-page
@@ -85,7 +79,7 @@ Latest content
 
 ```{=html}
 <script>new TypeIt(".multipleStrings", {
-    strings: ["Welcome to my Blog 💡", "Here you'll find all things Data Science 🕵️️", "Stay tuned for the latest developments 🔍"],
+    strings: ["Welcome to my Website 💡", "New Book: Health Metrics and the Spread of Infectious Diseases️ 🦠", "Stay tuned for the latest developments 🔍"],
     breakLines: false,
     loop: true,
     speed: 50

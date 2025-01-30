@@ -5,28 +5,21 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>Federica Gazzelloni</title>
+<title>Federica Gazzelloni&#39;s Website</title>
 <link>https://federicagazzelloni.com/</link>
 <atom:link href="https://federicagazzelloni.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Data Science</description>
-<image>
-<url>https://federicagazzelloni.com/images/homepage.png</url>
-<title>Federica Gazzelloni</title>
-<link>https://federicagazzelloni.com/</link>
-<height>144</height>
-<width>144</width>
-</image>
 <generator>quarto-1.6.32</generator>
 <lastBuildDate>Thu, 27 Jun 2024 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Understanding Plain Vanilla - from Scratch</title>
-  <link>https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/</link>
+  <link>https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>In the world of artificial intelligence, understanding the fundamentals of neural networks is essential. One of the simplest yet powerful architectures is the <strong>Artificial Neural Network (ANN) with a single hidden layer, often referred to as a “plain vanilla” network</strong>. This blog post aims to provide a comprehensive guide to building such a network from scratch, focusing on key concepts like activation functions, weights, and the backpropagation algorithm outside the library boxes.</p>
 </section><section id="example-of-construction-of-plain-vanilla-network-architecture" class="level2"><h2 class="anchored" data-anchor-id="example-of-construction-of-plain-vanilla-network-architecture">Example of construction of Plain vanilla network architecture</h2>
 <p>ANN’s (Artificial Neural Networks) is the simplest implementation of deep learning model architectures that mimic the human brain’s neural network. The simplest form of ANN is a single-layer network, also known as a “plain vanilla” network. This network consists of an input layer, a hidden layer, and an output layer. The hidden layer transforms the input data into a new set of features, which are then used to predict the response variable.</p>
 <center>
-<img src="https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/images/10_02_single-layer.png" class="img-fluid" width="400">
+<img src="https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/images/10_02_single-layer.png" class="img-fluid" width="400">
 </center>
 <p>In the image above, we have some predictors <img src="https://latex.codecogs.com/png.latex?x_i"> that are fed into the hidden layer, which then transforms them into a new set of features <img src="https://latex.codecogs.com/png.latex?h_k(x)">, which are then used to predict the response variable <img src="https://latex.codecogs.com/png.latex?y">.</p>
 <div class="cell">
@@ -309,7 +302,7 @@ background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="576"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="576"></p>
 <figcaption>Synthetic Data</figcaption></figure>
 </div>
 </div>
@@ -687,19 +680,19 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>Sigmoid function</figcaption></figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-11-2.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-11-2.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>ReLU function</figcaption></figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-11-3.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-11-3.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>SoftPlus function</figcaption></figure>
 </div>
 </div>
@@ -800,7 +793,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="576"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="576"></p>
 <figcaption>Sigmoid vs ReLU</figcaption></figure>
 </div>
 </div>
@@ -1019,7 +1012,7 @@ background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>In this figure is shown the attempt of the ‘linear’ and ‘sigmoid’ functions to fit our original data. The final model function, able to replicate the original pattern is the result of a continous adaptation and re-calibration of the coeffcients in the model.</figcaption></figure>
 </div>
 </div>
@@ -1214,7 +1207,7 @@ font-style: inherit;">}</span></span></code></pre></div>
 </blockquote>
 <p>Here is a recap of the definition of derivative formula, which is applied any time the output released by the activation function is met in the network. And so, a new minimum is found. It will be more clear through the end of the post.</p>
 <center>
-<img src="https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/images/10_derivative.png" class="img-fluid" width="400">
+<img src="https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/images/10_derivative.png" class="img-fluid" width="400">
 </center>
 <p>So, it is fundamental to define the derivative of the activation function needed for computing the gradient. For this example, we will use the derivative of the <code>sigmoid</code> function.</p>
 <div class="cell">
@@ -2352,7 +2345,7 @@ background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -2475,7 +2468,7 @@ background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -2641,7 +2634,7 @@ background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/index_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -2657,18 +2650,18 @@ font-style: inherit;">)</span></span></code></pre></div>
 </ol>
 
 
-</section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+</section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>rstats</category>
   <category>modeling</category>
   <category>machine-learning</category>
   <category>artificial-neural-networks</category>
-  <guid>https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/</guid>
+  <guid>https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/</guid>
   <pubDate>Thu, 27 Jun 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://federicagazzelloni.com/posts/stats/statistics/plain_vanilla/featured.png" medium="image" type="image/png" height="104" width="144"/>
+  <media:content url="https://federicagazzelloni.com/content/stats/statistics/plain_vanilla/featured.png" medium="image" type="image/png" height="104" width="144"/>
 </item>
 <item>
   <title>hmsidwR R-package</title>
-  <link>https://federicagazzelloni.com/posts/proj/projects/hmsidwR/</link>
+  <link>https://federicagazzelloni.com/content/proj/projects/hmsidwR/</link>
   <description><![CDATA[ 
 
 
@@ -2684,7 +2677,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 <p>GITHUB: <a href="https://github.com/Fgazzelloni/hmsidwR" class="uri">https://github.com/Fgazzelloni/hmsidwR</a></p>
 <p>VIGNETTE: <a href="https://fgazzelloni.github.io/hmsidwR/" class="uri">https://fgazzelloni.github.io/hmsidwR/</a></p>
 </div><div class="column" style="width:20%;">
-<p><img src="https://federicagazzelloni.com/posts/proj/projects/hmsidwR/featured.png" class="img-fluid"></p>
+<p><img src="https://federicagazzelloni.com/content/proj/projects/hmsidwR/featured.png" class="img-fluid"></p>
 </div>
 </div>
 <p><br>
@@ -2699,16 +2692,16 @@ font-style: inherit;">)</span></span></code></pre></div>
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+<p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>Health Metrics</category>
   <category>Data Science</category>
   <category>Machine Learning</category>
-  <guid>https://federicagazzelloni.com/posts/proj/projects/hmsidwR/</guid>
+  <guid>https://federicagazzelloni.com/content/proj/projects/hmsidwR/</guid>
   <pubDate>Sat, 13 Apr 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>R-Ladies Events Stats</title>
-  <link>https://federicagazzelloni.com/posts/stats/statistics/rladies/</link>
+  <link>https://federicagazzelloni.com/content/stats/statistics/rladies/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <div class="columns">
 <div class="column" style="width:80%;">
@@ -2717,7 +2710,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 events &lt;- purrr::map(urlname,get_events)
 dat &lt;- dplyr::bind_rows(events)</code></pre>
 </div><div class="column" style="width:20%;">
-<p><img src="https://federicagazzelloni.com/posts/stats/statistics/rladies/featured.png" class="img-fluid"></p>
+<p><img src="https://federicagazzelloni.com/content/stats/statistics/rladies/featured.png" class="img-fluid"></p>
 </div>
 </div>
 <p>Load necessary libraries</p>
@@ -3028,7 +3021,7 @@ font-style: inherit;">jsonlite</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/jsonlite/man/fromJSON.html">fromJSON</a></span><span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://jeroen.r-universe.dev/jsonlite/reference/fromJSON.html">fromJSON</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">(</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -4308,14 +4301,14 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 
 
-</section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+</section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>text-analysis</category>
-  <guid>https://federicagazzelloni.com/posts/stats/statistics/rladies/</guid>
+  <guid>https://federicagazzelloni.com/content/stats/statistics/rladies/</guid>
   <pubDate>Mon, 11 Mar 2024 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>How does geom_smooth() make predictions</title>
-  <link>https://federicagazzelloni.com/posts/stats/statistics/linear_prediction/</link>
+  <link>https://federicagazzelloni.com/content/stats/statistics/linear_prediction/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <div class="columns">
 <div class="column" style="width:80%;">
@@ -4514,7 +4507,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>Deaths due to Cholera in London (1849)</figcaption></figure>
 </div>
 </div>
@@ -4643,7 +4636,7 @@ background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -4827,7 +4820,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -4955,7 +4948,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -5027,7 +5020,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -5093,7 +5086,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -5203,7 +5196,7 @@ background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -5421,7 +5414,7 @@ font-style: inherit;">plot</span></span></code></pre></div>
 </div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>Cholera Deaths explanined by London Districts Population (1849)</figcaption></figure>
 </div>
 </div>
@@ -5669,7 +5662,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/linear_prediction/index_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -5678,18 +5671,18 @@ font-style: inherit;">)</span></span></code></pre></div>
 <hr>
 
 
-</section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+</section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>rstats</category>
   <category>modeling</category>
   <category>linear regression</category>
   <category>geom_smooth</category>
-  <guid>https://federicagazzelloni.com/posts/stats/statistics/linear_prediction/</guid>
+  <guid>https://federicagazzelloni.com/content/stats/statistics/linear_prediction/</guid>
   <pubDate>Sun, 25 Feb 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://federicagazzelloni.com/posts/stats/statistics/linear_prediction/featured.png" medium="image" type="image/png" height="103" width="144"/>
+  <media:content url="https://federicagazzelloni.com/content/stats/statistics/linear_prediction/featured.png" medium="image" type="image/png" height="103" width="144"/>
 </item>
 <item>
   <title>#DuboisChallenge2024 Challenge 01</title>
-  <link>https://federicagazzelloni.com/posts/dataviz/data_visualization/dubois2024/challenge01/</link>
+  <link>https://federicagazzelloni.com/content/dataviz/data_visualization/dubois2024/challenge01/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>My contributions to the #DuboisChallenge2024.</p>
 <div class="columns">
@@ -7910,14 +7903,14 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 
 
-</section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>https://federicagazzelloni.com/posts/dataviz/data_visualization/dubois2024/challenge01/</guid>
+</section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>https://federicagazzelloni.com/content/dataviz/data_visualization/dubois2024/challenge01/</guid>
   <pubDate>Sun, 04 Feb 2024 23:00:00 GMT</pubDate>
   <media:content url="https://raw.githubusercontent.com/Fgazzelloni/DuboisChallenge2024_FG/main/2024/challenge01/challenge01.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Understanding Simpson’s Paradox: A Simple Explanation</title>
-  <link>https://federicagazzelloni.com/posts/stats/statistics/simpson_paradox/</link>
+  <link>https://federicagazzelloni.com/content/stats/statistics/simpson_paradox/</link>
   <description><![CDATA[ <center>
 <img src="https://media.giphy.com/media/aQt5QYJm0FZo4/giphy.gif" class="img-fluid">
 </center>
@@ -8349,7 +8342,7 @@ background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/simpson_paradox/index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/simpson_paradox/index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -8358,19 +8351,19 @@ font-style: inherit;">)</span></span></code></pre></div>
 <p>The key takeaway is that understanding causation is crucial, and Simpson’s Paradox emphasizes the need to consider confounding factors when interpreting data.</p>
 
 
-</section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+</section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>rstats</category>
   <category>modeling</category>
-  <guid>https://federicagazzelloni.com/posts/stats/statistics/simpson_paradox/</guid>
+  <guid>https://federicagazzelloni.com/content/stats/statistics/simpson_paradox/</guid>
   <pubDate>Thu, 11 Jan 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://federicagazzelloni.com/posts/stats/statistics/simpson_paradox/featured.png" medium="image" type="image/png" height="96" width="144"/>
+  <media:content url="https://federicagazzelloni.com/content/stats/statistics/simpson_paradox/featured.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
   <title>Epidemic transition metrics of HIV infections estimation</title>
-  <link>https://federicagazzelloni.com/posts/dataviz/data_visualization/usecases/hiv/</link>
+  <link>https://federicagazzelloni.com/content/dataviz/data_visualization/usecases/hiv/</link>
   <description><![CDATA[ <section id="overview" class="level1"><h1>Overview</h1>
 <p>HIV infections data is from the <code>aidsinfo.unaids.org</code>. The data contains Global values from 2010 to 2022 for <code>HIV estimate</code>, <code>HIV incidence of mortality</code>, <code>HIV prevalence</code>, and <code>HIV deaths</code>.</p>
-<p><img src="https://federicagazzelloni.com/posts/dataviz/data_visualization/usecases/hiv/featured.png" class="img-fluid"></p>
+<p><img src="https://federicagazzelloni.com/content/dataviz/data_visualization/usecases/hiv/featured.png" class="img-fluid"></p>
 <p>National data for the 2010 and 2020 are included in this dataset.</p>
 <p>The following is estimating magnitude of change along 10 years time-frame from 2010 to 2020 of HIV infections for all countries with available data.</p>
 <p>Load necessary libraries.</p>
@@ -10722,17 +10715,17 @@ font-style: inherit;">)</span> </span></code></pre></div>
 </ul>
 
 
-</section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>https://federicagazzelloni.com/posts/dataviz/data_visualization/usecases/hiv/</guid>
+</section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>https://federicagazzelloni.com/content/dataviz/data_visualization/usecases/hiv/</guid>
   <pubDate>Sun, 12 Nov 2023 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>How to get started with ggmap</title>
-  <link>https://federicagazzelloni.com/posts/dataviz/data_visualization/ggmap/</link>
+  <link>https://federicagazzelloni.com/content/dataviz/data_visualization/ggmap/</link>
   <description><![CDATA[ <section id="overview" class="level1"><h1>Overview</h1>
 <p>For this <code>#30DayMapChallenge 2023 Day6 - Asia</code> let’s explore the Population estimation for Regions and major Cities, from different sources.</p>
 <p>Also, we will be looking at how to get started with <a href="https://github.com/dkahle/ggmap">ggmap</a> to find the <code>geocodes</code> for the major cities in Asia.</p>
-<p><img src="https://federicagazzelloni.com/posts/dataviz/data_visualization/ggmap/featured.png" class="img-fluid"></p>
+<p><img src="https://federicagazzelloni.com/content/dataviz/data_visualization/ggmap/featured.png" class="img-fluid"></p>
 <section id="asia-cities-and-population-by-wikipedia.org" class="level2"><h2 class="anchored" data-anchor-id="asia-cities-and-population-by-wikipedia.org">Asia Cities and Population by Wikipedia.org</h2>
 <p>Let’s scrap the table of the Major Cities in Asia along with the Population level from <code>Wikipedia.org</code>.</p>
 <p>Load the first set of libraries:</p>
@@ -12636,18 +12629,18 @@ font-style: inherit;">)</span></span></code></pre></div>
 </ul>
 
 
-</section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>https://federicagazzelloni.com/posts/dataviz/data_visualization/ggmap/</guid>
+</section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>https://federicagazzelloni.com/content/dataviz/data_visualization/ggmap/</guid>
   <pubDate>Mon, 06 Nov 2023 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>The case of Malaria</title>
-  <link>https://federicagazzelloni.com/posts/dataviz/data_visualization/usecases/malaria/</link>
+  <link>https://federicagazzelloni.com/content/dataviz/data_visualization/usecases/malaria/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <blockquote class="blockquote">
 <p>August 18, 2023 “A case of locally acquired #malaria has been confirmed in Maryland, Washington, D.C., area. Nine cases have been reported this summer in Florida and Texas, the first in the US in 20 years, according to the US Centers for Disease Control and Prevention. #epidemics” <sup>1</sup></p>
 </blockquote>
-<p><img src="https://federicagazzelloni.com/posts/dataviz/data_visualization/usecases/malaria/featured.png" class="img-fluid"></p>
+<p><img src="https://federicagazzelloni.com/content/dataviz/data_visualization/usecases/malaria/featured.png" class="img-fluid"></p>
 <p>The Malaria case is somehow a concerning case, eradicated all over the World except for some areas in the Africa’s continent, the highlight of cases of domestic origins are considered epidemics.</p>
 <p>Let’s dig on some data about Malaria.</p>
 </section><section id="who-malaria-map" class="level2"><h2 class="anchored" data-anchor-id="who-malaria-map">WHO Malaria Map</h2>
@@ -16205,24 +16198,24 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 
 
-</section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+</section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 <ol>
 <li id="fn1"><p>worldbank_data source: <a href="https://databank.worldbank.org/reports.aspx?source=2&amp;series=SH.MLR.INCD.P3&amp;country=#" class="uri">https://databank.worldbank.org/reports.aspx?source=2&amp;series=SH.MLR.INCD.P3&amp;country=#</a>↩︎</p></li>
 <li id="fn2"><p>worldbank_data source: <a href="https://databank.worldbank.org/reports.aspx?source=2&amp;series=SH.MLR.INCD.P3&amp;country=#" class="uri">https://databank.worldbank.org/reports.aspx?source=2&amp;series=SH.MLR.INCD.P3&amp;country=#</a>↩︎</p></li>
 <li id="fn3"><p>worldbank_data source: <a href="https://databank.worldbank.org/reports.aspx?source=2&amp;series=SH.MLR.INCD.P3&amp;country=#" class="uri">https://databank.worldbank.org/reports.aspx?source=2&amp;series=SH.MLR.INCD.P3&amp;country=#</a>↩︎</p></li>
 </ol></section></div> ]]></description>
-  <guid>https://federicagazzelloni.com/posts/dataviz/data_visualization/usecases/malaria/</guid>
+  <guid>https://federicagazzelloni.com/content/dataviz/data_visualization/usecases/malaria/</guid>
   <pubDate>Sat, 26 Aug 2023 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Bayesian Statistics model comparison</title>
-  <link>https://federicagazzelloni.com/posts/stats/statistics/bayesian_statistics/</link>
+  <link>https://federicagazzelloni.com/content/stats/statistics/bayesian_statistics/</link>
   <description><![CDATA[ <section id="overview" class="level1"><h1>Overview</h1>
 <div class="columns">
 <div class="column" style="width:60%;">
 <p>In this post I’ll go through some differences between <em>Bayesian statistical packages</em> in R. Bayesian statistics involves probabilities. This means that the probability of an event to occur is considered in the modeling procedure, and is mainly used in for making <strong>inferences</strong>, and can be used for an analysis of the speculation of the root cause of a phenomenon under the term of <strong>causal inference</strong>.</p>
 </div><div class="column" style="width:40%;">
-<p><img src="https://federicagazzelloni.com/posts/stats/statistics/bayesian_statistics/featured.png" class="img-fluid" width="400"></p>
+<p><img src="https://federicagazzelloni.com/content/stats/statistics/bayesian_statistics/featured.png" class="img-fluid" width="400"></p>
 </div>
 </div>
 <p>In more details, when Bayesian statistics is performed, the response variable is tested against (causal) predictors with the application of suited <strong>prior</strong> distributions, and the use of the <strong>likelihood function</strong>, to finally produce a <strong>posterior</strong> distribution which should be as much as possible close to the real future outcome of the response variable distribution.</p>
@@ -17392,24 +17385,24 @@ font-style: inherit;">)</span></span></code></pre></div>
 </table>
 
 
-</section></section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+</section></section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>rstats</category>
   <category>modeling</category>
   <category>bayesian</category>
-  <guid>https://federicagazzelloni.com/posts/stats/statistics/bayesian_statistics/</guid>
+  <guid>https://federicagazzelloni.com/content/stats/statistics/bayesian_statistics/</guid>
   <pubDate>Tue, 21 Mar 2023 23:00:00 GMT</pubDate>
-  <media:content url="https://federicagazzelloni.com/posts/stats/statistics/bayesian_statistics/featured.png" medium="image" type="image/png" height="90" width="144"/>
+  <media:content url="https://federicagazzelloni.com/content/stats/statistics/bayesian_statistics/featured.png" medium="image" type="image/png" height="90" width="144"/>
 </item>
 <item>
   <title>Measuring Health Performance</title>
-  <link>https://federicagazzelloni.com/posts/proj/projects/performance/</link>
+  <link>https://federicagazzelloni.com/content/proj/projects/performance/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <div class="columns">
 <div class="column" style="width:80%;">
 <p>These days measuring performance is very appropriate for many different topics. Thinking about health and the fast changing environments, including climate changes, require a ready tool for identifying possible future outcomes. On health, interesting simple metrics are used to classify the state of health of a population, so to be comparable with other near and far.</p>
 <p>Here is a spec of my latest project where I am collecting all that I learned since the start of the Covid19 pandemic on a summary of the techniques used for measuring the health status of a population when in conjunction with an extreme event. Many tools are available and ready to use for the most exceptional purpose someone might had in mind, and I had difficulties choosing one on top of the other. But, why choosing if you can combine them?</p>
 </div><div class="column" style="width:20%;">
-<p><img src="https://federicagazzelloni.com/posts/proj/projects/performance/featured.png" class="img-fluid"></p>
+<p><img src="https://federicagazzelloni.com/content/proj/projects/performance/featured.png" class="img-fluid"></p>
 </div>
 </div>
 <p>There are three metrics that are used for the purpose of classification in the public health, the DALYs, YLLs, and the YLDs. Respectively are the <strong>Disability Adjusted Life Years</strong>, <strong>Years of Life Lost</strong>, and <strong>Years Lived with Disabilities</strong>.</p>
@@ -17609,7 +17602,7 @@ background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/proj/projects/performance/index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/proj/projects/performance/index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -17877,7 +17870,7 @@ background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/proj/projects/performance/index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/proj/projects/performance/index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -18177,18 +18170,18 @@ font-style: inherit;">)</span></span></code></pre></div>
 <p>Overall, while the global impact of Ebola on DALYs in 2019 was relatively low, it is still an important health concern in areas where outbreaks occur, and efforts to prevent and control the disease are crucial to reducing its impact on affected populations.</p>
 
 
-</section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>https://federicagazzelloni.com/posts/proj/projects/performance/</guid>
+</section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>https://federicagazzelloni.com/content/proj/projects/performance/</guid>
   <pubDate>Mon, 13 Mar 2023 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Retail Sales with ggstream</title>
-  <link>https://federicagazzelloni.com/posts/dataviz/data_visualization/ggstream/</link>
+  <link>https://federicagazzelloni.com/content/dataviz/data_visualization/ggstream/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This post is all about <strong>Retail Sales with ggstream</strong>, the dataset comes from <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-12-13">#TidyTuesday</a> 2022 week 50 <strong>Monthly State Retail Sales</strong>.</p>
 <p>The picture below is the result of the ggstream visualization.</p>
 <center>
-<img src="https://federicagazzelloni.com/posts/dataviz/data_visualization/ggstream/featured.png" class="img-fluid">
+<img src="https://federicagazzelloni.com/content/dataviz/data_visualization/ggstream/featured.png" class="img-fluid">
 </center>
 <p>Load libraries</p>
 <div class="cell">
@@ -19384,13 +19377,13 @@ font-style: inherit;">)</span></span></code></pre></div>
 </ul>
 
 
-</section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>https://federicagazzelloni.com/posts/dataviz/data_visualization/ggstream/</guid>
+</section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>https://federicagazzelloni.com/content/dataviz/data_visualization/ggstream/</guid>
   <pubDate>Mon, 30 Jan 2023 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Oregon spotted a frog: Rana Pretiosa</title>
-  <link>https://federicagazzelloni.com/posts/proj/projects/oregonfrogs/</link>
+  <link>https://federicagazzelloni.com/content/proj/projects/oregonfrogs/</link>
   <description><![CDATA[ <section id="updated-june-2023" class="level4"><h4 class="anchored" data-anchor-id="updated-june-2023">Updated June 2023</h4>
 </section><section id="overview" class="level1"><h1>Overview</h1>
 <div class="columns">
@@ -19398,7 +19391,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 <p>I made a package! Looking for data to use for one of my data visualization I stomped into this data about frogs in Oregon (US) and realized that it was very interesting for making both classification and regression models. So, I wrapped the data into a package, and even if it is still a work in progress I started using it for practicing <strong>machine learning</strong> algorithms.</p>
 <p>More info about it will follow. For now this project is all about how to use <a href="https://mlr3.mlr-org.com">mlr3</a> package for analysing and predicting data. <strong>mlr3</strong> is a machine learning <strong>ecosystem</strong>, it provides a unified interface to use different machine learning models in R.</p>
 </div><div class="column" style="width:20%;">
-<p><img src="https://federicagazzelloni.com/posts/proj/projects/oregonfrogs/featured.png" class="img-fluid"></p>
+<p><img src="https://federicagazzelloni.com/content/proj/projects/oregonfrogs/featured.png" class="img-fluid"></p>
 </div>
 </div>
 <p>Let’s load the libraries, and start using <strong>mlr3</strong> with <strong>oregonfrogs</strong> data!</p>
@@ -20780,19 +20773,19 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 
 
-</section></section></section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+</section></section></section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>Machine Learning</category>
   <category>mlr3</category>
-  <guid>https://federicagazzelloni.com/posts/proj/projects/oregonfrogs/</guid>
+  <guid>https://federicagazzelloni.com/content/proj/projects/oregonfrogs/</guid>
   <pubDate>Sat, 29 Oct 2022 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Yarn: hierarchical edge bundling visualization</title>
-  <link>https://federicagazzelloni.com/posts/dataviz/data_visualization/yarn/</link>
+  <link>https://federicagazzelloni.com/content/dataviz/data_visualization/yarn/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This post is all about <strong>hierarchical edge bundling visualization</strong>, the dataset comes from <a href="https://github.com/rfordatascience/tidytuesday/blob/master/data/2022/2022-10-11">#TidyTuesday</a> 2022 week 41 <strong>Ravelry data</strong>.</p>
 <p>The picture below is the result of the hierarchical edge bundling visualization.</p>
-<p><img src="https://federicagazzelloni.com/posts/dataviz/data_visualization/yarn/featured.png" class="img-fluid"></p>
+<p><img src="https://federicagazzelloni.com/content/dataviz/data_visualization/yarn/featured.png" class="img-fluid"></p>
 <p>First thing load the libraries and set the fonts:</p>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
@@ -22518,17 +22511,17 @@ font-style: inherit;">)</span></span></code></pre></div>
 </ul>
 
 
-</section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>https://federicagazzelloni.com/posts/dataviz/data_visualization/yarn/</guid>
+</section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>https://federicagazzelloni.com/content/dataviz/data_visualization/yarn/</guid>
   <pubDate>Mon, 10 Oct 2022 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Oregon Spotted a frog: Rana Pretiosa</title>
-  <link>https://federicagazzelloni.com/posts/dataviz/data_visualization/oregonfrogs/</link>
+  <link>https://federicagazzelloni.com/content/dataviz/data_visualization/oregonfrogs/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This #TidyTuesday week 31 is all about <strong>Oregon Spotted a frog: Rana Pretiosa</strong>.</p>
 <p>Load the {tidyverse} and the data from: <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-08-02">#TidyTuesday GitHub repo</a></p>
-<p><img src="https://federicagazzelloni.com/posts/dataviz/data_visualization/oregonfrogs/featured.png" class="img-fluid"></p>
+<p><img src="https://federicagazzelloni.com/content/dataviz/data_visualization/oregonfrogs/featured.png" class="img-fluid"></p>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va" style="color: #111111;
 background-color: null;
@@ -23138,16 +23131,16 @@ font-style: inherit;">#        bg = "white")</span></span></code></pre></div>
 </div>
 
 
-</section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>https://federicagazzelloni.com/posts/dataviz/data_visualization/oregonfrogs/</guid>
+</section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>https://federicagazzelloni.com/content/dataviz/data_visualization/oregonfrogs/</guid>
   <pubDate>Mon, 01 Aug 2022 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>European flights</title>
-  <link>https://federicagazzelloni.com/posts/dataviz/data_visualization/european_flights/</link>
+  <link>https://federicagazzelloni.com/content/dataviz/data_visualization/european_flights/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This #TidyTuesday week 28 is all about <strong>European flights</strong>. I was looking for a visualization that would represent the differences among countries in terms of the number of airports versus number of flights. I looked on the internet for getting some inspiration and then landed on Pintarest, where I found exactly what I was hoping for: a Sankey! First of all, <strong>What is a Sankey?</strong> The answer is clearer after you make one of your own. In short, it is a network graph connecting diffent groups with a ribbon. A few things that made me think about a lot were the requirenment for the type of data to combine, the consequent label results, and the grouping.</p>
-<p><img src="https://federicagazzelloni.com/posts/dataviz/data_visualization/european_flights/featured.png" class="img-fluid"></p>
+<p><img src="https://federicagazzelloni.com/content/dataviz/data_visualization/european_flights/featured.png" class="img-fluid"></p>
 <p>So, let’s have a go in making a <strong>Sankey</strong>.</p>
 <p>Have a quick look at the data for European flights:</p>
 <p>Load the {tidyverse} and the data from: <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-07-12">#TidyTuesday GitHub repo</a></p>
@@ -24721,13 +24714,13 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 
 
-</section></section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>https://federicagazzelloni.com/posts/dataviz/data_visualization/european_flights/</guid>
+</section></section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>https://federicagazzelloni.com/content/dataviz/data_visualization/european_flights/</guid>
   <pubDate>Mon, 11 Jul 2022 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Predictive modeling</title>
-  <link>https://federicagazzelloni.com/posts/stats/statistics/predictive_modeling/</link>
+  <link>https://federicagazzelloni.com/content/stats/statistics/predictive_modeling/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This post is dedicated to make a comparison between <strong>Caret</strong> and <strong>TidyModels</strong> R packages. Data modeling with R pass through data preprocessing and parameters assessments to predicting an outcome. Both set of packages can be used to acheive same results, with the purpose of finding the best predictive performance for data specifc models.</p>
 <p>The <strong>Caret</strong> package is the starting point for understanding how to manage models and produce unbiases predictions with R. As well as <strong>TidyModels</strong> meta package, it gives the opportunity to contruct a multivariate model syntax to manage several models to be applied on same set of data. <strong>TidyModels</strong> allows the use of a set of concatenated functions in partership with the <strong>TidyVerse</strong> grammar to build a structural model base which blends different models as one global model.</p>
@@ -25239,15 +25232,15 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 
 
-</section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+</section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>modeling</category>
-  <guid>https://federicagazzelloni.com/posts/stats/statistics/predictive_modeling/</guid>
+  <guid>https://federicagazzelloni.com/content/stats/statistics/predictive_modeling/</guid>
   <pubDate>Sat, 04 Jun 2022 22:00:00 GMT</pubDate>
-  <media:content url="https://federicagazzelloni.com/posts/stats/statistics/predictive_modeling/featured.png" medium="image" type="image/png" height="89" width="144"/>
+  <media:content url="https://federicagazzelloni.com/content/stats/statistics/predictive_modeling/featured.png" medium="image" type="image/png" height="89" width="144"/>
 </item>
 <item>
   <title>Multiple Hypothesis Testing</title>
-  <link>https://federicagazzelloni.com/posts/stats/statistics/multiple_testing/</link>
+  <link>https://federicagazzelloni.com/content/stats/statistics/multiple_testing/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p><em>Multiple testing</em>, what does it means?</p>
 <p>Sometimes answering a research question means evaluating the different combinations of predictors, and this is the case when multiple hypothesis testing is made.</p>
@@ -25313,7 +25306,7 @@ font-style: inherit;">cheese</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">::</span><span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;">heart_disease</span> <span class="op" style="color: #5E5E5E;
+font-style: inherit;"><a href="https://zajichek.github.io/cheese/reference/heart_disease.html">heart_disease</a></span> <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span><span class="va" style="color: #111111;
 background-color: null;
@@ -25418,7 +25411,7 @@ background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/stats/statistics/multiple_testing/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/stats/statistics/multiple_testing/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -25432,17 +25425,17 @@ font-style: inherit;">)</span></span></code></pre></div>
 </ul>
 
 
-</section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>https://federicagazzelloni.com/posts/stats/statistics/multiple_testing/</guid>
+</section></section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>https://federicagazzelloni.com/content/stats/statistics/multiple_testing/</guid>
   <pubDate>Thu, 19 May 2022 22:00:00 GMT</pubDate>
-  <media:content url="https://federicagazzelloni.com/posts/stats/statistics/multiple_testing/featured.png" medium="image" type="image/png" height="78" width="144"/>
+  <media:content url="https://federicagazzelloni.com/content/stats/statistics/multiple_testing/featured.png" medium="image" type="image/png" height="78" width="144"/>
 </item>
 <item>
   <title>Statistics</title>
-  <link>https://federicagazzelloni.com/posts/dataviz/data_visualization/Statistics/</link>
+  <link>https://federicagazzelloni.com/content/dataviz/data_visualization/Statistics/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This is one of my favourite visualizations. It looks like very simple, and straight forward with the use of the ggdist::stat_dots function to make dotted ditributions of the wages by highest educational status reached.</p>
-<p><img src="https://federicagazzelloni.com/posts/dataviz/data_visualization/Statistics/featured.png" class="img-fluid"></p>
+<p><img src="https://federicagazzelloni.com/content/dataviz/data_visualization/Statistics/featured.png" class="img-fluid"></p>
 <p>The Tidyverse libraries needed for the data manipulation:</p>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;
@@ -26003,13 +25996,13 @@ font-style: inherit;">)</span></span></code></pre></div>
 </ul>
 
 
-</section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>https://federicagazzelloni.com/posts/dataviz/data_visualization/Statistics/</guid>
+</section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>https://federicagazzelloni.com/content/dataviz/data_visualization/Statistics/</guid>
   <pubDate>Fri, 08 Apr 2022 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Erasmus students exchange</title>
-  <link>https://federicagazzelloni.com/posts/dataviz/data_visualization/erasmus/</link>
+  <link>https://federicagazzelloni.com/content/dataviz/data_visualization/erasmus/</link>
   <description><![CDATA[ <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This week 10 of #TidyTuesday 2022 theme is #Erasmus students exchange in the European countries.</p>
 <p>The data set is from Erasmus student mobility, Data.Europa.eu and Wimdu.co to discover the most popular Erasmus destinations.</p>
@@ -28011,7 +28004,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 <p>Or a simplified version:</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://federicagazzelloni.com/posts/dataviz/data_visualization/erasmus/images/er-network.png" class="img-fluid figure-img"></p>
+<figure class="figure"><p><img src="https://federicagazzelloni.com/content/dataviz/data_visualization/erasmus/images/er-network.png" class="img-fluid figure-img"></p>
 <figcaption>network</figcaption></figure>
 </div>
 <p>Let’s select Top 5 sending countries:</p>
@@ -29061,8 +29054,8 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 
 
-</section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>https://federicagazzelloni.com/posts/dataviz/data_visualization/erasmus/</guid>
+</section><p>Contacts and Information: <a href="mailto:fede.gazzelloni@gmail.com" class="email">fede.gazzelloni@gmail.com</a></p><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>https://federicagazzelloni.com/content/dataviz/data_visualization/erasmus/</guid>
   <pubDate>Mon, 14 Mar 2022 23:00:00 GMT</pubDate>
 </item>
 </channel>
