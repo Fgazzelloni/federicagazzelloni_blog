@@ -13,7 +13,7 @@ listing:
   max-items: 3
   categories: false
   feed: true
-page-layout: full
+page-layout: article
 title-block-banner: true
 format:
   html:
@@ -22,21 +22,21 @@ format:
           <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js">
 ---
 
-:::: column-page
-
-:::: {.columns}
-
-::: {.column}
-
-```{=html}
-<video width="80%" height="auto" autoplay loop muted playsinline>
-  <source src="images/video-homepage.mp4" type="video/mp4">
-</video>
-```
-
+::::::: column-page
+:::::: columns
+::: {.column width="40%"}
+<div style="display: flex; flex-direction: column; align-items: center; gap: 1em;">
+  <a href="https://www.codementor.io/@federicagazzelloni?refer=badge">
+    <img src="https://www.codementor.io/m-badges/federicagazzelloni/get-help.svg" alt="Contact me on Codementor" style="border-radius:10px;">
+  </a>
+  <img src="images/homepage.png" alt="R packages logo" style="border-radius: 10px; max-width: 90%; height: auto;">
+</div>
 :::
 
-::: {.column}
+::: {.column width="1%"}
+:::
+
+::: {.column width="59%"}
 *"Welcome to my Data Science Hub! This platform is dedicated to sharing insights, resources, and projects in data science. With expertise in advanced statistical methods, data modeling, and public health analytics, I focus on topics like health metrics and the dynamics of infectious diseases."*
 
 ## News: My Upcoming Book Is Now Online!
@@ -49,6 +49,9 @@ Title: **Health Metrics and the Spread of Infectious Diseases: Machine Learning 
 
 -   <https://bookdown.org/fede_gazzelloni/hmsidR/>
 -   <https://fgazzelloni.quarto.pub/hmsidr/>
+:::
+::::::
+:::::::
 
 It’s been an incredible journey, and while the book is nearing its completion, I feel a mix of emotions—both the excitement of sharing it with you and a touch of sadness that this creative process is coming to an end. 😌
 
@@ -63,16 +66,37 @@ So, what’s next? While this project may be wrapping up, my passion for writing
 Thank you for being a part of this journey. I hope the book serves as a valuable resource for your research and studies. Let’s see where this new chapter takes us!
 
 Happy reading! 📚✨
+
+:::::: column-page
+
+::::: columns
+
+:::: {.column width="70%"}
+
+```{=html}
+<video width="80%" height="auto" autoplay loop muted playsinline>
+  <source src="images/welcome-video.mp4" type="video/mp4">
+</video>
+```
+::::
+
+:::: {.column width="1%"}
+::::
+
+:::: {.column width="29%"}
+
+::: {style="margin-top: 10px; font-size: 3em;  font-weight: bold; text-align: center;"}
+More Tutorials on [Youtube](https://www.youtube.com/@federicagazzelloni)! <br> 👈
 :::
 
 ::::
 
 :::::
 
-<br>
+::::::
 
 :::: column-page
-::: {style="font-size: 2.5em; face: bold; color: #343a40;"}
+::: {style="margin-top: 10px; font-size: 3em;  font-weight: bold; text-align: center; background-color: #343a40; color: white;"}
 Latest content
 :::
 ::::

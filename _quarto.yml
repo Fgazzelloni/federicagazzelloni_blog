@@ -32,8 +32,8 @@ website:
   #  This page brought to you by <https://federicagazzelloni.com>
   #margin-header: |
   #  ![FG](/images/profile.png)
-  body-footer: | 
-    Contacts and Information: <fede.gazzelloni@gmail.com>
+  # body-footer: | 
+    #Contacts and Information: <fede.gazzelloni@gmail.com>
   #margin-footer: |
   #  ![FG](/images/profile.png)  
   navbar: 
@@ -57,20 +57,32 @@ website:
       - icon: rss
         href: index.xml  
   page-footer:
-    left: "© Copyright &copy; CC-By [Federica Gazzelloni](https://github.com/Fgazzelloni). CC-BY-NC 4.0."
+    left: 
+    - text: Copyright &copy; 2025 Federica Gazzelloni
+      href: https://github.com/Fgazzelloni
+    - text: MIT Licence
+      href: LICENSE.md
+    center: 
+      - icon: envelope
+        href: mailto:fede.gazzelloni@gmail.com
+        text: Contacts and Information
+      - icon: github
+        href: https://github.com/fgazzelloni
+      - text: 🦋 Bluesky
+        url: "https://bsky.app/profile/fgazzelloni.bsky.social"
+      - text: LinkedIn
+        url: "https://linkedin.com/in/federicagazzelloni"
     right: 
       - text: "This Blog is made with 💜 in Quarto"
         href: "https://quarto.org"
-      - icon: github
-        href: https://github.com/fgazzelloni
-      - icon: twitter 
-        href: https://twitter.com/fgazzelloni 
+    background: "#008080"    
 lang: en    
 format:
   html:
     smooth-scroll: true
-    theme: sandstone
-    css: styles.css
+    theme:
+      - flatly
+      - custom.scss
     toc: true
     link-external-icon: false
     link-external-newwindow: true
