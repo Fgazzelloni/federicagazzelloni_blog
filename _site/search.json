@@ -140,6 +140,13 @@
     "text": "TidyModels Example with SPAM Data\n\nlibrary(tidymodels)\ntidymodels_prefer()\nset.seed(123)\nsplit &lt;- initial_split(spam,0.75,strata=type)\ntraining &lt;- training(split)\ntesting &lt;- testing(split)\n\nmodelFit &lt;- logistic_reg() %&gt;% \n  set_engine(\"glm\") %&gt;%\n  fit(type~.,data=spam)\n\n# tidy(modelFit)\n\npredictions &lt;- predict(modelFit,new_data=testing)\n# predictions\n\ntesting$pred &lt;- predictions$.pred_class\ncm &lt;- yardstick::conf_mat(data = testing, truth = type, estimate = pred)\ncm\nautoplot(cm)"
   },
   {
+    "objectID": "content/blog/index.html",
+    "href": "content/blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No matching items\n Back to top"
+  },
+  {
     "objectID": "content/dataviz/data_visualization/usecases/hiv/index.html",
     "href": "content/dataviz/data_visualization/usecases/hiv/index.html",
     "title": "Epidemic transition metrics of HIV infections estimation",
@@ -532,6 +539,13 @@
     "text": "Footnotes\n\nworldbank_data source: https://databank.worldbank.org/reports.aspx?source=2&series=SH.MLR.INCD.P3&country=#↩︎\nworldbank_data source: https://databank.worldbank.org/reports.aspx?source=2&series=SH.MLR.INCD.P3&country=#↩︎\nworldbank_data source: https://databank.worldbank.org/reports.aspx?source=2&series=SH.MLR.INCD.P3&country=#↩︎"
   },
   {
+    "objectID": "content/blog/blog_posts/june2025_book/index.html",
+    "href": "content/blog/blog_posts/june2025_book/index.html",
+    "title": "Writing a book in R",
+    "section": "",
+    "text": "Overview\n\n\nIn this post, I will share my experience of writing a book in R, and the challenges I faced along the way.\nI will also discuss the tools I used, the process I followed, and the lessons I learned.\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "content/stats/statistics/linear_prediction/index.html",
     "href": "content/stats/statistics/linear_prediction/index.html",
     "title": "How does geom_smooth() make predictions",
@@ -606,13 +620,13 @@
     "href": "index.html",
     "title": "\n",
     "section": "",
-    "text": "“Welcome to my Data Science Hub! This platform is dedicated to sharing insights, resources, and projects in data science. With expertise in advanced statistical methods, data modeling, and public health analytics, I focus on topics like health metrics and the dynamics of infectious diseases.”\n\n\nI’m thrilled to announce that my book is now available online!\nTitle: Health Metrics and the Spread of Infectious Diseases: Machine Learning Application and Spatial modelling Analysis with R\n🎉 Check it out here:\n\nhttps://bookdown.org/fede_gazzelloni/hmsidR/\nhttps://fgazzelloni.quarto.pub/hmsidr/\nIt’s been an incredible journey, and while the book is nearing its completion, I feel a mix of emotions—both the excitement of sharing it with you and a touch of sadness that this creative process is coming to an end. 😌\nWriting this book has been an immensely rewarding experience. I’ve spent countless hours into selecting the right material, striving to present it in a way that’s accessible and helpful for early-career researchers and students. One of the biggest challenges was deciding what to include and what to leave out, constantly refining the content to ensure it’s both comprehensive and easy to follow.\nEven though the book is almost finished, my mind is still buzzing with ideas. There’s always that lingering thought of what else could be added to make it even better. But at some point, you have to step back and trust that what you’ve created will serve its purpose. And now, it’s time to see how it will resonate with you, the readers.\nAs I reflect on this journey, I’m filled with gratitude for all the support and feedback I’ve received along the way. Your encouragement has been invaluable in shaping this book into what it is today.\nSo, what’s next? While this project may be wrapping up, my passion for writing and sharing knowledge is far from over. Stay tuned for more updates and future projects! In the meantime, I invite you to dive into the book, explore its content, and share your thoughts. Your insights will be crucial as I make final touches and consider potential additions.\nThank you for being a part of this journey. I hope the book serves as a valuable resource for your research and studies. Let’s see where this new chapter takes us!\nHappy reading! 📚✨"
+    "text": "“Welcome to my Data Science Hub! This platform is dedicated to sharing insights, resources, and projects in data science. With expertise in advanced statistical methods, data modeling, and public health analytics, I focus on topics like health metrics and the dynamics of infectious diseases.”\n\n\n\nGazzelloni, Federica. Health Metrics and the Spread of Infectious Diseases: Machine Learning Applications and Spatial Modelling Analysis with R. First edition. Boca Raton, FL: CRC Press, 2025. Print.\n\n\n\n📖 Read it now:\n\n🔗 bookdown.org/fede_gazzelloni/hmsidR\n🔗 fgazzelloni.quarto.pub/hmsidr\n\n🛒 Available for Pre-Order:\n\nReserve your printed copy today on the 👉 Routledge Website\nIt’s been an incredible journey, and now that the book is officially printed and available for pre-order, I feel a mix of emotions—both the excitement of sharing it with you and a touch of nostalgia as this creative process comes to a close. 😌\nWriting this book has been an immensely rewarding experience. I’ve spent countless hours selecting the right material and striving to present it in a way that’s accessible and helpful for early-career researchers and students. One of the biggest challenges was deciding what to include and what to leave out, constantly refining the content to ensure it’s both comprehensive and easy to follow.\nEven though the book is now published, my mind is still buzzing with ideas. There’s always that lingering thought of what else could be added to make it even better. But at some point, you have to step back and trust that what you’ve created will serve its purpose. And now, it’s time to see how it will resonate with you, the readers.\nAs I reflect on this journey, I’m filled with gratitude for all the support and feedback I’ve received along the way. Your encouragement has been invaluable in shaping this book into what it is today.\nSo, what’s next? While this project may be wrapping up, my passion for writing and sharing knowledge is far from over. Stay tuned for more updates and future projects! In the meantime, I invite you to dive into the book, explore its content, and share your thoughts. Your insights will be crucial as I continue to learn and grow.\nThank you for being a part of this journey. I hope the book serves as a valuable resource for your research and studies. Let’s see where this new chapter takes us!\nHappy reading! 📚✨"
   },
   {
-    "objectID": "index.html#news-my-upcoming-book-is-now-online",
-    "href": "index.html#news-my-upcoming-book-is-now-online",
+    "objectID": "index.html#news-hmsid-book-is-available-online-and-for-pre-order",
+    "href": "index.html#news-hmsid-book-is-available-online-and-for-pre-order",
     "title": "\n",
     "section": "",
-    "text": "I’m thrilled to announce that my book is now available online!\nTitle: Health Metrics and the Spread of Infectious Diseases: Machine Learning Application and Spatial modelling Analysis with R\n🎉 Check it out here:\n\nhttps://bookdown.org/fede_gazzelloni/hmsidR/\nhttps://fgazzelloni.quarto.pub/hmsidr/"
+    "text": "Gazzelloni, Federica. Health Metrics and the Spread of Infectious Diseases: Machine Learning Applications and Spatial Modelling Analysis with R. First edition. Boca Raton, FL: CRC Press, 2025. Print.\n\n\n\n📖 Read it now:\n\n🔗 bookdown.org/fede_gazzelloni/hmsidR\n🔗 fgazzelloni.quarto.pub/hmsidr\n\n🛒 Available for Pre-Order:\n\nReserve your printed copy today on the 👉 Routledge Website"
   }
 ]

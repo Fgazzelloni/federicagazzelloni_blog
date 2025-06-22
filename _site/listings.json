@@ -12,6 +12,10 @@
     ]
   },
   {
+    "listing": "/content/blog/index.html",
+    "items": []
+  },
+  {
     "listing": "/content/proj/index.html",
     "items": [
       "/content/proj/projects/hmsidwR/index.html",
@@ -42,7 +46,9 @@
     "items": [
       "/content/proj/index.html",
       "/content/dataviz/index.html",
+      "/content/blog/index.html",
       "/content/stats/index.html",
+      "/content/blog/blog_posts/june2025_book/index.html",
       "/content/stats/statistics/plain_vanilla/index.html",
       "/content/proj/projects/hmsidwR/index.html",
       "/content/stats/statistics/rladies/index.html",

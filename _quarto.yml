@@ -25,17 +25,9 @@ website:
   announcement: 
     icon: info-circle
     dismissable: true
-    content: "**Health Metrics and the Spread of Infectious Diseases** is now available online! [Check it out](https://bookdown.org/fede_gazzelloni/hmsidR/)"
+    content: "**Health Metrics and the Spread of Infectious Diseases** is now available for pre-order from Routledge!! [👉 Pre-order your copy](https://www.routledge.com/Health-Metrics-and-the-Spread-of-Infectious-Diseases-Machine-Learning-Applications-and--Spatial-Modelling-Analysis-with-R/Gazzelloni/p/book/9781032625782?srsltid=AfmBOorETnPyGDBrDZ1F8rjQAVCodgRfiPXnuWbc9CGWA_O0i8_UT1bV)"
     type: danger
     position: below-navbar
-  #body-header: | 
-  #  This page brought to you by <https://federicagazzelloni.com>
-  #margin-header: |
-  #  ![FG](/images/profile.png)
-  # body-footer: | 
-    #Contacts and Information: <fede.gazzelloni@gmail.com>
-  #margin-footer: |
-  #  ![FG](/images/profile.png)  
   navbar: 
     right:
       - text: "Data Visualization"
