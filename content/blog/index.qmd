@@ -2,7 +2,7 @@
 title: Blog
 description: "This is my blog section.\n"
 listing:
-  contents: statistics
+  contents: blog_posts
   sort: "date desc"
   type: default
   categories: true

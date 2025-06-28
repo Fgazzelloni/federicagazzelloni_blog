@@ -1,96 +1,13 @@
 project:
   type: website
+  output-dir: docs
 
-website:
-  title: "Federica Gazzelloni's Website"
-  description: "Data Science"
-  favicon: images/profile.png
-  site-url: https://federicagazzelloni.com
-  repo-url: https://github.com/fgazzelloni
-  repo-actions: [issue]
-  cookie-consent:
-    type: express
-    style: headline
-    palette: light
-  google-analytics:
-    tracking-id: "G-119NQB71C8"
-    anonymize-ip: true
-  open-graph: 
-    locale: en_US
-  twitter-card:
-    creator: "@fgazzelloni"
-  page-navigation: true
-  back-to-top-navigation: true 
-  reader-mode: true
-  announcement: 
-    icon: info-circle
-    dismissable: true
-    content: "**Health Metrics and the Spread of Infectious Diseases** is now available for pre-order from Routledge!! [👉 Pre-order your copy](https://www.routledge.com/Health-Metrics-and-the-Spread-of-Infectious-Diseases-Machine-Learning-Applications-and--Spatial-Modelling-Analysis-with-R/Gazzelloni/p/book/9781032625782?srsltid=AfmBOorETnPyGDBrDZ1F8rjQAVCodgRfiPXnuWbc9CGWA_O0i8_UT1bV)"
-    type: danger
-    position: below-navbar
-  navbar: 
-    right:
-      - text: "Data Visualization"
-        href: content/dataviz/index.qmd
-      - text: "Statistics"
-        href: content/stats/index.qmd
-      - text: "Projects"
-        href: content/proj/index.qmd
-     # - text: "R-Ladies"
-     #   href: posts/rladies/index.qmd
-      - text:  "About"
-        href: about.qmd
-      - text: "{{< ai orcid size=xl >}}"
-        href: https://orcid.org/0000-0002-4285-611X
-      - icon: github
-        href: https://github.com/fgazzelloni
-      - text: "{{< ai google-scholar size=xl >}}"
-        href: https://scholar.google.com/citations?hl=en&user=Xes0-r0AAAAJ
-      - icon: rss
-        href: index.xml  
-  page-footer:
-    left: 
-    - text: Copyright &copy; 2025 Federica Gazzelloni
-      href: https://github.com/Fgazzelloni
-    - text: MIT Licence
-      href: LICENSE.md
-    center: 
-      - icon: envelope
-        href: mailto:fede.gazzelloni@gmail.com
-        text: Contacts and Information
-      - icon: github
-        href: https://github.com/fgazzelloni
-      - text: 🦋 Bluesky
-        url: "https://bsky.app/profile/fgazzelloni.bsky.social"
-      - text: LinkedIn
-        url: "https://linkedin.com/in/federicagazzelloni"
-    right: 
-      - text: "This Blog is made with 💜 in Quarto"
-        href: "https://quarto.org"
-    background: "#008080"    
-lang: en    
-format:
-  html:
-    smooth-scroll: true
-    theme:
-      - flatly
-      - custom.scss
-    toc: true
-    link-external-icon: false
-    link-external-newwindow: true
-    citations-hover: true
-    footnotes-hover: true
-    code-link: true
-    code-overflow: wrap
-    title-block-banner: true
-    page-navigation: true
-    back-to-top-navigation: true
-    #include-in-header: 
-     # - text: |
-      #    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js">
+metadata-files:
+  - _website.yml
+  - _format.yml
+  - _brand.yml
+  
+execute:
+  freeze: auto 
 
-
-editor: visual
-execute: 
-  freeze: auto
 
