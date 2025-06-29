@@ -1,12 +1,13 @@
-### Co-authored Publications
+### Authored & Co-authored Publications
 
 ```{r}
 #| echo: false
+#| warning: false
+#| message: false
 
-suppressPackageStartupMessages({
-  library(scholar)
-  library(tidyverse)
-})
+library(scholar)
+library(tidyverse)
+
 
 id <- 'Xes0-r0AAAAJ'
 ```
@@ -17,12 +18,13 @@ p <- get_publications(id)
 pp <- p%>%
   select(year,journal,title,author,pubid)%>%
   filter(!journal=="")%>%
-  arrange(desc(year))
+  arrange(desc(year)) %>%
+  rename_with(~str_to_title(.x))
 ```
 
 ```{r}
 #| echo: false
 knitr::kable(pp, 
              format = 'html', 
-             caption = 'List of Co-Authored Publications')
+             caption = 'List of Publications 2020 to Present')
 ```

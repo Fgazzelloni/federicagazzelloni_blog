@@ -6,3 +6,7 @@
 .httr-oauth
 .DS_Store
 docs
+*.json
+*.html
+_freeze
+_extensions
