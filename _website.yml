@@ -7,7 +7,7 @@ website:
     position: below-navbar
   title: "Federica Gazzelloni's Website"
   description: "Data Science Portfolio"
-  favicon: images/profile.png
+  favicon: "images/logo-website-removebg.png"
   site-url: "https://federicagazzelloni.com"
   repo-url: "https://github.com/fgazzelloni"
   repo-actions: [issue]
@@ -26,43 +26,51 @@ website:
   back-to-top-navigation: true 
   reader-mode: true
   navbar: 
-    logo: "images/homepage-transparent.png"
-    logo-alt: "RUsers Logo"
+    logo: "images/logo-website-removebg.png"
+    logo-alt: "me-ai2"
     collapse: true 
     left:
-      - text: "Data Visualization"
+      - text: Data Visualization
         href: content/dataviz/index.qmd
-      - text: "Statistics"
+      - text: Statistics
         href: content/stats/index.qmd
-      - text: "Projects"
+      - text: Projects
         href: content/proj/index.qmd
-      - text:  "About"
+      - text: Blog
+        href: content/blog/index.qmd  
+      - text: About
         href: about.qmd
+    right:    
+      - text: "{{< ai orcid >}}"
+        href: "https://orcid.org/0000-0002-4285-611X"
+      - text: "{{< ai google-scholar >}}"
+        href: "https://scholar.google.com/citations?hl=en&user=Xes0-r0AAAAJ"  
     tools:    
       - icon: envelope
         href: mailto:fede.gazzelloni@gmail.com
       - icon: linkedin
-        href: https://www.linkedin.com/it/federicagazzelloni 
+        href: "https://www.linkedin.com/in/federicagazzelloni/" 
       - icon: github
-        href: https://github.com/fgazzelloni
-      - icon: rss
-        href: index.xml   
-      - text: "{{< ai orcid size=xl >}}"
-        href: https://orcid.org/0000-0002-4285-611X
-      - text: "{{< ai google-scholar size=xl >}}"
-        href: https://scholar.google.com/citations?hl=en&user=Xes0-r0AAAAJ
+        href: "https://github.com/fgazzelloni"
   page-footer:
     left: |
       Copyright © 2025 Federica Gazzelloni<br>Designer & Maintainer: <a href="https://github.com/Fgazzelloni">Federica Gazzelloni</a><br>Powered by: Quarto & GitHub Pages | <a href="/LICENSE.md">MIT License</a>.
     right: 
+      - text: "{{< ai orcid >}}"
+        href: "https://orcid.org/0000-0002-4285-611X"
+      - text: "{{< ai google-scholar >}}"
+        href: "https://scholar.google.com/citations?hl=en&user=Xes0-r0AAAAJ"
       - icon: envelope
         href: mailto:fede.gazzelloni@gmail.com
       - icon: github
-        href: https://github.com/fgazzelloni
-      - text: 🦋
-        url: "https://bsky.app/profile/fgazzelloni.bsky.social"
+        href: "https://github.com/fgazzelloni"
       - icon: linkedin
-        url: "https://linkedin.com/in/federicagazzelloni"
+        href: "https://linkedin.com/in/federicagazzelloni"
+      - text: 🦋
+        href: "https://bsky.app/profile/fgazzelloni.bsky.social"  
+      - icon: twitter
+        href: "https://x.com/FGazzelloni"  
+        
     center:  
       - text: "This Blog is made with 💜 in Quarto"
         href: "https://quarto.org"
